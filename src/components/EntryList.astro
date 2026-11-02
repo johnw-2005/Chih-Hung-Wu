@@ -1,0 +1,185 @@
+---
+import { formatYearRange } from '../lib/site';
+import { withBase } from '../lib/paths';
+
+export interface EntryItem {
+  editCollection?: string;
+  editId?: string;
+  editYear?: number;
+  order?: number;
+  title: string;
+  subtitle?: string;
+  subtitleLines?: string[];
+  link?: string;
+  detail?: string;
+  startYear?: number;
+  endYear?: number;
+  year?: number;
+  image?: string;
+  imageAlt?: string;
+  /** 篩選用分類 key */
+  category?: string;
+  /** 卡片上顯示的分類標籤 */
+  categoryLabel?: string;
+  /** 個別卡片色條（優先於列表 accent） */
+  categoryAccent?: string;
+  /** 獎項名稱標籤 */
+  awardLabel?: string;
+  /** 結構化欄位（以排版區分，不顯示標籤文字） */
+  meta?: { kind: 'primary' | 'role' | 'location' | 'date' | 'content'; value: string }[];
+}
+
+interface Props {
+  items: EntryItem[];
+  emptyText?: string;
+  /** 區塊統一色條，代表此列表的類別 */
+  accent?: string;
+  /** 較緊湊的卡片間距與內距 */
+  compact?: boolean;
+}
+
+const { items, emptyText = '尚無資料。', accent = 'lab-blue', compact = false } = Astro.props;
+---
+
+{items.length === 0 ? (
+  <p class="rounded-lg bg-white px-5 py-4 text-muted shadow-sm">{emptyText}</p>
+) : (
+  <ul class:list={['entry-list', compact && 'entry-list--compact']}>
+    {items.map((item) => {
+      const yearLabel = item.year
+        ? String(item.year)
+        : item.startYear
+          ? formatYearRange(item.startYear, item.endYear)
+          : undefined;
+      const roleRows = item.meta?.filter((row) => row.kind === 'role') ?? [];
+      const bodyRows = item.meta?.filter((row) => row.kind !== 'role') ?? [];
+      return (
+        <li
+          class:list={[
+            'entry-card overflow-hidden rounded-lg border-l-4 bg-white shadow-sm',
+            `accent-${item.categoryAccent ?? accent}`,
+            item.categoryAccent && `entry-tint-${item.categoryAccent}`,
+          ]}
+          data-edit-collection={item.editCollection}
+          data-edit-id={item.editId}
+          data-edit-year={item.editYear ?? item.year ?? item.endYear ?? item.startYear ?? 0}
+          data-edit-sort-year={item.year ?? item.endYear ?? item.startYear ?? 0}
+          data-entry-category={item.category}
+        >
+          <div class:list={[item.image && 'flex flex-col sm:flex-row']}>
+            {item.image && (
+              <div class="aspect-[16/10] shrink-0 sm:aspect-auto sm:w-44 md:w-52">
+                <img
+                  src={withBase(item.image)}
+                  alt={item.imageAlt ?? item.title}
+                  width="208"
+                  height="130"
+                  loading="lazy"
+                  class="h-full w-full object-cover sm:min-h-[8rem]"
+                />
+              </div>
+            )}
+            <div class:list={['entry-card__body', compact && 'entry-card__body--compact']}>
+              {item.awardLabel ? (
+                <>
+                  <div class="entry-card__header">
+                    {item.categoryLabel && item.categoryAccent && (
+                      <span class:list={['entry-card__badge', `badge-${item.categoryAccent}`]}>
+                        {item.categoryLabel}
+                      </span>
+                    )}
+                    <h4 class="min-w-0 flex-1 text-lg font-semibold leading-snug text-heading">{item.title}</h4>
+                    {yearLabel && (
+                      <span class="entry-card__year">{yearLabel}</span>
+                    )}
+                  </div>
+                  <p class="mt-2">
+                    <span class:list={['entry-card__award', `award-${item.categoryAccent ?? accent}`]}>
+                      {item.awardLabel}
+                    </span>
+                  </p>
+                </>
+              ) : item.meta && item.meta.length > 0 ? (
+                <>
+                  <div class="entry-card__header">
+                    {item.categoryLabel && item.categoryAccent && (
+                      <span class:list={['entry-card__badge', `badge-${item.categoryAccent}`]}>
+                        {item.categoryLabel}
+                      </span>
+                    )}
+                    {yearLabel && (
+                      <span class="entry-card__year">{yearLabel}</span>
+                    )}
+                  </div>
+                  {roleRows.length > 0 && (
+                    <div class="entry-card__roles">
+                      {roleRows.map((row) => (
+                        <span class:list={['entry-card__role', `role-${item.categoryAccent ?? accent}`]}>
+                          {row.value}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                  <div class="entry-card__meta min-w-0 space-y-1">
+                    {bodyRows.map((row) => (
+                      <p
+                        class:list={[
+                          'leading-relaxed',
+                          row.kind === 'primary' && 'text-base font-semibold leading-snug text-heading sm:text-lg',
+                          row.kind === 'location' && 'text-sm text-muted',
+                          row.kind === 'date' && 'text-sm text-muted',
+                          row.kind === 'content' && 'text-sm text-body',
+                        ]}
+                      >
+                        {row.value}
+                      </p>
+                    ))}
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div class="entry-card__header">
+                    {item.categoryLabel && item.categoryAccent && (
+                      <span class:list={['entry-card__badge', `badge-${item.categoryAccent}`]}>
+                        {item.categoryLabel}
+                      </span>
+                    )}
+                    <h4 class="min-w-0 flex-1 text-lg font-semibold leading-snug text-heading">{item.title}</h4>
+                    {yearLabel && (
+                      <span class="entry-card__year">{yearLabel}</span>
+                    )}
+                  </div>
+                </>
+              )}
+              {!item.meta?.length && item.subtitleLines?.map(line => <p class="mt-1 text-base text-muted">{line}</p>)}
+              {!item.meta?.length && item.subtitle && <p class="mt-1 text-base text-muted">{item.subtitle}</p>}
+              {item.link && (
+                <p class="mt-2 text-sm"><a class="link" href={item.link} target="_blank" rel="noopener noreferrer">查看原文 ↗</a></p>
+              )}
+              {!item.meta?.length && item.detail && (
+                <div class="entry-card__detail mt-3 space-y-1">
+                  {item.detail.split('\n').map((line) => (
+                    <p
+                      class:list={[
+                        'leading-relaxed',
+                        line.startsWith('任期：') ||
+                          /^(指導|主辦|承辦|補助|合辦|執行)單位：/.test(line) ||
+                          line.startsWith('場次：') ||
+                          line.startsWith('參賽作品：') ||
+                          /^\d{2,3}年/.test(line)
+                          ? 'text-sm text-muted'
+                          : 'text-body',
+                      ]}
+                    >
+                      {line}
+                    </p>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+        </li>
+      );
+    })}
+  </ul>
+)}

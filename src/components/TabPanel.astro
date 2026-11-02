@@ -1,0 +1,20 @@
+---
+interface Props {
+  id: string;
+  groupId: string;
+  isDefault?: boolean;
+}
+
+const { id, groupId, isDefault = false } = Astro.props;
+---
+
+<section
+  role="tabpanel"
+  id={`panel-${groupId}-${id}`}
+  aria-labelledby={`tab-${groupId}-${id}`}
+  data-panel={id}
+  hidden={!isDefault}
+  class:list={['tab-panel', isDefault && 'is-active']}
+>
+  <slot />
+</section>

@@ -1,0 +1,164 @@
+---
+import EntryFilters from './EntryFilters.astro';
+import { withBase } from '../lib/paths';
+import type { CollectionEntry } from 'astro:content';
+import { projectCategories, projectCategoryAccent, sectionAccent } from '../lib/colors';
+import { formatProjectTime, projectSortYear } from '../lib/project-time.mjs';
+import { projectFields } from '../lib/project-fields.mjs';
+import { sortByCollectionDateDesc } from '../lib/site';
+
+interface Props {
+  items: CollectionEntry<'projects'>[];
+}
+
+const { items } = Astro.props;
+
+const sortedItems = sortByCollectionDateDesc(items);
+
+const parsedItems = sortedItems.map((item) => {
+  const data = projectFields(item.data);
+  const { category, title, grant } = data;
+  return { item: {...item, data}, category, title, grant };
+});
+
+const counts = {
+  all: parsedItems.length,
+  ...Object.fromEntries(
+    projectCategories.map((category) => [
+      category,
+      parsedItems.filter((entry) => entry.category === category).length,
+    ]),
+  ),
+} as Record<string, number>;
+
+const filters = [
+  { id: 'all', label: '全部', count: counts.all, color: sectionAccent.services },
+  ...projectCategories.map((category) => ({
+    id: category,
+    label: category,
+    count: counts[category] ?? 0,
+    color: projectCategoryAccent[category],
+  })),
+].filter((filter) => filter.id === 'all' || filter.count > 0);
+---
+
+{items.length === 0 ? (
+  <p class="rounded-lg bg-white px-5 py-4 text-muted shadow-sm">尚無研究計劃資料。</p>
+) : (
+  <div class="service-section" data-entry-filters>
+    <EntryFilters filters={filters} label="計畫分類" dotColors={['cat-indigo', 'cat-green', 'cat-amber']} />
+
+    <ul class="space-y-4">
+      {parsedItems.map(({ item, category, title, grant }) => {
+        const accent = category ? projectCategoryAccent[category] : sectionAccent.services;
+        return (
+          <li
+            class:list={[
+              'overflow-hidden rounded-lg border-l-[5px] bg-white shadow-sm',
+              `accent-${accent}`,
+              category && `entry-tint-${accent}`,
+            ]}
+            data-edit-collection="projects"
+            data-edit-id={item.id}
+            data-edit-year={projectSortYear(item.data)}
+            data-entry-category={category ?? 'other'}
+          >
+            <div class:list={[item.data.image && 'flex flex-col sm:flex-row']}>
+              {item.data.image && (
+                <div class="aspect-[16/10] shrink-0 sm:aspect-auto sm:w-44 md:w-52">
+                  <img
+                    src={withBase(item.data.image)}
+                    alt={title}
+                    width="208"
+                    height="130"
+                    loading="lazy"
+                    class="h-full w-full object-cover sm:min-h-[8rem]"
+                  />
+                </div>
+              )}
+              <div class="p-5">
+                <div class="mb-2 flex flex-wrap items-center gap-2">
+                  {category && (
+                    <span class:list={['entry-card__badge', `badge-${accent}`]}>
+                      {category}
+                    </span>
+                  )}
+                  <span
+                    class:list={['project-status', item.data.status === '進行中' ? 'project-status--ongoing' : 'project-status--completed']}
+                    data-project-status={item.data.status}
+                  >
+                    {item.data.status}
+                  </span>
+                </div>
+                <div class="flex flex-col items-start gap-3 sm:flex-row">
+                  <div class="min-w-0 flex-1">
+                    <h3 class="text-lg font-semibold leading-snug text-heading">
+                      {item.data.projectUrl ? (
+                        <a href={item.data.projectUrl} target="_blank" rel="noopener noreferrer" class="text-inherit no-underline transition-colors duration-150 hover:text-accent focus-visible:text-accent" data-project-link title="查看此計畫的官方詳細頁面（另開新分頁）">{title}</a>
+                      ) : title}
+                    </h3>
+                    {grant && (
+                      <p class="mt-1 font-mono text-sm text-muted">{grant}</p>
+                    )}
+                  </div>
+                  <span class="max-w-full rounded-full bg-page px-3 py-0.5 text-sm font-medium text-muted sm:shrink-0">
+                    {formatProjectTime(item.data)}
+                  </span>
+                </div>
+                {item.data.funding?.trim() && item.data.funding.trim() !== '其他' && (
+                  <p class="mt-3 text-sm text-muted">
+                    {item.data.funding}
+                  </p>
+                )}
+                {item.data.role && <p class="mt-1 text-sm text-muted">計畫角色：{item.data.role}</p>}
+                {item.data.detail && (
+                  <details class="project-description mt-3">
+                    <summary class="project-description__toggle">
+                      <span class="project-description__arrow" aria-hidden="true">▸</span>
+                      <span class="project-description__expand">展開敘述</span>
+                      <span class="project-description__collapse">收起敘述</span>
+                    </summary>
+                    <p class="mt-2 leading-relaxed text-body">{item.data.detail.trim()}</p>
+                  </details>
+                )}
+              </div>
+            </div>
+          </li>
+        );
+      })}
+    </ul>
+  </div>
+)}
+
+<style is:global>
+  .project-description__toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    cursor: pointer;
+    list-style: none;
+    color: var(--color-muted);
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  .project-description__toggle::-webkit-details-marker { display: none; }
+  .project-description__toggle:hover { color: var(--color-accent); }
+  .project-description__toggle:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 4px; border-radius: 2px; }
+  .project-description__collapse { display: none; }
+  .project-description[open] .project-description__expand { display: none; }
+  .project-description[open] .project-description__collapse { display: inline; }
+  .project-description[open] .project-description__arrow { transform: rotate(90deg); }
+
+  .project-status {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 9999px;
+    border: 1px solid transparent;
+    padding: 0.15rem 0.65rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  .project-status--ongoing { color: #17603d; background: #e7f4eb; border-color: #bcdcc7; }
+  .project-status--completed { color: #5a6270; background: #f0f1f4; border-color: #dcdfe5; }
+
+</style>

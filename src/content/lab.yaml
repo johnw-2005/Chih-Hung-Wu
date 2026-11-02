@@ -1,0 +1,36 @@
+name: I.C.A.L. 實驗室
+nameEn: Intelligent Computation and Applications Laboratory
+intro: |
+  ICAL 實驗室以從事以 AI 技術（特別是 logic-based、machine learning、soft-computing 等）進行智慧型資訊系統的研究、設計與開發。
+  本實驗室座落於國立高雄大學理工第一實驗大樓四樓（room 406-1），指導老師為吳志宏博士，成員為其研究生與專題指導學生。
+  本實驗室的宗旨是結合 AI 技術以解決好玩的問題。
+
+  歡迎有興趣的研究生與大學部學生加入。
+mission:
+  - 不會，要學（To Learn）
+  - 要動手做（To Do）
+  - 要好玩（To Have Fun）
+email: johnw@nuk.edu.tw
+phone: (07) 5919446
+office: 工學院 406-1
+address: 高雄市 811 楠梓區高雄大學路 700 號
+photos:
+  - src: /images/profile/johnw-ya.jpg
+    caption: ICAL 指導老師
+links:
+  - label: ICAL 官方網站
+    url: https://www.ical.tw/
+  - label: 國立高雄大學電機系
+    url: https://ee.nuk.edu.tw/
+introEn: Welcome to "Intelligent Computation and Applications Laboratory (ICAL＠ee.nuk.edu.tw)". We devote to the study, design, development, and implementation of intelligent information systems using AI-based techniques (especially logic-based, machine learning, soft-computing, etc.) The location of this lab is at room 406-1, the first science building, National University of Kaohsiung. Members of ICAL include Dr. Johnw Chih-Hung Wu (the supervisor) and his graduate and undergraduate students. We welcome graduate or undergraduate students who are interested in these topics to join with us.
+researchTopics:
+  - Artificial Intelligence & Machine Learning
+  - Intelligent Robotics
+  - Image/Vision Recognition
+  - Deep Learning
+  - Cloud Computing & Virtualization
+  - Multi-Core & GPU Programming
+addressEn: |-
+  Department of Electrical Engineering, National University of Kaohsiung
+  No. 700, Kaohsiung University Road, Nan-Tzu District, Kaohsiung 811, Taiwan
+campusMap: /images/lab/campus-map.jpg

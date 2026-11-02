@@ -1,0 +1,79 @@
+---
+import EntryFilters from './EntryFilters.astro';
+import type { CollectionEntry } from 'astro:content';
+import EntryList from './EntryList.astro';
+import type { EntryItem } from './EntryList.astro';
+import { sectionAccent, serviceCategories, serviceCategoryAccent } from '../lib/colors';
+import {
+  formatServiceRole,
+  isServiceTenureOrganization,
+  parseServiceTenureYears,
+  resolveServiceCategory,
+  serviceCategoryShortLabel,
+} from '../lib/services';
+import { sortByEntryDateDesc } from '../lib/site';
+
+interface Props {
+  items: CollectionEntry<'services'>[];
+}
+
+const { items } = Astro.props;
+
+const entryItems: EntryItem[] = sortByEntryDateDesc(
+  items.map((item) => {
+    const category = resolveServiceCategory(item);
+    const formatted = formatServiceRole(item.data.role, item.data.organization);
+    const tenure = isServiceTenureOrganization(item.data.organization)
+      ? parseServiceTenureYears(item.data.organization)
+      : undefined;
+
+    return {
+      editCollection: 'services',
+      editId: item.id,
+      editYear: item.data.endYear ?? item.data.startYear,
+      order: item.data.order,
+      title: formatted.title,
+      meta: formatted.meta,
+      year: (tenure || formatted.isCampusRole) ? undefined : item.data.startYear,
+      startYear: tenure?.startYear ?? (formatted.isCampusRole ? item.data.startYear : undefined),
+      endYear: tenure?.endYear ?? item.data.endYear,
+      category,
+      categoryLabel: serviceCategoryShortLabel[category],
+      categoryAccent: serviceCategoryAccent[category],
+    };
+  }),
+);
+
+const counts = {
+  all: entryItems.length,
+  ...Object.fromEntries(
+    serviceCategories.map((category) => [
+      category,
+      entryItems.filter((item) => item.category === category).length,
+    ]),
+  ),
+} as Record<string, number>;
+
+const filters = [
+  { id: 'all', label: '全部', count: counts.all, color: sectionAccent.services },
+  ...serviceCategories.map((category) => ({
+    id: category,
+    label: serviceCategoryShortLabel[category],
+    count: counts[category] ?? 0,
+    color: serviceCategoryAccent[category],
+  })),
+].filter((filter) => filter.id === 'all' || filter.count > 0);
+---
+
+{entryItems.length === 0 ? (
+  <p class="rounded-lg bg-white px-5 py-4 text-muted shadow-sm">尚無行政與社會服務資料。</p>
+) : (
+  <div class="service-section" data-entry-filters>
+    <EntryFilters filters={filters} label="服務分類" />
+    <EntryList
+      items={entryItems}
+      accent={sectionAccent.services}
+      emptyText="尚無行政與社會服務資料。"
+    />
+  </div>
+)}

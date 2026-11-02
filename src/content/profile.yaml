@@ -1,0 +1,127 @@
+name: 吳志宏 教授
+nameEn: Dr. Chih-Hung Wu
+title: 電機工程學系 教授
+affiliation: 國立高雄大學
+email: johnw@nuk.edu.tw
+phone: (07) 5919446
+office: 工學院 406-1
+photo: /images/profile/johnw.jpg
+tagline: 致力於人工智慧、機器學習與智慧機器人研究，並積極推動產學合作與偏鄉數位教育。
+highlights:
+  - role: 人工智慧研究中心主任
+    organization: 國立高雄大學
+    period: 2024–
+  - role: 電機工程學系教授
+    organization: 國立高雄大學
+    period: 2013–
+education:
+  - degree: 博士
+    school: 國立中山大學
+    field: 電機工程研究所計算機組
+    year: 1996
+  - degree: 碩士
+    school: 國立中山大學
+    field: 電機工程研究所計算機組
+    year: 1992
+  - degree: 學士
+    school: 國立成功大學
+    field: 工程科學系
+    year: 1990
+experience:
+  - role: 人工智慧研究中心顧問
+    organization: 國立高雄大學
+    period: 2021–2024
+    order: 1
+  - role: 人工智慧研究中心執行長
+    organization: 國立高雄大學
+    period: 2018–2021
+    order: 2
+  - role: 電機系副教授
+    organization: 國立高雄大學
+    period: 2004–2013
+    order: 3
+  - role: Vice Chair, Tainan Section Chapter
+    organization: IEEE SMC Society
+    period: 2017–
+    order: 4
+  - role: 助理教授（1998–2002）、副教授（2002–2004）、系主任、所長
+    organization: 樹德科技大學資訊管理系
+    period: 1998–2004
+    order: 5
+  - role: 理事
+    organization: 中華民國人工智慧學會
+    period: 2002–2004、2004–2006、2006–2008、2010–2012
+    order: 6
+  - role: 監事、理事
+    organization: 高雄市電子商務協會
+    period: 2002–2005、2005–2008、2008–2010、2010–2011
+    order: 7
+  - role: 電子商務社指導老師
+    organization: 樹德科技大學
+    period: 1998–2006
+    order: 8
+  - role: e-Eureka 資訊志工團指導老師
+    organization: e-Eureka
+    period: 2000–
+    order: 9
+  - role: 原住民青年文化社指導老師
+    organization: 國立高雄大學
+    period: 2006–2008
+    order: 10
+  - role: 電機系系主任
+    organization: 國立高雄大學
+    period: 2008–2010
+    order: 3.5
+  - role: 學術副校長（已卸任）
+    organization: 國立高雄大學
+    period: 2024 起（已卸任）
+    order: 0
+schools:
+  - 高雄市立高雄高級中學
+  - 高雄市立五福國民中學
+  - 高雄市立前金國小學
+  - 高雄市立大同國小學
+  - 嘉義縣水上鄉柳林國小
+  - 澎湖縣馬公市馬公國小附設幼稚園
+researchAreas:
+  - 人工智慧（專家系統與知識庫系統、自動推理系統、歸納邏輯程式、智慧代理人、知識驗證與確認）
+  - 機器學習與軟式計算（資料探勘、分類、分群、符號式迴歸、演化式計算與基因規劃）
+  - 機器人
+  - 模糊邏輯理論與應用
+  - 可演化硬體設計
+  - 系統建模與 Petri Net
+  - GPS
+  - 平行與分散式系統（網格運算、多核心程式設計、GPU、雲端運算、虛擬化）
+  - 抄襲偵測與垃圾郵件過濾
+  - 資訊系統（平衡計分卡、電子商務、網際網路應用、遊戲）
+interests:
+  - 人工智慧與機器學習
+  - 智慧機器人
+  - 影像/視覺辨識
+  - 深度學習
+  - 雲端運算與虛擬化
+  - 多核心與 GPU 程式設計
+photos:
+  - src: /images/profile/johnw.jpg
+    caption: 吳志宏教授
+  - src: /images/profile/johnw-ya.jpg
+    caption: 生活剪影 1
+  - src: /images/profile/johnw-ya-2.jpg
+    caption: 生活剪影 2
+  - src: /images/profile/johnw-smile.gif
+    caption: 生活剪影 3
+  - src: /images/profile/johnw-life.jpg
+    caption: 生活剪影 4
+  - src: /images/profile/johnw-portrait.jpg
+    caption: 生活剪影 5
+links:
+  - label: ICAL 官方網站
+    url: https://www.ical.tw/
+  - label: 國立高雄大學
+    url: https://www.nuk.edu.tw/
+  - label: 線上教學資源
+    url: http://learning.ical.tw/
+  - label: e-Eureka 資訊志工
+    url: http://www.e-eureka.tw/
+  - label: ICAL 成員入口
+    url: https://www.ical.tw/xICAL/

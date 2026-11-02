@@ -1,0 +1,95 @@
+<button
+  type="button"
+  id="back-to-top"
+  class="back-to-top"
+  aria-label="回到頂部"
+  hidden
+>
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M12 19V5M5 12l7-7 7 7"/>
+  </svg>
+</button>
+
+<style>
+  .back-to-top {
+    position: fixed;
+    right: 1.25rem;
+    bottom: 1.25rem;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border: none;
+    border-radius: 9999px;
+    background: linear-gradient(135deg, var(--color-lab-blue), var(--color-lab-indigo));
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(26, 54, 93, 0.3);
+    transition: opacity 0.25s, transform 0.25s, box-shadow 0.25s;
+    opacity: 0;
+    transform: translateY(0.5rem);
+    pointer-events: none;
+  }
+
+  .back-to-top.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .back-to-top:hover {
+    box-shadow: 0 6px 20px rgba(26, 54, 93, 0.4);
+    transform: translateY(-2px);
+  }
+
+  .back-to-top.is-visible:hover {
+    transform: translateY(-2px);
+  }
+
+  .back-to-top:focus-visible {
+    outline: 2px solid var(--color-lab-teal);
+    outline-offset: 2px;
+  }
+
+  @media (min-width: 640px) {
+    .back-to-top {
+      right: 1.5rem;
+      bottom: 1.5rem;
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+</style>
+
+<script>
+  function initBackToTop() {
+    const btn = document.getElementById('back-to-top');
+    if (!btn) return;
+
+    const showThreshold = 320;
+
+    function toggleVisibility() {
+      const visible = window.scrollY > showThreshold;
+      btn.classList.toggle('is-visible', visible);
+      btn.hidden = !visible;
+    }
+
+    btn.addEventListener('click', () => {
+      const top = document.getElementById('top');
+      if (top) {
+        top.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+      history.replaceState(null, '', '/#top');
+    });
+
+    window.addEventListener('scroll', toggleVisibility, { passive: true });
+    toggleVisibility();
+  }
+
+  initBackToTop();
+  document.addEventListener('astro:page-load', initBackToTop);
+</script>

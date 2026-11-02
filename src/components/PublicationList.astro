@@ -1,0 +1,135 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import {publicationDisplay} from '../lib/publication-fields.mjs';
+
+interface Props {
+  publications: CollectionEntry<'publications'>[];
+  limit?: number;
+  showAbstract?: boolean;
+}
+
+const { publications, limit, showAbstract = false } = Astro.props;
+const items = (limit ? publications.slice(0, limit) : publications).map(pub => {
+  const {data, authors, indexes, venue, doi} = publicationDisplay(pub.data);
+  const type = data.bibType;
+  const category = data.type === 'journal' || type === 'article' || pub.id.startsWith('journal-') ? '期刊'
+    : ['inproceedings', 'conference'].includes(type ?? '') || pub.id.startsWith('conference-') ? '會議'
+    : pub.id.startsWith('patent-') ? '專利'
+    : '專書／其他著作';
+  return {...pub, data, category, authors, indexes, venue, doi};
+});
+const categories = [
+  {id: '期刊', color: 'cat-blue'},
+  {id: '會議', color: 'cat-indigo'},
+  {id: '專書／其他著作', color: 'cat-teal'},
+  {id: '專利', color: 'cat-amber'},
+];
+const filters = [
+  {id: 'all', label: '全部', color: 'lab-blue', count: items.length},
+  ...categories.map(category => ({...category, label: category.id, count: items.filter(item => item.category === category.id).length})),
+].filter(filter => filter.id === 'all' || filter.count > 0);
+---
+
+{items.length === 0 ? (
+  <p class="rounded-lg bg-white px-5 py-4 text-muted shadow-sm">尚無發表資料。</p>
+) : (
+  <div class="service-section" data-entry-filters>
+    <div class="service-filters" role="tablist" aria-label="論文著作分類">
+      {filters.map((filter, index) => (
+        <button type="button" role="tab" class:list={['service-filter', index === 0 && 'is-active']}
+          data-entry-filter={filter.id} data-color={filter.color} aria-selected={index === 0 ? 'true' : 'false'}>
+          {filter.id === 'all' ? (
+            <span class="service-filter__dot service-filter__dot--all" aria-hidden="true">
+              <span class="service-filter__dot-bit" />
+              <span class="service-filter__dot-bit" />
+              <span class="service-filter__dot-bit" />
+            </span>
+          ) : <span class:list={['service-filter__dot', `category-dot-${filter.color}`]} aria-hidden="true" />}
+          <span class="service-filter__label">{filter.label}</span>
+          <span class="service-filter__count">{filter.count}</span>
+        </button>
+      ))}
+    </div>
+  <ul class="publication-list" aria-label="論文與著作">
+    {items.map(pub => (
+      <li class="publication-card" data-entry-category={pub.category} data-edit-collection="publications" data-edit-id={pub.id} data-edit-year={pub.data.year}>
+        <article>
+          <div class="publication-badges">
+            <span class="publication-badge publication-year">{pub.data.year}</span>
+            {pub.category && <span class="publication-badge publication-category">{pub.category}</span>}
+            {pub.indexes.map(index => <span class="publication-badge publication-index">{index}</span>)}
+          </div>
+          <h3 class="publication-title">
+            {pub.data.link ? (
+              <a href={pub.data.link} target="_blank" rel="noopener noreferrer">{pub.data.title}</a>
+            ) : pub.data.title}
+          </h3>
+          <p class="publication-authors">
+            {pub.authors.split(/(\bChih-Hung Wu\b|\bC\.-H\. Wu\b|吳志宏)/g).map((part, index) => (
+              index % 2 === 1 ? <strong>{part}</strong> : part
+            ))}
+          </p>
+          <p class="publication-venue"><em>{pub.venue}</em></p>
+          {pub.data.link && (
+            <p class="publication-link">
+              {pub.doi ? <><span>DOI:</span> <a href={pub.data.link} target="_blank" rel="noopener noreferrer">{pub.doi}</a></>
+                : <a href={pub.data.link} target="_blank" rel="noopener noreferrer">論文連結 <span aria-hidden="true">↗</span></a>}
+            </p>
+          )}
+          {showAbstract && pub.data.abstract?.trim() && (
+            <details class="publication-abstract">
+              <summary>Abstract</summary>
+              <p>{pub.data.abstract.trim()}</p>
+            </details>
+          )}
+        </article>
+      </li>
+    ))}
+  </ul>
+  </div>
+)}
+
+<style>
+  .publication-list { display: grid; gap: 1rem; padding: 0; margin: 0; list-style: none; }
+  .publication-card {
+    min-width: 0;
+    padding: 1.4rem 1.5rem;
+    border: 1px solid #e5d7b2;
+    border-radius: 0.8rem;
+    background: #fffdf4;
+    box-shadow: 0 3px 10px rgb(26 31 44 / 5%);
+  }
+  .publication-badges { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin-bottom: 0.65rem; }
+  .publication-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.2rem 0.65rem;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    font-size: 0.74rem;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  .publication-year { color: #4a5568; background: #f0f1f4; }
+  .publication-category { color: #1d4ed8; background: #eff6ff; border-color: #dbeafe; }
+  .publication-index { color: #a33713; background: #fff4e9; border-color: #f9dfc5; }
+  .publication-title { margin: 0 0 0.5rem; color: var(--color-heading); font-size: 1.08rem; font-weight: 700; line-height: 1.5; overflow-wrap: anywhere; }
+  .publication-title a { color: inherit; text-decoration: none; }
+  .publication-title a:hover { color: var(--color-accent); }
+  .publication-authors { margin: 0 0 0.4rem; color: var(--color-muted); font-size: 0.88rem; line-height: 1.7; overflow-wrap: anywhere; }
+  .publication-authors strong { color: var(--color-accent); font-weight: 700; }
+  .publication-venue { margin: 0; color: #454d60; font-size: 0.88rem; line-height: 1.65; overflow-wrap: anywhere; }
+  .publication-link { margin: 0.25rem 0 0; font-size: 0.78rem; overflow-wrap: anywhere; }
+  .publication-link > span { color: var(--color-muted); }
+  .publication-link a { color: #1d4ed8; text-decoration: none; }
+  .publication-link a:hover { text-decoration: underline; text-underline-offset: 3px; }
+  a:focus-visible, summary:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 4px; border-radius: 2px; }
+  .publication-abstract { margin-top: 0.75rem; border-top: 1px solid #e9e2cf; padding-top: 0.6rem; }
+  .publication-abstract summary { width: fit-content; cursor: pointer; color: var(--color-muted); font-size: 0.8rem; }
+  .publication-abstract p { margin: 0.5rem 0 0; font-size: 0.85rem; line-height: 1.8; color: var(--color-muted); overflow-wrap: anywhere; }
+  @media (max-width: 480px) {
+    .publication-card { padding: 1.05rem; }
+    .publication-title { font-size: 1rem; }
+  }
+</style>

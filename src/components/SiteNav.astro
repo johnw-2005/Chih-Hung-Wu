@@ -1,0 +1,152 @@
+---
+import type { TabItem } from '../lib/tabs';
+
+interface Props {
+  tabs: TabItem[];
+  groupId: string;
+  defaultTab: string;
+}
+
+const { tabs, groupId, defaultTab } = Astro.props;
+---
+
+<nav
+  class="site-nav"
+  role="tablist"
+  aria-label="網站導覽"
+  data-tab-nav={groupId}
+  data-default-tab={defaultTab}
+>
+  <div class="site-nav__inner">
+    {tabs.map((tab) => (
+      <button
+        type="button"
+        role="tab"
+        id={`tab-${groupId}-${tab.id}`}
+        aria-controls={`panel-${groupId}-${tab.id}`}
+        data-tab={tab.id}
+        data-color={tab.color}
+        class:list={['site-nav__btn', tab.id === defaultTab && 'is-active']}
+        aria-selected={tab.id === defaultTab ? 'true' : 'false'}
+      >
+        <span class="site-nav__label">{tab.label}</span>
+      </button>
+    ))}
+  </div>
+</nav>
+
+<style>
+  .site-nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    background: color-mix(in srgb, #ffffff 94%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: 0 1px 4px rgba(26, 31, 44, 0.06);
+  }
+
+  .site-nav__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+  }
+
+  .site-nav__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 0.5rem;
+    background: transparent;
+    color: var(--color-muted);
+    padding: 0.5rem 0.875rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.35;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+  }
+
+  .site-nav__btn:hover {
+    background: var(--color-page);
+    color: var(--color-body);
+  }
+
+  .site-nav__btn.is-active {
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(26, 31, 44, 0.12);
+  }
+
+  .site-nav__btn.is-active[data-color='lab-blue'] { background: var(--color-lab-blue); }
+  .site-nav__btn.is-active[data-color='lab-indigo'] { background: var(--color-lab-indigo); }
+  .site-nav__btn.is-active[data-color='lab-teal'] { background: var(--color-lab-teal); }
+  .site-nav__btn.is-active[data-color='lab-purple'] { background: var(--color-lab-purple); }
+  .site-nav__btn.is-active[data-color='lab-orange'] { background: var(--color-lab-orange); }
+  .site-nav__btn.is-active[data-color='lab-green'] { background: var(--color-lab-green); }
+  .site-nav__btn.is-active[data-color='lab-pink'] { background: var(--color-lab-pink); }
+  .site-nav__btn.is-active[data-color='lab-amber'] { background: var(--color-lab-amber); color: var(--color-primary); }
+</style>
+
+<script>
+  function initSiteNav() {
+    document.querySelectorAll('[data-tab-nav]').forEach((nav) => {
+      const groupId = nav.getAttribute('data-tab-nav') ?? '';
+      const defaultTab = nav.getAttribute('data-default-tab') ?? '';
+      const panelsRoot = document.querySelector(`[data-tab-panels="${groupId}"]`);
+      if (!panelsRoot) return;
+
+      const buttons = Array.from(nav.querySelectorAll('[data-tab]'));
+      const panels = Array.from(panelsRoot.children).filter(
+        (el) => el instanceof HTMLElement && el.dataset.panel,
+      );
+
+      function activate(tabId, pushHash = true) {
+        buttons.forEach((btn) => {
+          const isActive = btn.dataset.tab === tabId;
+          btn.classList.toggle('is-active', isActive);
+          btn.setAttribute('aria-selected', String(isActive));
+        });
+
+        panels.forEach((panel) => {
+          const isActive = panel.dataset.panel === tabId;
+          panel.classList.toggle('is-active', isActive);
+          panel.hidden = !isActive;
+          if (isActive) {
+            panel.dispatchEvent(new CustomEvent('tab-panel-activate', { bubbles: false }));
+          }
+        });
+
+        const activeBtn = nav.querySelector('.site-nav__btn.is-active');
+        if (activeBtn) {
+          activeBtn.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
+        }
+
+        if (pushHash) {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          history.replaceState(null, '', `${window.location.pathname}${window.location.search}#${tabId}`);
+        }
+      }
+
+      const hash = window.location.hash.slice(1);
+      const initial = hash && panels.some((panel) => panel.dataset.panel === hash)
+        ? hash
+        : defaultTab;
+      activate(initial, false);
+
+      buttons.forEach((btn) => {
+        btn.addEventListener('click', () => activate(btn.dataset.tab ?? defaultTab));
+      });
+    });
+  }
+
+  initSiteNav();
+  document.addEventListener('astro:page-load', initSiteNav);
+</script>

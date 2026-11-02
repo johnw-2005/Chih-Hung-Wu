@@ -1,0 +1,3137 @@
+# 論文／計畫請編輯 bibliography/*.bib，再執行 npm run bib:sync。
+# 有 bibKey 的項目由腳本管理；其他項目保留手動維護。
+- id: bib-2367fadfabd41278761b
+  bibKey: Johnw_Journal.bib:Johnw:2026:JIMO
+  bibType: article
+  title: A genetic algorithm for tool-constrained scheduling with dynamic expedited orders in smart manufacturing
+  order: 0
+  type: journal
+  authors:
+    - Yi-Han Chen
+    - Hsi-Wen Wang
+    - Chiung-Hui Tsai
+    - Chih-Hung Wu*
+  year: 2026
+  journal: Journal of Industrial and Management Optimization
+  volume: '22'
+  pages: 182-213
+  issn: 1547-5816
+  note: (SCIE)
+  issue: '1'
+  keywords:
+    - flexible job shop scheduling problem (FJSSP)
+    - expedited orders
+    - tool constraints
+    - genetic algorithm
+    - job priority
+    - scheduling decision support
+  indexes:
+    - SCIE
+  doi: 10.3934/jimo.2026007
+  url: https://www.aimspress.com/article/doi/10.3934/jimo.2026007
+- id: bib-255607f328bc2e289fb4
+  bibKey: Johnw_Conference.bib:Chen2025Fabrication
+  bibType: inproceedings
+  title: Fabrication of Bio-inspired adhesives via AI-assisted design and their application to adaptive robot grippers
+  order: 0
+  type: conference
+  authors:
+    - Po-Cheng Chen
+    - Kai-Ming Wu
+    - Tzong-Pei Hong
+    - Chih-Hung Wu
+    - Chau-Cho Yu
+    - Yi-Chang Chung
+  year: 2025
+  month: October 23-25
+  publisher: IEEE
+  address: Kaohsiung, Taiwan
+  booktitle: Proceedings of the 2025 IEEE 7th Eurasia Conference on Biomedical Engineering, Healthcare and Sustainability (IEEE ECBIOS 2025)
+- id: bib-25bcc05c0fb5528c479c
+  bibKey: Johnw_Journal.bib:Chen2025HybridEMD
+  bibType: article
+  title: A Hybrid EMD-Transformer Framework for Intelligent Fault Diagnosis in Rotating Machinery
+  order: 0
+  type: journal
+  authors:
+    - Yi-Han Chen
+    - Pin-Chia Lin
+    - Chiung-Hui Tsai
+    - Chih-Hung Wu*
+  year: 2025
+  journal: IEEE Transactions on Instrumentation and Measurement
+  note: Under Revision (SCI)
+  indexes:
+    - SCI
+- id: bib-2ad2fb9b523b41ae4fa1
+  bibKey: Johnw_Conference.bib:Wu2025PreliminaryGripper
+  bibType: inproceedings
+  title: Preliminary Development of a Three-Finger Bio-Adhesive Gripper with Quick-Exchange Interface and Coordinated Control for Adaptive and Learning-Based Manipulation
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu*
+    - Yan-Cheng Pan
+    - Leng Tang Kai
+  year: 2025
+  month: October 23-25
+  publisher: IEEE
+  address: Kaohsiung, Taiwan
+  booktitle: Proceedings of the 2025 IEEE 7th Eurasia Conference on Biomedical Engineering, Healthcare and Sustainability (IEEE ECBIOS 2025)
+- id: bib-ae7dd7783a54fadd0a65
+  bibKey: Johnw_Conference.bib:Chen2025PCB
+  bibType: inproceedings
+  title: A Comparative Analysis of the Effectiveness of Data Augmentation Techniques for PCB Trace Defect Detection
+  order: 0
+  type: conference
+  authors:
+    - Min-Chi Chen
+    - Mu-Lin Tsai
+    - Wei-Min Wu
+    - Tang-Kai Leng
+    - Yen-Cheng Liu
+    - Ting-Chun Lin
+    - Chih-Hung Wu*
+  year: 2025
+  month: May 23-25
+  address: Penghu, Taiwan
+  booktitle: Proceeding of The 23rd Conference on Information Technology and Application in Outlying Islands
+- id: bib-cabc8f01485fb9e53d6b
+  bibKey: Johnw_Conference.bib:Li2025Metal
+  bibType: inproceedings
+  title: 'Metal Defect Detection: Comparative Analysis of the Effectiveness of GAN-Based Data Augmentation and Traditional Augmentation Techniques'
+  order: 0
+  type: conference
+  authors:
+    - Min-Pei Li
+    - Hsin-Yu Chen
+    - Hsiang-Yi Wu
+    - Pei-Yan Chou
+    - Yan-Cheng Pan
+    - Chih-Hung Wu*
+  year: 2025
+  month: May 23-25
+  address: Penghu, Taiwan
+  booktitle: Proceeding of The 23rd Conference on Information Technology and Application in Outlying Islands
+- id: bib-d2c42d70dfdd96015a0c
+  bibKey: Johnw_Conference.bib:Chiu2025Textile
+  bibType: inproceedings
+  title: Comparative Analysis of Deep Learning Classification Models for Textile Defect Detection Enhanced by Generative Adversarial Networks (GANs)
+  order: 0
+  type: conference
+  authors:
+    - Ching-Yu Chiu
+    - Yun-Zhong Shi
+    - Wei-Ying Chen
+    - Cheng-Jiun Hsieh
+    - Chih-Hung Wu*
+  year: 2025
+  month: May 23-25
+  address: Penghu, Taiwan
+  booktitle: Proceeding of The 23rd Conference on Information Technology and Application in Outlying Islands
+- id: bib-d71c43b4bce32df8642d
+  bibKey: Johnw_Conference.bib:Chan2025Fingerprint
+  bibType: inproceedings
+  title: Fingerprint-inspired tactile sensor for directional sensing applications
+  order: 0
+  type: conference
+  authors:
+    - Jui-Yang Chan
+    - Po-Cheng Chen
+    - Chen-Yu Li
+    - Chih-Hung Wu
+    - Hung-Yi Lin
+    - Yi-Chang Chung
+  year: 2025
+  month: October 23-25
+  publisher: IEEE
+  address: Kaohsiung, Taiwan
+  booktitle: Proceedings of the 2025 IEEE 7th Eurasia Conference on Biomedical Engineering, Healthcare and Sustainability (IEEE ECBIOS 2025)
+- id: bib-dcebc91c85a2c21258ca
+  bibKey: Johnw_Conference.bib:Wu2025PreliminaryVLM
+  bibType: inproceedings
+  title: Preliminary Study on Lightweight Vision–Language Model Deployment for Edge-based Customer Service Applications
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu*
+    - Wei-Min Wu
+    - Wei-Ying Chen
+  year: 2025
+  month: October 23-25
+  publisher: IEEE
+  address: Kaohsiung, Taiwan
+  booktitle: Proceedings of the 2025 IEEE 7th Eurasia Conference on Biomedical Engineering, Healthcare and Sustainability (IEEE ECBIOS 2025)
+- id: journal-2025-001-integrating-local-bi
+  bibKey: Johnw_Journal.bib:Johnw:2025:MTAP
+  bibType: article
+  title: Integrating local binary patterns and convolutional neural networks with a balanced gray encoded pooling mechanism
+  order: 0
+  type: journal
+  authors:
+    - Cheng-Ling Lai
+    - Ling-Shen Tseng
+    - Chih-Hung Chang
+    - Yi-Han Chen
+    - Chih-Hung Wu*
+  year: 2025
+  journal: Multimedia Tools and Applications
+  volume: '84'
+  pages: 42009–42035
+  month: oct
+  issn: 1573-7721
+  note: (ESCI)
+  issue: '34'
+  indexes:
+    - ESCI
+  doi: 10.1007/s11042-025-20823-0
+  url: https://doi.org/10.1007/s11042-025-20823-0
+- id: journal-2024-002-deep-learning-method
+  bibKey: Johnw_Journal.bib:Johnw:2024:ACCESS
+  bibType: article
+  title: Deep-Learning Methods for Defect Inspection of Plated Through Holes With Clustering-Based Auto-Labeling and GAN-Based Model Training
+  order: 0
+  type: journal
+  authors:
+    - Chang-Yeh Hsieh
+    - Ling-Shen Tseng
+    - Yi-Han Chen
+    - Chiung-Hui Tsai
+    - Chih-Hung Wu*
+  year: 2024
+  journal: IEEE Access
+  volume: '12'
+  pages: 190598-190610
+  note: (SCI)
+  issue: ''
+  keywords:
+    - Training
+    - YOLO
+    - Manufacturing
+    - Accuracy
+    - Feature extraction
+    - Detectors
+    - Drilling
+    - Symmetric matrices
+    - Soldering
+    - Resource management
+    - Automated optical inspection (AOI)
+    - defect detection
+    - deep learning
+    - electroplated through-hole (PTH)
+    - printed circuit board (PCB)
+    - generative adversarial network (GAN)
+    - ResNet
+  indexes:
+    - SCI
+  doi: 10.1109/ACCESS.2024.3515463
+- id: journal-2022-003-forecasting-of-air-p
+  bibKey: Johnw_Journal.bib:Johnw:2022:AppIntell
+  bibType: article
+  title: Forecasting of Air Pollutant Concentrations Using a Hybrid Deep Learning Network Model
+  order: 0
+  type: journal
+  authors:
+    - Yu-Shun Mao
+    - Shie-Jue Lee
+    - Chih-Hung Wu
+    - Chun-Liang Hou
+    - Chen-Sen Ouyang
+    - Chih-Feng Liu
+  year: 2023
+  journal: Applied Intelligence
+  volume: '53'
+  pages: 12792–12810
+  month: ''
+  note: (SCI)
+  issue: ''
+  indexes:
+    - SCI
+  doi: 10.1007/s10489-022-04191-y
+- id: conference-2022-044-information-extracti
+  bibKey: Johnw_Conference.bib:Wu2021a
+  bibType: inproceedings
+  title: Information Extraction and Analysis on Certificates and Medical Receipts
+  order: 0
+  type: conference
+  authors:
+    - Tzung-Pei Hong
+    - Wei-Chou Chen
+    - Chih-Hung Wu
+    - Bo-Wen Xiao
+    - Bing-Yang Chiang
+    - Zhi-Xun Shen
+  year: 2022
+  month: 7-9 jan
+  address: Virtual Online Conference
+  booktitle: IEEE 40th International Conference on Consumer Electronics (IEEE ICCE)
+- id: journal-2022-004-leveraging-attribute
+  bibKey: Johnw_Journal.bib:Johnw:2022:ECR
+  bibType: article
+  title: Leveraging attribute latent features for addressing new item cold-start issue
+  order: 0
+  type: journal
+  authors:
+    - Mi-Tsuen Hsieh
+    - Shie-Jue Lee
+    - Chih-Hung Wu
+    - Chun-Liang Hou
+    - Chen-Sen Ouyang
+    - Zhan-Pei Lin
+  year: 2022
+  journal: Electronic Commerce Research and Applications
+  volume: '54'
+  pages: '101177'
+  issn: 1567-4223
+  abstract: A recommender system employs an information filtering technology aiming to recommend items that are likely to be of interest to users, based on user behavior, rating feedback of items, or item characteristics. The cold-start problem occurs when the recommender system has difficulties in drawing any recommendations due to lack of information. In this paper, we focus on the item cold-start problem. When new items are added to the catalogue, they can easily be overlooked because no feedback information is accessible for recommending them to users, impeding the promotion of new products online. We propose a hybrid recommender system, called ALFNCF (Attribute Latent Features with Neural Collaborative Filtering), which combines the advantages of collaborative filtering, content-based filtering, and neural network technologies, to address the item cold-start issue. Like collaborative filtering, ALFNCF considers the interaction between users with similar behavior and items with similar feedback, while it also takes into account the influence of user’s and item’s attributes on individual behaviors. As in content-based filtering, attribute information is used in ALFNCF to establish links between new and old items. ALFNCF not only can retain the linear interactions between users and items, but also can learn the non-linear interactions by neural network units. Through the training on users’ past rating feedback information for old items, ALFNCF can predict the user’s ratings for new items. Experimental results show that our proposed method is effective and superior to other methods in the promotion of new items.
+  note: (SSCI)
+  keywords:
+    - E-commerce
+    - Recommender system
+    - Item cold-start problem
+    - Matrix factorization
+    - Neural networks
+  indexes:
+    - SSCI
+  doi: 10.1016/j.elerap.2022.101177
+  url: https://www.sciencedirect.com/science/article/pii/S1567422322000618
+- id: journal-2021-005-using-word-semantic
+  bibKey: Johnw_Journal.bib:Johnw:2021:IRJ
+  bibType: article
+  title: Using word semantic concepts for plagiarism detection in text documents
+  order: 0
+  type: journal
+  authors:
+    - Chia-Yang Chang
+    - Shie-Jue Lee
+    - Chih-Hung Wu
+    - Chih-Feng Liu
+    - Ching-Kuan Liu
+  year: 2021
+  journal: Information Retrieval Journal
+  volume: '24'
+  pages: 298–321
+  month: October
+  note: (SCI)
+  issue: '4'
+  indexes:
+    - SCI
+  doi: 10.1007/s10791-021-09394-4
+- id: journal-2021-006-local-binary-pattern
+  bibKey: Johnw_Journal.bib:Johnw:2020:IMA
+  bibType: article
+  title: 'Local binary pattern encoding schemes for computed tomography image segmentation: An experimental and comparative study'
+  order: 0
+  type: journal
+  authors:
+    - Hsien-Jen Lo
+    - Chih-Hung Wu*
+  year: 2021
+  journal: International Journal of Imaging Systems and Technology
+  volume: '31'
+  pages: 1300-1316
+  abstract: 'Abstract Local binary patterns (LBPs) are used for effective texture representation in various applications. This study explores the clustering consistency and stability of image segmentation when distance-based clustering methods are used with an LBP. Because data are described by features and attributes, distances among data are also dominated by the definition of features. Moreover, four popular LBP encoding schemes for segmenting computed tomography (CT) images by using fuzzy C-means are discussed and compared. The experimental results demonstrate several notable phenomena: When the pixels are encoded in different LBP encoding schemes, the distance between these pixels varies considerably. The experimental results indicate that each LBP encoding scheme emphasizes a specific image texture that dominates how pixels are described in the feature space and thus affects the clustering results. Based on the evaluation of CT image segmentation by using the clustering inconsistency index, linear and corner-like LBPs are particularly suitable for clustering longitudinal sections and cross sections of CT images, respectively.'
+  note: (SCI)
+  issue: '3'
+  keywords:
+    - clustering
+    - CT images
+    - Euclidean distance
+    - fuzzy C-means
+    - image segmentation
+    - local binary pattern
+  indexes:
+    - SCI
+  doi: 10.1002/ima.22534
+  url: https://onlinelibrary.wiley.com/doi/abs/10.1002/ima.22534
+  eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/ima.22534
+- id: journal-2021-007-migration-based-load
+  bibKey: Johnw_Journal.bib:Johnw:2021:ACCESS
+  bibType: article
+  title: Migration-Based Load Balance of Virtual Machine Servers in Cloud Computing by Load Prediction Using Genetic-Based Methods
+  order: 0
+  type: journal
+  authors:
+    - Lung-Hsuan Hung
+    - Chih-Hung Wu*
+    - Chiung-Hui Tsai
+    - Hsiang-Cheh Huang
+  year: 2021
+  journal: IEEE Access
+  volume: '9'
+  pages: 49760-49773
+  note: (SCI)
+  issue: ''
+  indexes:
+    - SCI
+  doi: 10.1109/ACCESS.2021.3065170
+- id: journal-2020-008-air-quality-predicti
+  bibKey: Johnw_Journal.bib:Johnw:2020:ASC
+  bibType: article
+  title: Air quality prediction by neuro-fuzzy modeling approach
+  order: 0
+  type: journal
+  authors:
+    - Yu-Chun Lin
+    - Shie-Jue Lee
+    - Chen-Sen Ouyang
+    - Chih-Hung Wu
+  year: 2020
+  journal: Applied Soft Computing
+  volume: '86'
+  pages: '105898'
+  issn: 1568-4946
+  note: (SCI)
+  indexes:
+    - SCI
+  doi: 10.1016/j.asoc.2019.105898
+  url: http://www.sciencedirect.com/science/article/pii/S1568494619306799
+- id: conference-2019-045-visual-path-tracking
+  bibKey: Johnw_Conference.bib:Wu201907a
+  bibType: inproceedings
+  title: Visual Path Tracking Control Using Reinforcement-Recurrent Neural Networks for Autonomous Wheeled Robots
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Cheng-Ling Lai
+    - Yi-Han Chen
+    - Wen-sheng Chen
+    - Tzung-Pei Hong
+    - Yi-Chang Chung
+    - Chau-Cho Yu
+  year: 2019
+  month: 10-12 jun
+  address: Osaka, Japan
+  booktitle: Proceedings of the 2nd World Conference on Robotics and Artificial Intelligence (WCRAI-2019)
+- id: patent-2019-156-新型第m583390號-專利名稱-組合式
+  title: 新型第M583390號，專利名稱：組合式場地，發明人：吳志宏、莊文仁，1080911
+  authors: Chih-Hung Wu et al.
+  venue: Patent
+  year: 2019
+  order: 156
+- id: patent-2019-157-新型第m583390號-專利名稱-紅外線
+  title: 新型第M583390號，專利名稱：紅外線陣列循線感應器抗震動治具，發明人：吳志宏、蔡楚璿、呂浚豪，1080911
+  authors: Chih-Hung Wu et al.
+  venue: Patent
+  year: 2019
+  order: 157
+- id: patent-2019-158-新型第m583361號-專利名稱-多用途
+  title: 新型第M583361號，專利名稱：多用途機械手臂夾具的夾具套組，發明人：温宗彬、吳志宏、賴正齡，1080911
+  authors: Chih-Hung Wu et al.
+  venue: Patent
+  year: 2019
+  order: 158
+- id: patent-2019-159-新型第m583542號-專利名稱-氣壓固
+  title: 新型第M583542號，專利名稱：氣壓固定式壓力感測薄膜製作專用台，發明人：温宗彬、吳志宏，1080911
+  authors: Chih-Hung Wu et al.
+  venue: Patent
+  year: 2019
+  order: 159
+- id: patent-2019-160-新型第m583613號-專利名稱-壓力感
+  title: 新型第M583613號，專利名稱：壓力感應式薄膜塗佈機構，發明人：温宗彬、吳志宏，1080911
+  authors: Chih-Hung Wu et al.
+  venue: Patent
+  year: 2019
+  order: 160
+- id: conference-2018-046-face-recognition-wit
+  bibKey: Johnw_Conference.bib:Wu2018b
+  bibType: inproceedings
+  title: Face Recognition with Cascaded Global and Local Feature of Local Ternary Patterns
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Jia-Ching Jang Jian
+    - Yi-Han Chen
+  year: 2018
+  month: dec
+  address: Taipei, Taiwan
+  booktitle: Proceedings of the 2018 VII International Conference on Network, Communication and Computing
+- id: conference-2018-047-regression-estimatio
+  bibKey: Johnw_Conference.bib:Tu2018
+  bibType: inproceedings
+  title: Regression Estimation by RBF Networks with Self-Constructing Clustering
+  order: 0
+  type: conference
+  authors:
+    - C.-S. Tu
+    - D.-Y. Wu
+    - S.-J. Lee
+    - C.-H. Wu
+  year: 2018
+  month: nov
+  address: Nanjing, China
+  booktitle: Proceedings of the 5th International Conference on Systems and Informatics (ICSAI 2018)
+- id: conference-2018-048-ecg-based-automatic
+  bibKey: Johnw_Conference.bib:Pan2018
+  bibType: inproceedings
+  title: ECG-Based Automatic Sleep Staging Using Hidden Markov Model
+  order: 0
+  type: conference
+  authors:
+    - Shing-Tai Pan
+    - Chih-Hung Wu
+    - Chia-Ho Wu
+    - Yung-Ran Lin
+    - Shie-Jue Lee
+  year: 2018
+  month: oct
+  address: Emei, China
+  booktitle: Proceedings of the 2nd International Conference on Smart Vehicular Technology, Communication and Applications (VCTA-2018)
+- id: conference-2018-049-a-comparative-study
+  bibKey: Johnw_Conference.bib:Wu2018
+  bibType: inproceedings
+  title: A Comparative Study on Encoding Methods of Local Binary Patterns for Image Segmentation
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Chih-Chin Lai
+    - Hsien-Jen Lo
+    - Po-Sen Wang
+  year: 2018
+  month: oct
+  address: Emei, China
+  booktitle: Proceedings of the 2nd International Conference on Smart Vehicular Technology, Communication and Applications (VCTA-2018)
+- id: conference-2018-050-an-optimal-design-of
+  bibKey: Johnw_Conference.bib:Huang2018
+  bibType: inproceedings
+  title: An Optimal Design of Infinite Impulse Response Digital Filters by Using Particle Swarm Optimization Algorithm
+  order: 0
+  type: conference
+  authors:
+    - Hong-Siang Huang
+    - Po-Yuan Yang
+    - Wen-Hsien Ho
+    - Jinn-Tsong Tsai
+    - Chih-Hung Wu
+    - Jyh-Horng Chou
+  year: 2018
+  month: sep
+  address: Nara, Japan
+  booktitle: Proceedings of the SICE Annual Conference 2018
+- id: conference-2018-051-a-rbf-network-approa
+  bibKey: Johnw_Conference.bib:He2018
+  bibType: inproceedings
+  title: A RBF Network Approach for Function Approximation
+  order: 0
+  type: conference
+  authors:
+    - Z.-R. He
+    - Y.-T. Lin
+    - S.-J. Lee
+    - C.-H. Wu
+  year: 2018
+  month: aug
+  address: Fujian, China
+  booktitle: Proceedings of the 15th International Conference on Information and Automation (ICIA 2018)
+- id: conference-2018-052-visual-based-multi-p
+  bibKey: Johnw_Conference.bib:Wu2018a
+  bibType: inproceedings
+  title: Visual-based Multi-point Path-following Using Genetic Expression Programming for Mobile Robots
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Chiung-Hui Tsai
+    - Guan-Wen Huang
+    - Cheng-Ling Lai
+  year: 2018
+  month: aug
+  address: Tainan, Taiwan
+  booktitle: Proceedings of the 31st IPPR Conference on Computer Vision, Graphics, and Image Processing
+- id: conference-2018-053-emotion-recognition
+  bibKey: Johnw_Conference.bib:Pan2018a
+  bibType: inproceedings
+  title: Emotion Recognition from Speech Signals by Using Evolutionary Algorithm and Empirical Mode Decomposition
+  order: 0
+  type: conference
+  authors:
+    - Shing-Tai Pan
+    - Chih-Hung Wu
+    - Chen-Sen Ouyang
+    - Ying-Wei Lee
+  year: 2018
+  address: London
+  booktitle: Proceedings of the EVA London 2018 conference
+- id: conference-2018-054-an-optimal-design-of
+  bibKey: Johnw_Conference.bib:Wu201809a
+  bibType: inproceedings
+  title: An Optimal Design of Infinite Impulse Response Digital Filters by Using Particle Swarm Optimization Algorithm
+  order: 0
+  type: conference
+  authors:
+    - Hong-Siang Huang
+    - Po-Yuan Yang
+    - Wen-Hsien Ho
+    - Jinn-Tsong Tsai
+    - Chih-Hung Wu
+    - Jyh-Horng Chou
+  year: 2018
+  month: 11-14 sep
+  address: Nara, Japan
+  booktitle: Proceedings of the SICE Annual Conference
+- id: conference-2018-055-emotion-recognition
+  bibKey: Johnw_Conference.bib:Wu201807a
+  bibType: inproceedings
+  title: Emotion Recognition from Speech Signals by Using Evolutionary Algorithm and Empirical Mode Decomposition
+  order: 0
+  type: conference
+  authors:
+    - Shing-Tai Pan
+    - Chih-Hung Wu
+    - Chen-Sen Ouyang
+    - Ying-Wei Lee
+  year: 2018
+  month: 9-13 jul
+  address: London, UK
+  booktitle: Proceedings of the Electronic Visualisation and the Arts (EVA)
+- id: conference-2017-056-jang-jian-c-h-wu
+  bibKey: Johnw_Conference.bib:Jian2017
+  bibType: inproceedings
+  title: Cascading global and local features for Face recognition using support vector machines and local ternary patterns
+  order: 0
+  type: conference
+  authors:
+    - J.-C. Jang Jian
+    - C.-H. Wu
+    - Chih-Chin Lai
+    - S.-T. Pan
+    - S.-J. Lee
+    - C.-S. Ouyang
+  year: 2017
+  month: jul
+  address: Macau SAR, China
+  booktitle: Proceedings of the 14th IEEE International Conference on Intelligent and Automation (ICIA 2017)
+- id: conference-2017-057-recursive-svd-based
+  bibKey: Johnw_Conference.bib:Ouyang2017
+  bibType: inproceedings
+  title: Recursive SVD-based Fuzzy Extreme Learning Machine
+  order: 0
+  type: conference
+  authors:
+    - Chen-Sen Ouyang
+    - Yu-Yuan Cheng
+    - Tzu-Chin Kao
+    - Chih-Hung Wu
+    - Shing-Tai Pan
+    - Shie-Jue Lee
+  year: 2017
+  month: jul
+  address: Macau SAR, China
+  booktitle: Proceedings of the 14th IEEE International Conference on Intelligent and Automation (ICIA 2017)
+- id: conference-2017-058-a-recommender-system
+  bibKey: Johnw_Conference.bib:Chu2017
+  bibType: inproceedings
+  title: A Recommender System Using Word2Vec for Clustering Users
+  order: 0
+  type: conference
+  authors:
+    - P.-M. Chu
+    - S.-J. Lee
+    - C.-H. Wu
+  year: 2017
+  month: jul
+  booktitle: Proceedings of the International Conference on Machine Learning and Cybernetics (ICMLC2017)
+- id: conference-2017-059-building-language-mo
+  bibKey: Johnw_Conference.bib:He2017
+  bibType: inproceedings
+  title: Building Language Models with Fuzzy Weights
+  order: 0
+  type: conference
+  authors:
+    - T.-J. He
+    - S.-J. Lee
+    - and C.-H. Wu
+  year: 2017
+  month: jul
+  booktitle: Proceedings of the International Conference on Computational Methods (ICCM2017)
+- id: conference-2017-060-gait-based-gender-re
+  bibKey: Johnw_Conference.bib:Lai2017
+  bibType: inproceedings
+  title: Gait-based gender recognition using local texture pattern
+  order: 0
+  type: conference
+  authors:
+    - Chih-Chin Lai
+    - Chih-Hung Wu
+    - Shing-Tai Pan
+    - Shie-Jue Lee
+    - Peng-Hsiang Wang
+  year: 2017
+  month: 12-15 nov
+  address: Kenting, Pingtung, Taiwan
+  booktitle: Proceedings of the International Conference on Fuzzy Theory and Its Applications (iFUZZY 2017)
+- id: conference-2017-061-fpga-based-chip-with
+  bibKey: Johnw_Conference.bib:Pan2017
+  bibType: inproceedings
+  title: FPGA-based Chip with Dual Core for Speeding up Calculation of Empirical Mode Decomposition on Speech Recognition
+  order: 0
+  type: conference
+  authors:
+    - Shing-Tai Pan
+    - Chih-Hung Wu
+    - Chih-Chin Lai
+    - Shie-Jue Lee
+    - Wen-Sin Tseng
+  year: 2017
+  month: 12-15 nov
+  address: Kenting, Pingtung, Taiwan
+  booktitle: Proceedings of the International Conference on Fuzzy Theory and Its Applications (iFUZZY 2017)
+- id: conference-2016-062-an-improved-fuzzy-ex
+  bibKey: Johnw_Conference.bib:Ouyang2016
+  bibType: inproceedings
+  title: An Improved Fuzzy Extreme Learning Machine for Classification and Regression
+  order: 0
+  type: conference
+  authors:
+    - Chen-Sen Ouyang
+    - Tzu-Chin Kao
+    - Yu-Yuan Cheng
+    - Chih-Hung Wu
+    - Chiung-Hui Tsai
+    - Meng-Wei Wu
+  year: 2016
+  month: 20 jul
+  address: Hong Kong, China
+  owner: Johnw
+  timestamp: 2016.12.20
+  booktitle: Proceedings of the International Conference on Cybernetics, Robotics and Control (CRC-2016)
+- id: conference-2016-063-improved-fuzzy-assoc
+  bibKey: Johnw_Conference.bib:Lu2016
+  bibType: inproceedings
+  title: Improved Fuzzy Association Rule-Based Classification for High-Dimensional Problem
+  order: 0
+  type: conference
+  authors:
+    - P.-H. Lu
+    - B.-K. Xie an dS.-J. Lee
+    - C.-H. Wu
+  year: 2016
+  month: mar
+  booktitle: Proceedings of the 4th Annual Conference on Engineering and Information Technology
+- id: conference-2016-064-emotion-recognition
+  bibKey: Johnw_Conference.bib:Pan2016
+  bibType: inproceedings
+  title: Emotion Recognition from Speech Signals by Using Genetic Algorithm and Empirical Mode Decomposition
+  order: 0
+  type: conference
+  authors:
+    - Shing-Tai Pan
+    - Chih-Hung Wu
+    - Chih‐Chin Lai
+    - Shie-Jue Lee
+    - Ying-Wei Lee
+  year: 2016
+  month: 9-11 nov
+  address: Taichung, Taiwan
+  owner: Johnw
+  timestamp: 2016.12.20
+  booktitle: Proceedings of the 2016 International Conference on Fuzzy Theory and Its Applications (iFUZZY 2016)
+- id: conference-2016-065-lin-gender-recognit
+  bibKey: Johnw_Conference.bib:Lai2016
+  bibType: inproceedings
+  title: Gender recognition using local block difference pattern
+  order: 0
+  type: conference
+  authors:
+    - Chih-Chin Lai
+    - Chih-Hung Wu
+    - Shing-Tai Pan Shie-Jue Lee
+    - B.-H. Lin
+  year: 2016
+  month: 21-23 nov
+  address: Kaohsiung, Taiwan
+  owner: Johnw
+  timestamp: 2016.12.20
+  booktitle: Proceedings of the Twelfth International Conference on Intelligent Information Hiding and Multimedia Signal Processing (IIH-MSP 2016)
+- id: conference-2016-066-lin-gender-classifi
+  bibKey: Johnw_Conference.bib:Lai2016a
+  bibType: inproceedings
+  title: Gender classification using histogram of template
+  order: 0
+  type: conference
+  authors:
+    - Chih-Chin Lai
+    - Chih-Hung Wu
+    - Shing-Tai Pan Shie-Jue Lee
+    - B.-H. Lin
+  year: 2016
+  month: 9-11 nov
+  address: Taichung, Taiwan
+  owner: Johnw
+  timestamp: 2016.12.20
+  booktitle: Proceedings of the 2016 International Conference on Fuzzy Theory and Its Applications (iFUZZY 2016)
+- id: conference-2016-067-track-model-regressi
+  bibKey: Johnw_Conference.bib:Huang2016
+  bibType: inproceedings
+  title: Track Model Regression Using Genetic Expression Programming for Visual-based Path-Following of Mobile Robots
+  order: 0
+  type: conference
+  authors:
+    - Guan-Wen Huang
+    - Chih-Hung Wu
+    - Chih-Chin Lai
+    - Shing-Tai Pan
+    - Shie-Jue Lee
+    - Chen-Sen Ouyang
+  year: 2016
+  month: 20-24 jul
+  address: Tokyo, Japan
+  owner: Johnw
+  timestamp: 2016.12.20
+  booktitle: Proceedings of the IEEE Asia-Pacific Conference on Intelligent Robot Systems (ACIRS 2016)
+- id: conference-2015-068-noise-removal-using
+  bibKey: Johnw_Conference.bib:Wu2015a
+  bibType: inproceedings
+  title: Noise removal using Extended Kalman Filtering for SLAM on Mobile Robots
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Meng-Wei Wu
+    - Shie-Jue Lee
+    - Shing-Tai Pan
+    - Wei-Zhou Hong
+  year: 2015
+  month: November
+  address: Bali, Indonesia
+  owner: Johnw
+  timestamp: 2015.10.06
+  booktitle: Proceedings of the International Conference on Emerging Trends in Academic Research (ETAR-2015)
+  eventDate: 2015-11-25/26
+- id: conference-2015-069-gender-classificatio
+  bibKey: Johnw_Conference.bib:Li2015:IACETI
+  bibType: inproceedings
+  title: Gender Classification from Face Images with Local Texture Pattern
+  order: 0
+  type: conference
+  authors:
+    - Yi-Jui Li
+    - Chih-Chin Lai
+    - Chih-Hung Wu
+    - Shing-Tai Pan
+    - Shie-Jue Lee
+  year: 2015
+  month: 5 September
+  address: Kuala Lumpur, Malaysia
+  owner: Johnw
+  timestamp: 2015.10.06
+  booktitle: Proceedings of the 6th International Academic Conference on Engineering, Technology and Innovations (IACETI)
+- id: conference-2015-070-facial-expression-re
+  bibKey: Johnw_Conference.bib:Wu2015b
+  bibType: inproceedings
+  title: Facial Expression Recognition using Local Facial Features
+  order: 0
+  type: conference
+  authors:
+    - Szu-Han Wu
+    - Chih-Chin Lai
+    - Chih-Hung Wu
+    - Shing-Tai Pan
+    - Shie-Jue Lee
+  year: 2015
+  month: September
+  address: Kuala Lumpur, Malaysia
+  owner: Johnw
+  timestamp: 2015.10.06
+  booktitle: Proceedings of the 6th International Academic Conference on Engineering, Technology and Innovations (IACETI)
+  eventDate: '2015-09-05'
+- id: conference-2015-071-luminance-control-wi
+  bibKey: Johnw_Conference.bib:He2015
+  bibType: inproceedings
+  title: Luminance Control with Map Reduce Implementation
+  order: 0
+  type: conference
+  authors:
+    - Z.-L. He
+    - S.-J. Lee
+    - C.-H. Wu
+  year: 2015
+  month: July
+  address: Phuket, Thailand
+  owner: Johnw
+  timestamp: 2015.10.06
+  booktitle: Proceedings of the International Conference on Informatics, Control and Automation
+- id: conference-2015-072-a-comparative-study
+  bibKey: Johnw_Conference.bib:Wu2015c
+  bibType: inproceedings
+  title: A Comparative Study on CT Image Segmentation Using FCM-based Clustering Methods
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Xian-Ren Lo
+    - Chen-Sen Ouyang
+  year: 2015
+  month: March
+  address: Hong Kong
+  owner: Johnw
+  timestamp: 2015.11.13
+  booktitle: Proceedings of the International MultiConference of Engineers and Computer Scientists
+  eventDate: 2015-03-18/20
+- id: conference-2015-073-evaluation-of-antiep
+  bibKey: Johnw_Conference.bib:Ouyang2015
+  bibType: inproceedings
+  title: Evaluation of Antiepileptic Drugs’ Curative Effect with Quantitative EEG Feature Analysis
+  order: 0
+  type: conference
+  authors:
+    - Chen-Sen Ouyang
+    - Ching-Tai Chiang
+    - Lung-Chang Lin
+    - Rei-Cheng Yang
+    - Chih-Hung Wu
+  year: 2015
+  month: 29-31 July
+  address: Okinawa, Japan
+  owner: Johnw
+  timestamp: 2015.10.06
+  booktitle: Proceedings of the 3rd International Scientific Conference on Engineering and Applied Sciences
+- id: conference-2015-074-robust-speech-recogn
+  bibKey: Johnw_Conference.bib:Pan2015
+  bibType: inproceedings
+  title: Robust Speech Recognition by Ensemble Empirical Mode Decomposition
+  order: 0
+  type: conference
+  authors:
+    - Shing-Tai Pan
+    - Chia-Ping Chu
+    - Chih-Hung Wu
+  year: 2015
+  month: 22-26 may
+  address: Osaka, Japan
+  owner: Johnw
+  timestamp: 2015.10.06
+  booktitle: Proceedings of the 2015 International Conference on Applied System Innovation (ICASI 2015)
+- id: conference-2015-075-performance-evaluati
+  bibKey: Johnw_Conference.bib:Wu2015d
+  bibType: inproceedings
+  title: Performance Evaluation of Extended Kalman Filtering for Obstacle Avoidance of Mobile Robots
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Wei-Zhou Hong
+    - Shing-Tai Pan
+  year: 2015
+  month: 18-20 March
+  address: Hong Kong
+  owner: Johnw
+  timestamp: 2015.11.13
+  booktitle: Proceedings of the International MultiConference of Engineers and Computer Scientists
+- id: conference-2015-076-track-regression-for
+  bibKey: Johnw_Conference.bib:Wu2015
+  bibType: inproceedings
+  title: Track regression for mobile robots using genetic-based techniques
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Guan-Wen Huang
+    - Shie-Jue Lee
+    - Chih-Chin Lai
+    - Xian-Ren Lo
+    - Yao-Pao Huang
+  year: 2015
+  month: 25-26 November
+  address: Bali, Indonesia.
+  owner: Johnw
+  timestamp: 2015.10.06
+  booktitle: Proceedings of the International Conference on Emerging Trends in Academic Research (ETAR-2015)
+- id: journal-2015-009-gender-classificatio
+  bibKey: Johnw_Journal.bib:Li2015
+  bibType: article
+  title: Gender Classification from Face Images with Local Texture Pattern
+  order: 0
+  type: journal
+  authors:
+    - Yi-Jui Li
+    - Chih-Chin Lai
+    - Chih-Hung Wu
+    - Shing-Tai Pan
+    - Shie-Jue Lee
+  year: 2015
+  journal: International Journal of Industrial Electronics and Electrical Engineering
+  volume: '3'
+  pages: 15–17
+  month: November
+  owner: Johnw
+  timestamp: 2015.12.04
+  issue: '11'
+- id: journal-2015-010-facial-expression-re
+  bibKey: Johnw_Journal.bib:WuLai2015a
+  bibType: article
+  title: Facial Expression Recognition using Local Facial Features
+  order: 0
+  type: journal
+  authors:
+    - Szu-Han Wu
+    - Chih-Chin Lai
+    - Chih-Hung Wu
+    - Shing-Tai Pan
+    - Shie-Jue Lee
+  year: 2015
+  journal: International Journal of Industrial Electronics and Electrical Engineering
+  volume: '3'
+  pages: 18–21
+  month: November
+  note: (EI)
+  owner: Johnw
+  timestamp: 2015.12.04
+  issue: '11'
+  indexes:
+    - EI
+- id: journal-2015-011-a-new-fuzzy-clusteri
+  bibKey: Johnw_Journal.bib:Johnw:2014:IEEETFS
+  bibType: article
+  title: A New Fuzzy Clustering Validity Index With a Median Factor for Centroid-Based Clustering
+  order: 0
+  type: journal
+  authors:
+    - Chih-Hung Wu*
+    - Chen-Sen Ouyang
+    - Li-Wen Chen
+    - Li-Wei Lu
+  year: 2015
+  journal: IEEE Transactions on Fuzzy Systems
+  volume: '23'
+  pages: 701-718
+  month: June
+  issn: 1063-6706
+  note: (SCI)
+  issue: '3'
+  keywords:
+    - fuzzy set theory
+    - pattern clustering
+    - UCI datasets
+    - WLI performances
+    - Wu-and-Li index
+    - artificial datasets
+    - centroid-based partitional clustering algorithms
+    - fuzzy clustering validity index
+    - image datasets
+    - median factor
+    - minimum/maximum distance
+    - Algorithm design and analysis
+    - Clustering algorithms
+    - Indexes
+    - Open systems
+    - Partitioning algorithms
+    - Principal component analysis
+    - Signal processing algorithms
+    - Clustering analysis
+    - clustering validity index (CVI)
+    - fuzzy c-means (FCM) clustering algorithm
+    - partitional clustering algorithm
+  indexes:
+    - SCI
+  doi: 10.1109/TFUZZ.2014.2322495
+- id: journal-2015-012-automated-clustering
+  bibKey: Johnw_Journal.bib:Wu2015:optik
+  bibType: article
+  title: Automated Clustering by Support Vector Machines with a Local-Search Strategy and its Application to Image Segmentation
+  order: 0
+  type: journal
+  authors:
+    - Chih-Hung Wu*
+    - Chih-Chin Lai
+    - Chun-Yen Chen
+    - Yan-He Chen
+  year: 2015
+  journal: Optik - International Journal for Light and Electron Optics
+  volume: '126'
+  pages: 4964–4970
+  note: (SCI)
+  owner: Johnw
+  timestamp: 2015.10.06
+  issue: '24'
+  indexes:
+    - SCI
+- id: journal-2015-013-associative-classifi
+  bibKey: Johnw_Journal.bib:johnw:2015:JCIE
+  bibType: article
+  title: Associative classification with a new condenseness measure
+  order: 0
+  type: journal
+  authors:
+    - Chih-Hung Wu*
+    - Jing-Yi Wang
+  year: 2015
+  journal: Journal of the Chinese Institute of Engineers
+  volume: '38'
+  pages: 458-468
+  note: (SCI)
+  issue: '4'
+  indexes:
+    - SCI
+  doi: 10.1080/02533839.2014.998287
+  url: http://dx.doi.org/10.1080/02533839.2014.998287
+  eprint: http://dx.doi.org/10.1080/02533839.2014.998287
+- id: conference-2014-077-a-study-on-pattern-e
+  bibKey: Johnw_Conference.bib:Wu2014a
+  bibType: inproceedings
+  title: A study on pattern encoding of local binary patterns for texture-based image segmentation
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Li-Wei Lu
+    - Yao-Yu Li
+  year: 2014
+  month: July
+  address: Lanzhou, China
+  owner: Johnw
+  timestamp: 2014.05.05
+  booktitle: Proceedings of the 6th International Conference on Machine Learning and Cybernetics (ICMLC 2014)
+  eventDate: 2014-07-13/16
+- id: conference-2014-078-a-restart-mechanism
+  bibKey: Johnw_Conference.bib:Wu2014
+  bibType: inproceedings
+  title: A Restart Mechanism of Performance Improvement for Evolvable Hardware-based Image Filter Design
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Shing-Tai Pan
+    - Yu-Sian Lin
+    - Chen-Sen Ouyang
+  year: 2014
+  month: July
+  address: Sapporo, Japan
+  owner: Johnw
+  timestamp: 2014.11.08
+  booktitle: Proceedings of the International Conference on Engineering and Applied Science
+  eventDate: 2014-07-22/24
+- id: conference-2014-079-a-classification-app
+  bibKey: Johnw_Conference.bib:Ouyang2014
+  bibType: inproceedings
+  title: A Classification Approach for Automatic EEG Artifact Detection
+  order: 0
+  type: conference
+  authors:
+    - Chen-Sen Ouyang
+    - Chih-Hung Wu
+    - Ching-Tai Chiang
+    - Lung-Chang Lin
+    - Rei-Cheng Yang
+    - Rong-Ching Wu
+  year: 2014
+  month: 22-24 jul
+  address: Sapporo, Japan
+  owner: Johnw
+  timestamp: 2014.11.08
+  booktitle: Proceedings of the International Conference on Engineering and Applied Science
+- id: conference-2014-080-the-analysis-of-emot
+  bibKey: Johnw_Conference.bib:Pan2014
+  bibType: inproceedings
+  title: The Analysis of Emotional Components from Emotional Speech Signals
+  order: 0
+  type: conference
+  authors:
+    - Shing-Tai Pan
+    - Ying-Wei Lee
+    - Chih-Hung Wu
+  year: 2014
+  month: 22-24 jul
+  address: Sapporo, Japan
+  owner: Johnw
+  timestamp: 2014.11.08
+  booktitle: Proceedings of the International Conference on Engineering and Applied Science
+- id: journal-2014-014-evolutionary-design
+  bibKey: Johnw_Journal.bib:johnw:2014:JISE
+  bibType: article
+  title: Evolutionary Design of Evolvable Hardware Image Filters Using Fuzzy Noise Models
+  order: 0
+  type: journal
+  authors:
+    - Chih-Hung Wu*
+    - Chien-Jung Chen
+    - Chin-Yuan Chiang
+  year: 2014
+  journal: Journal of Information Science and Engineering
+  volume: '30'
+  pages: 605-618
+  month: May
+  note: (SCI)
+  owner: Johnw
+  timestamp: 2013.11.13
+  issue: '3'
+  indexes:
+    - SCI
+- id: conference-2013-081-the-integration-of-i
+  bibKey: Johnw_Conference.bib:Wu2013d
+  bibType: inproceedings
+  title: The integration of interval Kalman filtering and fuzzy sets for obstacle avoidance of mobile robots
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - You-Dong Huang
+    - Guan-Wen Huang
+    - Yao-Yu Li
+  year: 2013
+  month: September
+  address: Singapore
+  booktitle: Proceedings of the International Research Conference on Engineering and Technology (IRCET 2013)
+  eventDate: 2013-09-14/16
+- id: conference-2013-082-genetic-based-optima
+  bibKey: Johnw_Conference.bib:Wu2013a
+  bibType: inproceedings
+  title: Genetic-based optimal encoding for image clustering with texture-ased features
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Li-Wei Lu
+  year: 2013
+  month: September
+  address: Singapore
+  booktitle: Proceedings of the International Research Conference on Engineering and Technology (IRCET 2013)
+  eventDate: 2013-09-14/16
+- id: conference-2013-083-a-fast-genetic-slam
+  bibKey: Johnw_Conference.bib:Wu2013
+  bibType: inproceedings
+  title: A Fast Genetic SLAM Approach for Mobile Robots
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Yi-Han Chen
+    - Yao-Yu Lee
+    - Chiung-Hui Tsai
+  year: 2013
+  pages: 563-568
+  month: 1-3 July
+  address: Honolulu, Hawaii, U.S.A.
+  booktitle: Proceedings of the 14th ACIS International Conference on Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing (SNPD)
+  keywords:
+    - SLAM (robots)
+    - feature extraction
+    - filtering theory
+    - genetic algorithms
+    - laser ranging
+    - mobile robots
+    - GA iterations
+    - LRF feature matching
+    - LRF points
+    - crossover operation
+    - fast genetic SLAM
+    - fast genetic algorithm
+    - irrational chromosome filtering
+    - laser range finder
+    - mobile robots
+    - mutation operation
+    - point-distance information collection
+    - restart mechanism
+    - robot movement
+    - simultaneous localization and mapping method
+    - Biological cells
+    - Feature extraction
+    - Genetic algorithms
+    - Genetics
+    - Mobile robots
+    - Simultaneous localization and mapping
+    - Mobile robots
+    - constrained evolution
+    - genetic algorithm
+    - laser range finder
+    - simultaneous localization and mapping
+  doi: 10.1109/SNPD.2013.12
+- id: conference-2013-084-parallelism-of-evolu
+  bibKey: Johnw_Conference.bib:Wu2013c
+  bibType: inproceedings
+  title: Parallelism of Evolutionary Design of Image Filters for Evolvable Hardware Using GPU
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Chin-Yuan Chiang
+    - Yi-Han Chen
+  year: 2013
+  pages: 592-597
+  month: 1-3 July
+  address: Honolulu, Hawaii, U.S.A.
+  abstract: Evolvable Hardware (EHW) is a combination of evolutionary algorithm and reconfigurable hardware devices. Due to its flexible and adaptive ability, EHW-based solutions receive a lot of attention in industrial applications. One of the obstacles to realize an EHW-based method is its very long training time. This study deals with the parallelism of EHW-based design of image filters using graphic processing units (GPUs). The design process is analyzed and decomposed into some smaller processes that can run in parallel. Pixel-based data for training and verifying EHW solutions are partitioned according to the architecture of GPU. Several strategies for deploying parallel processes are developed and implemented. With the proposed method, significant improvements on the efficiency of training EHW models are gained. Using a GPU with 240 cores, a speedup of 64 times is obtained. This paper evaluates and compares the performance of the proposed method with other ones.
+  booktitle: Proceedings of the 14th ACIS International Conference on Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing (SNPD)
+  keywords:
+    - evolutionary computation
+    - filtering theory
+    - graphics processing units
+    - image processing
+    - parallel architectures
+    - training
+    - EHW model training
+    - EHW-based design
+    - EHW-based method
+    - GPU
+    - evolutionary algorithm
+    - graphic processing units
+    - image filters
+    - industrial applications
+    - parallel processes
+    - pixel-based data
+    - reconfigurable hardware devices
+    - Biological cells
+    - Computer architecture
+    - Graphics processing units
+    - Hardware
+    - Instruction sets
+    - Parallel processing
+    - Training
+    - Cartesian genetic programming
+    - GPU
+    - Parallelism
+    - evolutionary design
+    - evolvable hardware
+    - image filter
+  doi: 10.1109/SNPD.2013.79
+- id: conference-2013-085-load-prediction-of-v
+  bibKey: Johnw_Conference.bib:Wu2013b
+  bibType: inproceedings
+  title: Load Prediction of Virtual Machine Servers Using Genetic Expression Programming
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Lung-Hsuan Hung
+  year: 2013
+  month: 2013-12-06/08
+  booktitle: Proceedings of the 2013 International Conference on Fuzzy Theory and Its Applications (iFUZZY2013)
+- id: journal-2013-015-fuzzy-control-of-tar
+  bibKey: Johnw_Journal.bib:johnw:2013:JACIII
+  bibType: article
+  title: Fuzzy Control of Target Approaching and Object-Grabbing for a Four-Wheeled Vision-based Mobile Robot
+  order: 0
+  type: journal
+  authors:
+    - Chih-Hung Wu*
+    - I-Sheng Lin
+    - Ming-Liang Wei
+  year: 2013
+  journal: Journal of Advanced Computational Intelligence and Intelligent Informatics
+  volume: '17'
+  pages: 343-350
+  note: (EI)
+  owner: Johnw
+  timestamp: 2013.01.02
+  issue: '2'
+  indexes:
+    - EI
+- id: journal-2013-016-target-position-esti
+  bibKey: Johnw_Journal.bib:johnw:2013:TIM
+  bibType: article
+  title: Target Position Estimation by Genetic Expression Programming for Mobile Robots with Vision Sensors
+  order: 0
+  type: journal
+  authors:
+    - Chih-Hung Wu*
+    - I-Sheng Lin
+    - Ming-Liang Wei
+    - Tain-Yu Cheng
+  year: 2013
+  journal: IEEE Transactions on Instrumentation and Measurement
+  volume: '62'
+  pages: 3218–3230
+  note: (SCI)
+  owner: Johnw
+  timestamp: 2013.01.10
+  indexes:
+    - SCI
+- id: journal-2013-017-lattice-based-cluste
+  bibKey: Johnw_Journal.bib:johnw:2013:CAGEO
+  bibType: article
+  title: Lattice-based clustering and genetic programming for coordinate transformation in GPS applications
+  order: 0
+  type: journal
+  authors:
+    - Chih-Hung Wu*
+    - Wei-Han Su
+  year: 2013
+  journal: Computers & Geoscinces
+  volume: '52'
+  pages: 85–94
+  note: (SCI)
+  owner: Johnw
+  timestamp: 2013.01.02
+  indexes:
+    - SCI
+- id: conference-2012-086-intelligent-vision-t
+  bibKey: Johnw_Conference.bib:Wu2012b
+  bibType: inproceedings
+  title: Intelligent Vision-TrackingTechniques for Service Robots
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Chiung-Hui Tsai
+    - Lung-Hsuan Hung
+    - You-Dong Huang
+    - Yi-Han Chen
+    - Chin-Yuan Chiang
+    - Guan-Wen Huang
+    - Cheng-Ru Wang
+    - Tsan-Jung He
+  year: 2012
+  month: November
+  address: Taichung, Taiwan
+  note: Best Paper Award
+  owner: Johnw
+  timestamp: 2013.01.02
+  booktitle: Proceedings of the 2nd Conference on Applications of Innovation & Invention (AII 2012)
+  eventDate: '2013-11-23'
+- id: conference-2012-087-ming-condensed-rules
+  bibKey: Johnw_Conference.bib:Wu2012c
+  bibType: inproceedings
+  title: Ming Condensed Rules for Associative Classification
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Jing-Yi Wang
+    - Chien-Jung Chen
+  year: 2012
+  month: July
+  address: Xian, China
+  owner: Johnw
+  timestamp: 2013.01.02
+  booktitle: Proceedings of the 4th International Conference on Machine Learning and Cybernetics (ICMLC 2012)
+  eventDate: 2013-07-15/18
+- id: conference-2012-088-vision-based-coordin
+  bibKey: Johnw_Conference.bib:Tsai2012
+  bibType: inproceedings
+  title: Vision-based Coordinate Transformation with Back Propagation Neural Networks on Mobile Robots
+  order: 0
+  type: conference
+  authors:
+    - Chiung-Hui Tsai
+    - Chih-Hung Wu
+    - You-Dong Huang
+  year: 2012
+  month: 25-28 aug
+  address: Kitakyushu, Japan
+  owner: Johnw
+  timestamp: 2013.01.02
+  booktitle: Proceedings of the 6th International Conference on Genetic and Evolutionary Computing (ICGEC 2012)
+- id: conference-2012-089-the-design-of-evolva
+  bibKey: Johnw_Conference.bib:Wu2012e
+  bibType: inproceedings
+  title: The Design of Evolvable Hardware Image Filters Using Fuzzy Sets
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Chien-Jung Chen
+    - Chin Yuan Chiang
+  year: 2012
+  month: 16-18 November
+  address: Tainan, Taiwan
+  owner: Johnw
+  timestamp: 2013.01.02
+  booktitle: Proceedings of the 17th Conference on Technologies and Applications of Artificial Intelligence (TAAI 2012)
+- id: conference-2012-090-multiple-evolvable-h
+  bibKey: Johnw_Conference.bib:Wu2012d
+  bibType: inproceedings
+  title: Multiple Evolvable Hardware Image Filters by Analyzing Noise Types with Fuzzy Relations
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Chien-Jung Chen
+    - Chin Yuan Chiang
+    - You-Dong Huang
+  year: 2012
+  month: 26-28 September
+  address: Kaohsiung City, Taiwan
+  note: Best Paper Award
+  owner: Johnw
+  timestamp: 2013.01.02
+  booktitle: Proceedings of the 3rd International Conference on Innovations in Bio-Inspired Computing and Applications (IBICA 2012)
+- id: conference-2012-091-evolvable-hardware-i
+  bibKey: Johnw_Conference.bib:Wu2012a
+  bibType: inproceedings
+  title: Evolvable Hardware Image Filters with Discriminations of Noise Patterns
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Chien-Jung Chen
+    - Wei-Chih Yeh
+  year: 2012
+  month: 25-28 August
+  address: Kitakyushu, Japan
+  owner: Johnw
+  timestamp: 2013.01.02
+  booktitle: Proceedings of the 6th International Conference on Genetic and Evolutionary Computing (ICGEC 2012)
+- id: conference-2012-092-an-empirical-study-o
+  bibKey: Johnw_Conference.bib:Wu2012
+  bibType: inproceedings
+  title: An Empirical Study on Fuzzy Image Clustering with Various Clustering Validity Indexes
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Li-Wen Chen
+    - Li-Wei Lu
+  year: 2012
+  month: 25-28 August
+  address: Kitakyushu, Japan
+  owner: Johnw
+  timestamp: 2013.01.02
+  booktitle: Proceedings of the 6th International Conference on Genetic and Evolutionary Computing (ICGEC 2012)
+- id: journal-2012-018-an-empirical-study-o
+  bibKey: Johnw_Journal.bib:johnw:2012:ESWA
+  bibType: article
+  title: An empirical study on mining sequential patterns in a grid computing environment
+  order: 0
+  type: journal
+  authors:
+    - Chih-Hung Wu*
+    - Chih-Chin Lai
+    - Yu-Chieh Lo
+  year: 2012
+  journal: Expert Systems with Applications
+  volume: '39'
+  pages: 5748–5757
+  month: April
+  note: (SCI)
+  owner: Johnw_2
+  timestamp: 2012.02.27
+  issue: '5'
+  indexes:
+    - SCI
+- id: journal-2012-019-discovering-approxim
+  bibKey: Johnw_Journal.bib:johnw:2012:ADES
+  bibType: article
+  title: Discovering approximate expressions of GPS geometric dilution of precision using genetic programming
+  order: 0
+  type: journal
+  authors:
+    - Chih-Hung Wu*
+    - Ya-Wei Ho
+    - Li-Wun Chen
+    - You-Dong Huang
+  year: 2012
+  journal: Advances in Engineering Software
+  volume: '45'
+  pages: 332 -340
+  note: (SCI)
+  bibSource: DBLP, http://dblp.uni-trier.de
+  issue: '1'
+  keywords:
+    - Global Positioning System
+    - Geometric Dilution of Precision
+    - Genetic algorithm
+    - Genetic programming
+    - Regression
+    - White-boxed methods
+    - Soft computing
+  indexes:
+    - SCI
+  ee: http://dx.doi.org/10.1016/j.advengsoft.2011.10.013
+- id: conference-2011-093-interval-fuzzy-type
+  bibKey: Johnw_Conference.bib:Wu2011b
+  bibType: inproceedings
+  title: Interval Fuzzy Type-2 Control for Vision-based Wheeled Security Robots
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - I-Sheng Lin
+    - Ming-Liang Wei
+    - Tain-Yu Cheng
+  year: 2011
+  month: November
+  address: Taiwan
+  booktitle: Proceeding of the 19th National Conference on Fuzzy Theory and Its Applications
+- id: conference-2011-094-discovery-of-regress
+  bibKey: Johnw_Conference.bib:Wu2011
+  bibType: inproceedings
+  title: Discovery of Regression Models for Coordinates Transformation Using Genetic Programming for a Vision-based Security Robot
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - I-Sheng Lin
+    - Ming-Liang Wei
+  year: 2011
+  month: September
+  address: Suwon-City, Korea
+  booktitle: Proceeding of the 12th International Symposium on Advanced Intelligent Systems (ISIS 2011)
+  keywords:
+    - obotics
+    - fuzzy sets
+    - fuzzy controller
+    - target approaching
+    - object grabbing
+- id: conference-2011-095-fuzzy-control-of-tar
+  bibKey: Johnw_Conference.bib:Wu2011a
+  bibType: inproceedings
+  title: Fuzzy Control of Target Approaching and Object-Grabbing for a Four-Wheeled Vision-based Security Robot
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - I-Sheng Lin
+    - Ming-Liang Wei
+  year: 2011
+  month: September
+  address: Suwon-City, Korea
+  booktitle: Proceeding of the 12th International Symposium on Advanced Intelligent Systems (ISIS 2011)
+  keywords:
+    - fuzzy sets
+    - fuzzy controller
+    - target approaching
+    - object grabbing
+- id: journal-2011-020-a-study-on-gps-gdop
+  bibKey: Johnw_Journal.bib:johnw:2011:IEEETIM
+  bibType: article
+  title: A Study on GPS GDOP Approximation Using Support-Vector Machines
+  order: 0
+  type: journal
+  authors:
+    - Chih-Hung Wu*
+    - Wei-Han Su
+    - Ya-Wei Ho
+  year: 2011
+  journal: IEEE Transactions on Instrumentation and Measurement
+  volume: '60'
+  pages: 137-145
+  note: (SCI)
+  bibSource: DBLP, http://dblp.uni-trier.de
+  issue: '1'
+  indexes:
+    - SCI
+  ee: http://dx.doi.org/10.1109/TIM.2010.2049228
+- id: conference-2010-096-a-greedy-strategy-fo
+  bibKey: Johnw_Conference.bib:Wu2010
+  bibType: inproceedings
+  title: A greedy strategy for images segmentation by support vector machines
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Chun-Yen Chen
+    - Yan-He Chen
+    - Chia-Lin Wu
+    - Shing-Hwang Doong
+  year: 2010
+  volume: '6'
+  pages: 2915 -2920
+  month: July
+  address: Qingdao, China
+  booktitle: Proceeding of the International Conference on Machine Learning and Cybernetics (ICMLC)
+  keywords:
+    - clustering images
+    - greedy strategy
+    - images segmentation
+    - support vector machine
+    - support vector machines
+    - greedy algorithms
+    - image segmentation
+    - learning (artificial intelligence)
+    - support vector machines
+  doi: 10.1109/ICMLC.2010.5580752
+- id: conference-2010-097-proceeding-of-the-ge
+  bibKey: Johnw_Conference.bib:Wu2010b
+  bibType: inproceedings
+  title: Proceeding of the Genetic programming for the approximation of GPS GDOP
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Ya-Wei Ho
+  year: 2010
+  volume: '6'
+  pages: 2944-2949
+  month: July
+  address: Qingdao, China
+  booktitle: 2010 International Conference on Machine Learning and Cybernetics (ICMLC 2010)
+  keywords:
+    - GDOP
+    - GPS satellites
+    - genetic programming
+    - geometric dilution of precision
+    - global positioning system
+    - matrix inversions
+    - matrix transformation
+    - Global Positioning System
+    - genetic algorithms
+    - matrix algebra
+  doi: 10.1109/ICMLC.2010.5580757
+- id: conference-2010-098-web-usage-mining-on
+  bibKey: Johnw_Conference.bib:Wu2010c
+  bibType: inproceedings
+  title: Web usage mining on the sequences of clicking patterns in a grid computing environment
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Yen-Liang Wu
+    - Yuan-Ming Chang
+    - Ming-Hung Hung
+  year: 2010
+  volume: '6'
+  pages: 2909 -2914
+  month: July
+  address: Qingdao, China
+  booktitle: Proceeding of the International Conference on Machine Learning and Cybernetics (ICMLC)
+  keywords:
+    - Web administrator
+    - Web designer
+    - Web server
+    - Web structure
+    - Web usage mining
+    - browsing sequence
+    - clicking pattern sequence
+    - data mining
+    - distributed grid computing environment
+    - Internet
+    - data mining
+    - grid computing
+    - online front-ends
+  doi: 10.1109/ICMLC.2010.5580751
+- id: conference-2010-099-performance-modeling
+  bibKey: Johnw_Conference.bib:Doong2010
+  bibType: inproceedings
+  title: Performance modeling of virtual machines hosted on Xen
+  order: 0
+  type: conference
+  authors:
+    - Shing-Hwang Doong
+    - Chih-Chin Lai
+    - Shie-Jue Lee
+    - Chen-Sen Ouyang
+    - Chih-Hung Wu
+  year: 2010
+  month: May
+  address: Singapore Management University, Singapore
+  note: Best Paper Award
+  booktitle: Proceedings of Annual International Conference on Cloud Computing and Virtualization
+- id: conference-2010-100-one-class-support-ve
+  bibKey: Johnw_Conference.bib:Wu2010a
+  bibType: inproceedings
+  title: One-Class Support Vector Machines for Aerial Images Segmentation
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Chih-Chin Lai
+    - Chun-Yen Chen
+    - Yan-He Chen
+  year: 2010
+  pages: 881 -886
+  month: May
+  address: Tokyo, Japan
+  booktitle: Proceeding of the International Conference on Computer Vision and Image Processing (ICCVIP 2010)
+  keywords:
+    - Aerial imaging
+    - image segmentation
+    - machine learning
+    - support vector machine
+    - cluster validity index
+- id: journal-2010-021-virtual-machines-per
+  bibKey: Johnw_Journal.bib:johnw:2010:GSTFJOC
+  bibType: article
+  title: Virtual Machines Performance Modeling with Support Vector Regressions
+  order: 0
+  type: journal
+  authors:
+    - Shing-Hwang Doong
+    - Chih-Chin Lai
+    - Chih-Hung Wu
+    - Shie-Jue Lee
+    - Chen-Sen Ouyang
+  year: 2010
+  journal: GSTF International Journal on Computing
+  volume: '1'
+  pages: 114–119
+  issue: '1'
+- id: conference-2009-101-a-comparative-study
+  bibKey: Johnw_Conference.bib:Wu2009
+  bibType: inproceedings
+  title: A comparative study on regression models of GPS GDOP using soft-computing techniques
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Wei-Han Su
+  year: 2009
+  pages: 1513–1516
+  month: August
+  address: Jeju Island, Korea
+  booktitle: Proceedings of the IEEE International Conference on Fuzzy Systems
+  ee: http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=5277243
+- id: conference-2009-102-aerial-image-cluster
+  bibKey: Johnw_Conference.bib:Chan2009
+  bibType: inproceedings
+  title: Aerial Image Clustering using Genetic Algorithm
+  order: 0
+  type: conference
+  authors:
+    - Yan-He Chan
+    - Ya-Wei Ho
+    - Chih-Hung Wu
+    - Chih-Chin Lai
+  year: 2009
+  pages: 42–45
+  month: May
+  address: Hong Kong, China
+  booktitle: Proceedings of the International Conference on Computational Intelligence for Measurement Systems and Applications
+- id: journal-2009-022-behavior-based-spam
+  bibKey: Johnw_Journal.bib:johnw:2009:ESWAa
+  bibType: article
+  title: Behavior-based spam detection using a hybrid method of rule-based techniques and neural networks
+  order: 0
+  type: journal
+  authors:
+    - Chih-Hung Wu
+  year: 2009
+  journal: Expert Systems with Applications
+  volume: '36'
+  pages: 4321–4330
+  month: April
+  issn: 0957-4174
+  publisher: Pergamon Press, Inc.
+  address: Tarrytown, NY, USA
+  note: (SCI)
+  pageCount: '10'
+  acmid: '1498392'
+  issue: '3'
+  keywords:
+    - Back-propagation neural networks
+    - Classification
+    - Machine-learning
+    - Rule-based reasoning
+    - Spam filtering
+  indexes:
+    - SCI
+  doi: 10.1016/j.eswa.2008.03.002
+  url: http://dl.acm.org/citation.cfm?id=1497653.1498392
+- id: journal-2009-023-an-improved-data-min
+  bibKey: Johnw_Journal.bib:johnw:2009:ESWAb
+  bibType: article
+  title: An improved data mining approach using predictive itemsets
+  order: 0
+  type: journal
+  authors:
+    - Tzung-Pei Hong
+    - Chyan-Yuan Horng
+    - Chih-Hung Wu
+    - Shyue-Liang Wang
+  year: 2009
+  journal: Expert Systems with Applications
+  volume: '36'
+  pages: 72–80
+  month: jan
+  issn: 0957-4174
+  publisher: Pergamon Press, Inc.
+  address: Tarrytown, NY, USA
+  note: (SCI)
+  issueDate: January, 2009
+  pageCount: '9'
+  acmid: '1453354'
+  issue: '1'
+  keywords:
+    - Association rule
+    - Data dependency
+    - Data mining
+    - Predicting minimum support
+    - Predictive itemset
+  indexes:
+    - SCI
+  doi: 10.1016/j.eswa.2007.09.009
+  url: http://dx.doi.org/10.1016/j.eswa.2007.09.009
+- id: journal-2009-024-using-genetic-algori
+  bibKey: Johnw_Journal.bib:johnw:2009:IJSEKE
+  bibType: article
+  title: Using Genetic Algorithm to Solve Multiple Sequence Alignment Problem
+  order: 0
+  type: journal
+  authors:
+    - Chih-Chin Lai
+    - Chih-Hung Wu
+    - Cheng-Chen Ho
+  year: 2009
+  journal: International Journal of Software Engineering and Knowledge Engineering
+  volume: '19'
+  pages: 871–888
+  note: (SCI)
+  issue: '6'
+  indexes:
+    - SCI
+  ee: http://dx.doi.org/10.1142/S0218194009004441
+- id: journal-2009-025-feature-selection-us
+  bibKey: Johnw_Journal.bib:johnw:2009:IJICIC
+  bibType: article
+  title: Feature Selection Using Particle Swarm Optimization with Application in Spam Filtering
+  order: 0
+  type: journal
+  authors:
+    - Chih-Chin Lai
+    - Chih-Hung Wu
+    - Ming-Chi Tsai
+  year: 2009
+  journal: International Journal of Innovative Computing, Information and Control
+  volume: '5'
+  pages: 423–432
+  month: Feb.
+  note: (SCI)
+  issue: '2'
+  indexes:
+    - SCI
+- id: journal-2009-026-the-design-and-imple
+  bibKey: Johnw_Journal.bib:johnw:2009:JIM
+  bibType: article
+  title: The Design and Implementation of a Grid-Computing Environment for Mining Sequential Patterns
+  order: 0
+  type: journal
+  authors:
+    - Yu-Chieh Lo
+    - Chih-Hung Wu*
+    - Chih-Chin Lai
+  year: 2009
+  journal: Journal of Information Management
+  volume: '16'
+  pages: pp. 129-150
+  note: (TSSCI)
+  owner: Johnw_2
+  timestamp: 2012.02.27
+  issue: '2'
+- id: conference-2008-103-support-vector-regre
+  bibKey: Johnw_Conference.bib:Su2008a
+  bibType: inproceedings
+  title: Support Vector Regression for GDOP
+  order: 0
+  type: conference
+  authors:
+    - Wei-Han Su
+    - Chih-Hung Wu
+  year: 2008
+  pages: 302–306
+  month: November
+  address: Kaohsiung, Taiwan
+  booktitle: Proceedings of 8th International Conference on Intelligent Systems Design and Applications
+  ee: http://doi.ieeecomputersociety.org/10.1109/ISDA.2008.196
+- id: conference-2008-104-gdop-approximation-u
+  bibKey: Johnw_Conference.bib:Su2008
+  bibType: inproceedings
+  title: GDOP approximation using support vector regression for GIS applications
+  order: 0
+  type: conference
+  authors:
+    - Wei-Han Su
+    - Chih-Hung Wu
+  year: 2008
+  pages: Busan, Korea
+  month: September
+  address: Hong Kong, China
+  booktitle: Proceedings of 7th International Conference on ASIA GIS
+- id: journal-2008-027-direct-transformatio
+  bibKey: Johnw_Journal.bib:johnw:2008:EAAI
+  bibType: article
+  title: Direct Transformation of Coordinates for GPS Positioning Using the Techniques of Genetic Programming and Symbolic Regression
+  order: 0
+  type: journal
+  authors:
+    - Chih-Hung Wu*
+    - Hung-Ju Chou
+    - Wei-Han Su
+  year: 2008
+  journal: Engineering Applications of Artificial Intelligence
+  volume: '21'
+  pages: 1347–1359
+  note: (SCI)
+  issue: '8'
+  keywords:
+    - Soft-computing
+  indexes:
+    - SCI
+  doi: 10.1016/j.engappai.2008.02.001
+  url: http://www.(SCI)ncedirect.com/(SCI)nce/article/pii/S0952197608000079
+- id: journal-2008-028-robust-classificatio
+  bibKey: Johnw_Journal.bib:johnw:2008:JAI
+  bibType: article
+  title: Robust classification for spam filtering by back-propagation neural networks using behavior-based features
+  order: 0
+  type: journal
+  authors:
+    - Chih-Hung Wu*
+    - Chiung-Hui Tsai
+  year: 2008
+  journal: Applied Intelligence
+  volume: '31'
+  pages: 107–121
+  publisher: Springer
+  note: (SCI)
+  issue: '2'
+  indexes:
+    - SCI
+  url: http://www.springerlink.com/index/10.1007/s10489-008-0116-0
+- id: other-2008-152-machine-learning-in
+  bibKey: Johnw_Others.bib:johnw:WECSE2008
+  bibType: incollection
+  title: Machine Learning
+  order: 0
+  type: book-chapter
+  authors:
+    - Chih-Chin Lai
+    - Shi-Hai Dong
+    - Chih-Hung Wu
+  year: 2008
+  editors:
+    - Benjamin Wah
+  publisher: John Wiley and Sons, Inc.
+  address: Hoboken, New Jersey
+  booktitle: Wiley Encyclopedia of Computer Science and Engineering
+- id: conference-2007-105-the-application-of-i
+  bibKey: Johnw_Conference.bib:Pan2007
+  bibType: inproceedings
+  title: The Application of Improved Genetic Algorithm on the Training of Neural Network for Speech Recognition
+  order: 0
+  type: conference
+  authors:
+    - Shing-Tai Pan
+    - Chih-Hung Wu
+    - Chih-Chin Lai
+  year: 2007
+  pages: 5–7
+  month: September
+  publisher: IEEE Computer Society
+  address: Kumamoto, Japan
+  acmid: '1336918'
+  booktitle: Proceedings of 2nd International Conference on Innovative Computing, Informatio and Control
+  series: ICICIC '07
+  isbn: 0-7695-2882-1
+  url: http://dx.doi.org/10.1109/ICICIC.2007.563
+- id: conference-2007-106-a-time-robust-spam-c
+  bibKey: Johnw_Conference.bib:Wu2007
+  bibType: inproceedings
+  title: A Time-Robust Spam Classifier Based on Back-Propagation Neural Networks and Behavior-Based Features
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Chiung-Hui Tsai
+  year: 2007
+  pages: 2245–2250
+  month: August
+  address: Hong Kong, China
+  booktitle: Proceedings of International Conference on Machine Learning and Cybernetics
+  ee: http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=4370519
+- id: conference-2007-107-particle-swarm-optim
+  bibKey: Johnw_Conference.bib:Lai2007
+  bibType: inproceedings
+  title: Particle Swarm Optimization-Aided Feature Selection for Spam Email Classification
+  order: 0
+  type: conference
+  authors:
+    - Chih-Chin Lai
+    - Chih-Hung Wu
+  year: 2007
+  pages: 165–165
+  month: 5-7 sep
+  publisher: IEEE Computer Society
+  address: Kumamoto, Japan
+  acmid: '1336915'
+  booktitle: Proceedings of the Second International Conference on Innovative Computing, Informatio and Control
+  series: ICICIC '07
+  isbn: 0-7695-2882-1
+  doi: 10.1109/ICICIC.2007.442
+  url: http://dx.doi.org/10.1109/ICICIC.2007.442
+- id: conference-2007-108-direct-transformatio
+  bibKey: Johnw_Conference.bib:Wu2007a
+  bibType: inproceedings
+  title: Direct transformation of coordinates for GPS positioning using the techniques of genetic programming and symbolic regression on partitioned data.
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Hung-Ju Chou
+    - Wei-Han Su
+  year: 2007
+  editors:
+    - Hisham Al-Mubaid
+    - Marc Garbey
+  pages: 188-193
+  month: 9-11 July
+  publisher: ISCA
+  address: Las Vegas, USA
+  timestamp: 2007-09-19T00:00:00.000+0200
+  addedAt: 2007-09-19T00:00:00.000+0200
+  booktitle: Proceedings of the 16th International Conference on Software Engineering and Data Engineering (SEDE2007)
+  isbn: 978-1-880843-63-5
+  eventDate: '2007-09-19'
+  keywords:
+    - dblp
+  url: http://dblp.uni-trier.de/db/conf/sede/sede2007.html#WuCS07
+- id: journal-2007-029-genetic-subgradient
+  bibKey: Johnw_Journal.bib:johnw:2007:ASC
+  bibType: article
+  title: Genetic subgradient method for solving location allocation problems
+  order: 0
+  type: journal
+  authors:
+    - Shing-Hwang Doong
+    - Chih-Chin Lai
+    - Chih-Hung Wu
+  year: 2007
+  journal: Applied Soft Computing
+  volume: '7'
+  pages: 373–386
+  month: January
+  issn: 1568-4946
+  note: (SCI)
+  issue: '1'
+  indexes:
+    - SCI
+- id: journal-2007-030-a-genetic-approach-f
+  bibKey: Johnw_Journal.bib:johnw:2007:IEEEGRSL
+  bibType: article
+  title: A Genetic Approach for Coordinate Transformation Test of GPS Positioning
+  order: 0
+  type: journal
+  authors:
+    - Chih-Hung Wu*
+    - Hung-Ju Chou
+    - Wei-Han Su
+  year: 2007
+  journal: IEEE Geoscince and Remote Sensing Letters
+  volume: '4'
+  pages: 297 -301
+  month: april
+  issn: 1545-598X
+  note: (SCI)
+  issue: '2'
+  keywords:
+    - 2D coordinates
+    - Cartesian coordinates
+    - GPS positioning
+    - GPS signals
+    - coordinate transformation
+    - genetic programming
+    - global positioning system
+    - symbolic regression
+    - Global Positioning System
+    - genetic algorithms
+    - regression analysis
+    - remote sensing
+  indexes:
+    - SCI
+  doi: 10.1109/LGRS.2007.894164
+- id: conference-2006-109-mining-sequential-pa
+  bibKey: Johnw_Conference.bib:Wu2006b
+  bibType: inproceedings
+  title: Mining Sequential Patterns on a Grid-Computing Environment
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Yu-Chieh Lo
+  year: 2006
+  volume: '5'
+  pages: 4118-4123
+  month: October
+  address: Taipei, Taiwan
+  booktitle: Proceedings of the IEEE International Conference on Systems, Man and Cybernetics
+  keywords:
+    - Apriori-like algorithm
+    - Globus toolkit
+    - data grid
+    - distributed processing
+    - grid-computing
+    - mining sequential patterns
+    - data mining
+    - distributed processing
+    - grid computing
+  doi: 10.1109/ICSMC.2006.384779
+- id: conference-2006-110-an-intelligent-clust
+  bibKey: Johnw_Conference.bib:Lai2006
+  bibType: inproceedings
+  title: An intelligent clustering approach based on hierarchical differential evolution algorithm
+  order: 0
+  type: conference
+  authors:
+    - Chih-Chin Lai
+    - Shing-Tai Pan
+    - Chih-Hung Wu
+  year: 2006
+  pages: 20–24
+  month: September
+  address: Japan
+  booktitle: Proceedings of the Joint 3rd International Conference on Soft Computing and Intelligent Systems and 7th International Symposium on Advanced Intelligent Systems
+- id: conference-2006-111-a-genetic-approach-f
+  bibKey: Johnw_Conference.bib:Wu2006
+  bibType: inproceedings
+  title: A Genetic Approach for Coordinate Transformation of GPS Signals
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Hung-Ju Chou
+    - Wei-Han Su
+  year: 2006
+  volume: '1'
+  pages: 558 -561
+  month: 30 aug-1 sep
+  address: Beijing, China
+  note: 2006-08-30/2006-09-01
+  booktitle: Proceedings of the First International Conference on Innovative Computing, Information and Control
+  keywords:
+    - GPS
+    - Global Positioning System
+    - Taiwan
+    - computational complexity
+    - coordinate signal transformation
+    - genetic programming
+    - machine learning
+    - symbolic formula
+    - symbolic regression
+    - Global Positioning System
+    - genetic algorithms
+    - learning (artificial intelligence)
+    - regression analysis
+    - signal processing
+  doi: 10.1109/ICICIC.2006.6
+- id: conference-2006-112-acquisition-of-knowl
+  bibKey: Johnw_Conference.bib:Wu2006a
+  bibType: inproceedings
+  title: Acquisition of Knowledge for Spam Filtering by Rule Induction
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Hsiang-Chun Kuo
+    - Chih-Chin Lai
+  year: 2006
+  pages: 92–97
+  month: June
+  address: Hong Kong
+  booktitle: Proceedings of the 2006 IAENG International Workshop on Artificial Intelligence and Applications
+- id: conference-2006-113-the-design-and-imple
+  bibKey: Johnw_Conference.bib:Wu2006c
+  bibType: inproceedings
+  title: The Design and Implementation of a Grid-Computing Environment for Mining Sequential Patterns.
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Yu-Chieh Lo
+    - Shing-Tai Pan
+  year: 2006
+  pages: 311-316
+  month: June
+  address: Hong Kong
+  booktitle: Proceedings of the 2006 IAENG International Workshop on Data Mining and Applications(IWDMA 2006)
+  eventDate: 2006-06-20/22
+- id: conference-2006-114-doong-a-kernel-prot
+  bibKey: Johnw_Conference.bib:Yeh2006
+  bibType: inproceedings
+  title: A kernel prototype-based clustering algorithm
+  order: 0
+  type: conference
+  authors:
+    - Chi-Yuan Yeh
+    - Shie-Jue Lee
+    - Chih-Hung Wu
+    - Shing H. Doong
+  year: 2006
+  pages: 1127–1132
+  address: Stevens Point, Wisconsin, USA
+  pageCount: '6'
+  booktitle: Proceedings of the 10th WSEAS international conference on Computers
+  series: ICCOMP'06
+  isbn: 960-8457-47-5
+  location: Athens, Greece
+  keywords:
+    - kernel K-means
+    - kernel fuzzy C-means
+    - kernel prototype-based clustering
+    - one-class SVM
+  url: http://dl.acm.org/citation.cfm?id=1981848.1982054
+- id: journal-2006-031-generating-behavior
+  bibKey: Johnw_Journal.bib:johnw:2006:JIT
+  bibType: article
+  title: Generating Behavior-based Classification Rules for Spam Filtering Using Enhanced Induction Trees
+  order: 0
+  type: journal
+  authors:
+    - Chih-Hung Wu*
+    - Chi-Yuan Yeh
+    - Chih-Chin Lai
+  year: 2006
+  journal: Journal of Internet Technology
+  volume: '7'
+  pages: 387–398
+  month: October
+  note: (SCI)
+  indexes:
+    - SCI
+- id: journal-2006-032-a-hybrid-kernel-meth
+  bibKey: Johnw_Journal.bib:johnw:2006:WSEAS
+  bibType: article
+  title: A Hybrid Kernel Method for Clustering
+  order: 0
+  type: journal
+  authors:
+    - Chi-Yuan Yeh
+    - Shie-Jue Lee
+    - Chih-Hung Wu*
+    - Shing-Hwang Doong
+  year: 2006
+  journal: WSEAS Transactions on Computers
+  volume: '5'
+  pages: 2326–2333
+  month: October
+  note: (EI)
+  issue: '10'
+  indexes:
+    - EI
+- id: conference-2005-115-effective-spam-class
+  bibKey: Johnw_Conference.bib:Yeh2005
+  bibType: inproceedings
+  title: Effective spam classification based on meta-heuristics
+  order: 0
+  type: conference
+  authors:
+    - Chi-Yuan Yeh
+    - Chili-Hung Wu
+    - Shine-Hwang Doong
+  year: 2005
+  volume: '4'
+  pages: 3872–3877
+  month: October
+  address: Waikoloa, Hawaii
+  booktitle: Proceedings of the IEEE International Conference on Systems, Man and Cybernetics
+  keywords:
+    - binary feature extraction
+    - decision trees
+    - keyword-based filtering
+    - low dimensional feature space
+    - machine learning
+    - meta-heuristics
+    - naive Bayes
+    - spam classification
+    - spam e-mail
+    - sparse feature vector
+    - support vector machine
+    - belief networks
+    - decision trees
+    - learning (artificial intelligence)
+    - support vector machines
+    - unsolicited e-mail
+  doi: 10.1109/ICSMC.2005.1571750
+- id: conference-2005-116-transformation-of-gp
+  bibKey: Johnw_Conference.bib:Chou2005
+  bibType: inproceedings
+  title: Transformation of GPS coordinates using symbolic regression and genetic programming
+  order: 0
+  type: conference
+  authors:
+    - Hung-Ju Chou
+    - Chih-Hung Wu
+    - Wei-Han Su
+  year: 2005
+  pages: 301–306
+  month: July
+  address: TAORMINA, SICILY, ITALY
+  booktitle: Proceedings of the IEEE International Conference on Computational Intelligence for Measurement Systems and Applications
+  doi: 10.1109/CIMSA.2005.1522883
+- id: conference-2005-117-behavior-based-spam
+  bibKey: Johnw_Conference.bib:Wu2005
+  bibType: inproceedings
+  title: Behavior Based Spam Filtering Using Support Vector Machine
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Shing-Hwang Doong
+    - Chi-Yuan Yeh
+  year: 2005
+  month: April
+  address: Kaohsiung, Taiwan
+  booktitle: Proceedings of the IEEE International Conference on System & Signals
+- id: journal-2005-033-a-multi-agent-framew
+  bibKey: Johnw_Journal.bib:johnw:2005:ESWAa
+  bibType: article
+  title: A multi-agent framework for distributed theorem proving
+  order: 0
+  type: journal
+  authors:
+    - Chih-Hung Wu
+  year: 2005
+  journal: Expert Systems with Applications
+  volume: '29'
+  pages: 554–565
+  month: October
+  issn: 0957-4174
+  publisher: Pergamon Press, Inc.
+  address: Tarrytown, NY, USA
+  note: (SCI)
+  pageCount: '12'
+  acmid: '1707510'
+  issue: '3'
+  keywords:
+    - First-order logic
+    - Intelligent agents
+    - KQML
+    - Multi-agent system
+    - The hyper-linking strategy
+    - Theorem proving
+  indexes:
+    - SCI
+  doi: 10.1016/j.eswa.2005.04.013
+  url: http://dx.doi.org/10.1016/j.eswa.2005.04.013
+- id: other-2005-153-computational-intell
+  bibKey: Johnw_Others.bib:johnw:IBTITNM2005
+  bibType: incollection
+  title: Computational intelligence for facility location allocation problems
+  order: 0
+  type: book-chapter
+  authors:
+    - Shi-Hai Dong
+    - Chih-Chin Lai
+    - Chih-Hung Wu
+  year: 2005
+  editors:
+    - C.T. Leondes
+  publisher: Kluwer Academic Publishers
+  address: Norwell, MA, USA
+  booktitle: Business and Technology in The New Millennium
+- id: conference-2004-118-using-association-ru
+  bibKey: Johnw_Conference.bib:Wu2004
+  bibType: inproceedings
+  title: Using association rules for completing missing data
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Chian-Huei Wun
+    - Hung-Ju Chou
+  year: 2004
+  pages: 236–241
+  month: December
+  address: Kitakyushu, Japan
+  booktitle: Proceedings of the Fourth International Conference on Hybrid Intelligent Systems
+  keywords:
+    - association rules
+    - dataset dependency relationships
+    - missing data completion
+    - data mining
+    - database management systems
+  doi: 10.1109/ICHIS.2004.91
+- id: conference-2003-119-detection-of-spam-e
+  bibKey: Johnw_Conference.bib:Tseng2003
+  bibType: inproceedings
+  title: Detection of Spam E-Mails by Analyzing the Distributing Behaviors of E-Mail Servers
+  order: 0
+  type: conference
+  authors:
+    - Ling-Sheng Tseng
+    - Chih-Hung Wu
+  year: 2003
+  pages: 1024–1033
+  month: December
+  address: Australia
+  pageCount: '10'
+  booktitle: Proceedings of the Third International conference on Hybrid Intelligent Systems
+  isbn: 1-58603-394-8
+- id: conference-2003-120-mining-on-dynamic-we
+  bibKey: Johnw_Conference.bib:Wu2003
+  bibType: inproceedings
+  title: Mining on Dynamic Web Pages by Inductive Logic Programming
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Ko-Chang Chang
+  year: 2003
+  month: December
+  address: Taipei, Taiwan
+  booktitle: Proceedings of the joint conference on artificial intelligence,gray systems, and fuzzy systems
+- id: conference-2003-121-plagiarism-detection
+  bibKey: Johnw_Conference.bib:Wu2003a
+  bibType: inproceedings
+  title: 'Plagiarism Detection as Multiple Sequence Alignment: A Preliminary Result'
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Jung-Sheng Yang
+    - Chih-Chin Lai
+    - Shing-Hwang Doong
+  year: 2003
+  pages: 1824–1829
+  month: December
+  address: Kaohsiung, Taiwan
+  booktitle: Proceedings of the International Conference on Informatics, Cybernetics and Systems
+- id: conference-2003-122-plagiarism-detection
+  bibKey: Johnw_Conference.bib:Yang2003
+  bibType: inproceedings
+  title: Plagiarism Detection of Text using Knowledge-based Techniques
+  order: 0
+  type: conference
+  authors:
+    - Jung-Sheng Yang
+    - Chih-Hung Wu
+  year: 2003
+  pages: 973–982
+  month: December
+  address: Australia
+  pageCount: '10'
+  booktitle: Proceedings of the Third International conference on Hybrid Intelligent Systems
+  isbn: 1-58603-394-8
+- id: conference-2003-123-a-hybrid-model-for-s
+  bibKey: Johnw_Conference.bib:Doong2003
+  bibType: inproceedings
+  title: A Hybrid Model for Solving Single Source Capacitated Facility Location Problem
+  order: 0
+  type: conference
+  authors:
+    - Shing-Hwang Doong
+    - Chih-Chin Lai
+    - Chih-Hung Wu
+  year: 2003
+  pages: 395–400
+  month: February
+  address: Palm Springs, California, USA
+  booktitle: Proceedings of the IASTED International Conference on Modelling and Simulation
+- id: other-2003-154-the-techniques-and-e
+  bibKey: Johnw_Others.bib:johnw:TA2003
+  bibType: incollection
+  title: The techniques and experiences of integrating deductive database management systems and intelligent agents for electronic commerce
+  order: 0
+  type: book-chapter
+  authors:
+    - Chih-Hung Wu
+    - Shi-Hai Dong
+    - Chih-Chin Lai
+  year: 2003
+  editors:
+    - C.T. Leondes
+  publisher: CRC Press
+  address: Boca Raton
+  booktitle: Intelligent Systems–Techniques and Applications
+- id: conference-2002-124-fuzzy-knowledge-base
+  bibKey: Johnw_Conference.bib:Wu2002
+  bibType: inproceedings
+  title: Fuzzy Knowledge-based Techniques for Balanced Scorecard Applications
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Yen-Ting Pan
+  year: 2002
+  month: September
+  address: Taiwan
+  booktitle: The 10th National Conference on Fuzzy Theories and Applications
+- id: conference-2002-125-knowledge-acquisitio
+  bibKey: Johnw_Conference.bib:Wu2002a
+  bibType: inproceedings
+  title: Knowledge Acquisition with Fuzzy Logic for Balanced ScoreCard Applications
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Yen-Tin Pan
+    - Jung-Sheng Yang
+  year: 2002
+  month: July
+  address: Florida, USA
+  booktitle: Proceedings of the 6th World Multiconference on systems, Cybernetics and Informations
+  eventDate: 2002-07-14/18
+- id: journal-2002-034-kj3-the-design-an
+  bibKey: Johnw_Journal.bib:johnw:2005:ESWAb
+  bibType: article
+  title: KJ3 – The Design and Implementation of a Formal Validation Tool for Knowledge-based Expert Systems Using Petri Net and Theorem Proving Techniques
+  order: 0
+  type: journal
+  authors:
+    - Chih-Hung Wu
+    - Shie-Jue Lee
+  year: 2002
+  journal: International Journal of Human-Computer Studies
+  volume: '56'
+  pages: 495–524
+  note: (SCI, SSCI
+- id: conference-2001-126-a-hybrid-approach-fo
+  bibKey: Johnw_Conference.bib:Lai2001
+  bibType: inproceedings
+  title: A hybrid approach for solving optimal facility location
+  order: 0
+  type: conference
+  authors:
+    - Chih-Chin Lai
+    - Shing-Hwang Doong
+    - Chih-Hung Wu
+  year: 2001
+  pages: 365–371
+  month: October
+  address: Taipei, Taiwan
+  booktitle: Proceedings of On Technology and Management
+- id: conference-2001-127-techniques-and-exper
+  bibKey: Johnw_Conference.bib:Wu2001
+  bibType: inproceedings
+  title: Techniques and Experiences of Deductive Database Management Systems for Electronic Commerce
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Huang-Ghun Tseng
+    - Cheng-Chen Ho
+  year: 2001
+  pages: 406–411
+  month: February
+  address: Innsbruck, Austria
+  booktitle: Proceedings of the International Association of Science and Technology for Development International Conference Applied Informatics
+- id: conference-2001-128-intelligent-agents-w
+  bibKey: Johnw_Conference.bib:Yang2001
+  bibType: inproceedings
+  title: Intelligent Agents with Multi-Layered Knowledge Bases for Transaction Assistance in Electronic Commerce
+  order: 0
+  type: conference
+  authors:
+    - Rong-Sheng Yang
+    - Chih-Hung Wu
+  year: 2001
+  pages: '137'
+  month: February
+  address: Kuala Lumpur, Malaysia
+  booktitle: Proceedings of the IEEE Student Conference on Research and Development 2001
+- id: journal-2001-035-parallelization-of-a
+  bibKey: Johnw_Journal.bib:johnw:2001:JAR
+  bibType: article
+  title: Parallelization of a Hyper-Linking-Based Theorem Prover
+  order: 0
+  type: journal
+  authors:
+    - Chih-Hung Wu
+    - Shie-Jue Lee
+  year: 2001
+  journal: Journal of Automated Reasoning
+  volume: '26'
+  pages: 67–106
+  month: January
+  issn: 0168-7433
+  publisher: Springer-Verlag New York, Inc.
+  address: Secaucus, NJ, USA
+  note: (SCI)
+  pageCount: '40'
+  acmid: '594301'
+  issue: '1'
+  keywords:
+    - first-order logic
+    - hyper-linking strategy
+    - logic deduction
+    - parallel architecture
+    - parallel processing
+    - theorem proving
+  indexes:
+    - SCI
+  doi: 10.1023/A:1006469202251
+  url: http://dl.acm.org/citation.cfm?id=594140.594301
+- id: conference-2000-129-the-design-of-a-mult
+  bibKey: Johnw_Conference.bib:Wu2000a
+  bibType: inproceedings
+  title: The Design of a Multi-Agent Framework for Distributed Hyper-Linking-based Theorem Proving
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Shie-Jue Lee
+  year: 2000
+  pages: 120–127
+  month: December
+  address: Chiayi, Taiwan, Republic of China
+  booktitle: 'Proceedings of the 2000 International Computer Symposium: Workshop on Artificial Intelligence'
+- id: conference-2000-130-formal-verification
+  bibKey: Johnw_Conference.bib:Wu2000
+  bibType: inproceedings
+  title: Formal Verification of Rule-based Systems Using Petri-Nets Formalism and Hyper-Linking-based Theorem Proving
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Shie-Jue Lee
+  year: 2000
+  pages: 421–428
+  month: November
+  address: Taipei, Taiwan
+  booktitle: Proceedings of the 5th Conference on Artificial Intelligence and Applications
+- id: conference-2000-131-the-framework-of-cam
+  bibKey: Johnw_Conference.bib:Pu2000
+  bibType: inproceedings
+  title: The Framework of Campus Electronic Commerce (CEC)
+  order: 0
+  type: conference
+  authors:
+    - Christopher C. Pu
+    - Chih-Hung Wu
+  year: 2000
+  month: July
+  address: Orlando, Florida, USA
+  booktitle: Proceedings of the 4th Conferences of The World Multiconference on Systemics, Cybernetics and Informatics SCI 2000 and the 6th International Conference on Information Systems, Analysis and Synthesis ISAS 2000
+- id: conference-2000-132-the-progress-of-camp
+  bibKey: Johnw_Conference.bib:Pu2000a
+  bibType: inproceedings
+  title: The Progress of Campus Electronic Commerce and WAP Applications in Shu-Te University
+  order: 0
+  type: conference
+  authors:
+    - Christopher C. Pu
+    - Chih-Hung Wu
+  year: 2000
+  pages: 123–130
+  month: May
+  address: Shu-Te University, Kaoshiung, Taiwan
+  booktitle: Proceedings of the National Conference on Campus Electronic Commerce 2000
+- id: journal-2000-036-an-extended-system-f
+  bibKey: Johnw_Journal.bib:johnw:2000:AAI
+  bibType: article
+  title: An Extended System for Conceptual Clustering.
+  order: 0
+  type: journal
+  authors:
+    - Chih-Hung Wu
+    - Cheng-Jer Yu
+    - Shie-Jue Lee
+  year: 2000
+  journal: Applied Artificial Intelligence
+  volume: '14'
+  pages: 943-965
+  month: November
+  note: (SCI)
+  bibUrl: http://www.bibsonomy.org/bibtex/28c500a2fb8da33ab753402f6a9300237/dblp
+  addedAt: 2011-01-31T00:00:00.000+0100
+  interhash: 07f2438e965f4a66fdae34f12a1cd2f2
+  intrahash: 8c500a2fb8da33ab753402f6a9300237
+  issue: '10'
+  keywords:
+    - dblp
+  indexes:
+    - SCI
+  ee: http://dx.doi.org/10.1080/08839510050179455
+- id: journal-2000-037-a-token-flow-paradig
+  bibKey: Johnw_Journal.bib:johnw:2000:IEEETSCMB
+  bibType: article
+  title: A token-flow paradigm for verification of rule-based expert systems
+  order: 0
+  type: journal
+  authors:
+    - Chih-Hung Wu
+    - Shie-Jue Lee
+  year: 2000
+  journal: IEEE Transactions on Systems, Man, and Cybernetics, Part B
+  volume: '30'
+  pages: 616-624
+  month: August
+  note: (SCI)
+  bibUrl: http://www.bibsonomy.org/bibtex/2b099cdf835c665bd2bc893ec130a3dae/dblp
+  addedAt: 2011-11-08T00:00:00.000+0100
+  interhash: 5e514a4927d2bc85ecd938bfe9cd8239
+  intrahash: b099cdf835c665bd2bc893ec130a3dae
+  issue: '4'
+  keywords:
+    - dblp
+  indexes:
+    - SCI
+  ee: http://dx.doi.org/10.1109/3477.865181
+- id: other-2000-155-techniques-and-appli
+  bibKey: Johnw_Others.bib:johnw:KBSTA2000
+  bibType: incollection
+  title: Techniques and Applications of Petri Nets in Knowledge Verification and Validation of Rule-Based Expert Systems
+  order: 0
+  type: book-chapter
+  authors:
+    - Chih-Hung Wu
+    - Shie-Jue Lee
+  year: 2000
+  editors:
+    - C.T. Leondes
+  publisher: ACADEMIC Press
+  address: San Diego, USA
+  booktitle: Knowledge Based Systems Techniques and Applications
+- id: conference-1999-133-a-petri-net-based-fr
+  bibKey: Johnw_Conference.bib:Wu1999
+  bibType: inproceedings
+  title: A Petri-Net-based Framework for Representing and Retrieving Conception in Case-based Document Writing
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+  year: 1999
+  pages: 484–487
+  month: September
+  address: Australia
+  booktitle: Proceedings of the 3rd International Conference on Knowledge-Based Intelligent Information Engineering Systems
+- id: conference-1998-134-a-tool-for-proving-f
+  bibKey: Johnw_Conference.bib:Wu1998
+  bibType: inproceedings
+  title: A Tool for Proving Formal Specifications of Rule-Based Expert systems
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Shie-Jue Lee
+  year: 1998
+  pages: 310–317
+  month: November
+  address: Taipei, Taiwan
+  booktitle: Proceedings of the 10th IEEE International Conference on Tools with Artificial Intelligence
+- id: journal-1997-038-enhanced-high-level
+  bibKey: Johnw_Journal.bib:johnw:1997:IEEETSMCB
+  bibType: article
+  title: Enhanced high-level Petri nets with multiple colors for knowledge verification/validation of rule-based expert systems
+  order: 0
+  type: journal
+  authors:
+    - Chih-Hung Wu
+    - Shie-Jue Lee
+  year: 1997
+  journal: IEEE Transactions on Systems, Man, and Cybernetics, Part B
+  volume: '27'
+  pages: 760-773
+  month: September
+  note: (SCI)
+  bibSource: DBLP, http://dblp.uni-trier.de
+  issue: '5'
+  indexes:
+    - SCI
+  ee: http://dx.doi.org/10.1109/3477.623230
+- id: journal-1997-039-knowledge-verificati
+  bibKey: Johnw_Journal.bib:johnw:1997:IEEEIS
+  bibType: article
+  title: Knowledge Verification with an Enhanced High-Level Petri-Net Model
+  order: 0
+  type: journal
+  authors:
+    - Chih-Hung Wu
+    - Shie-Jue Lee
+  year: 1997
+  journal: IEEE Intelligent Systems
+  volume: '12'
+  pages: 73-80
+  month: Aug.
+  note: (SCI)
+  indexes:
+    - SCI
+- id: journal-1997-040-expider-a-channel-r
+  bibKey: Johnw_Journal.bib:johnw:1997:ESWA
+  bibType: article
+  title: 'EXPIDER: A Channel Routing Expert for VLSI Design'
+  order: 0
+  type: journal
+  authors:
+    - Chih-Hung Wu
+    - Shie-Jue Lee
+    - Ding-Lan Shen
+  year: 1997
+  journal: Expert Systems with Applications
+  volume: '12'
+  pages: 209-223
+  note: (SCI)
+  issue: '2'
+  indexes:
+    - SCI
+- id: conference-1996-135-expider-an-object-b
+  bibKey: Johnw_Conference.bib:Shen1996
+  bibType: inproceedings
+  title: 'EXPIDER: An Object-Based Expert System for VLSI Channel Routing'
+  order: 0
+  type: conference
+  authors:
+    - Ding-Lan Shen
+    - Chih-Hung Wu
+    - Shie-Jue Lee
+  year: 1996
+  pages: 226-231
+  month: October
+  address: Beijing, China
+  booktitle: Proceedings of IEEE International Conference on Systems, Man, and Cybernetics
+- id: conference-1996-136-on-parallelism-of-hy
+  bibKey: Johnw_Conference.bib:Wu1996
+  bibType: inproceedings
+  title: 'On Parallelism of Hyper-Linking Theorem Proving: A Preliminary Report'
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Shie-Jue Lee
+  year: 1996
+  pages: 494-499
+  month: June
+  address: Tokyo, Japan
+  booktitle: Proceedings of IEEE International Conference on Parallel and Distributed Systems
+- id: conference-1995-137-an-entropy-based-eva
+  bibKey: Johnw_Conference.bib:Wu1995a
+  bibType: inproceedings
+  title: An Entropy-Based Evaluation Function for Conceptual Clustering
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Cheng-Jer Yu
+    - Shie-Jue Lee
+  year: 1995
+  pages: 4307-4312
+  month: October
+  address: Vancouver, Canada
+  booktitle: Proceedings of IEEE International Conference on Systems, Man, and Cybernetics
+- id: conference-1995-138-an-efficient-impleme
+  bibKey: Johnw_Conference.bib:Yang1995
+  bibType: inproceedings
+  title: An Efficient Implementation of the Davis-Putnam Procedure Using Network Structures
+  order: 0
+  type: conference
+  authors:
+    - Hsin-Tai Yang
+    - Chih-Hung Wu
+    - Shie-Jue Lee
+  year: 1995
+  pages: 4245-4249
+  month: October
+  address: Vancouver, Canada
+  booktitle: Proceedings of IEEE International Conference on Systems, Man, and Cybernetics
+- id: conference-1995-139-a-study-on-paralleli
+  bibKey: Johnw_Conference.bib:Wu1995
+  bibType: inproceedings
+  title: A Study on Parallelism of a Hyper-Linking Based Theorem Prover
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Shie-Jue Lee
+  year: 1995
+  pages: 107-112
+  month: September
+  address: Taipei, Taiwan
+  booktitle: Proceedings of Artificial Intelligence Workshop
+- id: conference-1995-140-knowledge-validation
+  bibKey: Johnw_Conference.bib:Wu1995b
+  bibType: inproceedings
+  title: Knowledge Validation with an Enhanced High-level Petri Net Model
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Shie-Jue Lee
+  year: 1995
+  pages: 126-132
+  month: February
+  address: Los Angeles, California, USA
+  booktitle: Proceedings of 11th IEEE International Conference on Artificial Intelligence for Applications
+- id: journal-1995-041-clxpert-a-rule-base
+  bibKey: Johnw_Journal.bib:johnw:1995:ESWA
+  bibType: article
+  title: 'CLXPERT: A rule-based scheduling system'
+  order: 0
+  type: journal
+  authors:
+    - Chih-Hung Wu*
+    - Shie-Jue Lee
+  year: 1995
+  journal: Expert Systems with Applications
+  volume: '9'
+  pages: 153-164
+  note: (SCI)
+  issue: '2'
+  indexes:
+    - SCI
+- id: conference-1994-141-dependency-analysis
+  bibKey: Johnw_Conference.bib:Wu1994
+  bibType: inproceedings
+  title: Dependency Analysis for Knowledge Validation in Rule-Based Expert Systems
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Shie-Jue Lee
+    - Hung-Sen Chou
+  year: 1994
+  pages: 327-333
+  month: March
+  address: San Antonio, Texas, USA
+  booktitle: Proceedings of 10th IEEE International Conference on Artificial Intelligence for Applications
+- id: journal-1994-042-a-knowledge-based-ap
+  bibKey: Johnw_Journal.bib:johnw:1994:JAI
+  bibType: article
+  title: A knowledge-based approach to the local area network design problem
+  order: 0
+  type: journal
+  authors:
+    - Shie-Jue Lee
+    - Chih-Hung Wu
+  year: 1994
+  journal: Applied Intelligence
+  volume: '4'
+  pages: 7–29
+  issn: 0924-669X
+  publisher: Springer Netherlands
+  note: (SCI)
+  issue: '1'
+  indexes:
+    - SCI
+- id: journal-1994-043-improving-the-effici
+  bibKey: Johnw_Journal.bib:johnw:1994:JAR
+  bibType: article
+  title: Improving the Efficiency of a Hyper-Linking Based Theorem Prover by Incremental Evaluation with Network Structures
+  order: 0
+  type: journal
+  authors:
+    - Shie-Jue Lee
+    - Chih-Hung Wu
+  year: 1994
+  journal: Journal of Automated Reasoning
+  volume: '12'
+  pages: 359–388
+  note: (SCI)
+  issue: '3'
+  indexes:
+    - SCI
+- id: conference-1993-142-integrating-knowledg
+  bibKey: Johnw_Conference.bib:Wu1993d
+  bibType: inproceedings
+  title: Integrating Knowledge Validation into the Rete Rule Network for Rule-based Expert System
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Hung-Sen Chou
+    - Shie-Jue Lee
+    - Cheng-Jer Yu
+  year: 1993
+  pages: 213-220
+  month: December
+  address: Chia-Yi, Taiwan
+  booktitle: Proceedings of the National Computer Symposium
+- id: conference-1993-143-the-design-and-imple
+  bibKey: Johnw_Conference.bib:Wu1993e
+  bibType: inproceedings
+  title: The Design and Implementation of a Rule-Based Expert System Language
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Shie-Jue Lee
+    - Hung-Sen Chou
+    - Cheng-Jer Yu
+  year: 1993
+  pages: 468-169
+  month: November
+  address: Massachusetts,USA
+  booktitle: Proceedings of the Tools with Artificial Intelligence, Fifth International
+- id: conference-1993-144-a-model-based-troubl
+  bibKey: Johnw_Conference.bib:Wu1993a
+  bibType: inproceedings
+  title: A Model-Based Troubleshooter for Diagnosing Multiple Faults in Digital Systems
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Shie-Jue Lee
+    - Cheng-Jer Yu
+    - Hung-Sen Chou
+  year: 1993
+  pages: 579-886
+  month: July
+  address: Taichung,Taiwan
+  booktitle: Proceedings of the 6th National Conference on Automation Technology
+- id: conference-1993-145-building-an-expert-s
+  bibKey: Johnw_Conference.bib:Wu1993c
+  bibType: inproceedings
+  title: Building an Expert System Language Interpreter with the Rule Network Technique
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Shie-Jue Lee
+  year: 1993
+  pages: 76-85
+  month: June
+  address: Trondheim,Norway
+  booktitle: 'Proceedings of the Artificial Intelligence 689: 7th International Symposium on Methodologies for Intelligent Systems'
+- id: conference-1993-146-an-object-oriented-e
+  bibKey: Johnw_Conference.bib:Wu1993b
+  bibType: inproceedings
+  title: An Object-Oriented Expert System for Local Area Network Design
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Shie-Jue Lee
+  year: 1993
+  pages: 321-326
+  month: May
+  address: Ontario,Canada
+  booktitle: Proceedings of the IEEE Computing and Information ICCI '93
+- id: conference-1993-147-improving-efficiency
+  bibKey: Johnw_Conference.bib:Wu1993
+  bibType: inproceedings
+  title: Improving Efficiency of a Theorem Prover by Eliminating Redundant Unifications Using Network Structures
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Shie-Jue Lee
+  year: 1993
+  pages: 299-304
+  month: May
+  address: Ontario,Canada
+  booktitle: Proceedings of the IEEE Computing and Information ICCI'93
+- id: conference-1992-148-controlling-storage
+  bibKey: Johnw_Conference.bib:Lee1992
+  bibType: inproceedings
+  title: Controlling Storage Consumption in Mechanical Theorem Proving
+  order: 0
+  type: conference
+  authors:
+    - Shie-Jue Lee
+    - Chih-Hung Wu
+  year: 1992
+  pages: 201–207
+  month: July
+  address: Taipei, Taiwan
+  booktitle: Proceedings of the 2nd International Conference on Automation Technology
+- id: conference-1992-149-application-of-exper
+  bibKey: Johnw_Conference.bib:Wu1992
+  bibType: inproceedings
+  title: Application of Expert System Techniques to Computer Network Design
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Shie-Jue Lee
+  year: 1992
+  pages: 201-207
+  month: July
+  address: Taipei, Taiwan
+  booktitle: Proceedings of the NEXPERT Object and Smart Applications
+- id: conference-1992-150-dynamic-addition-del
+  bibKey: Johnw_Conference.bib:Wu1992a
+  bibType: inproceedings
+  title: Dynamic Addition/Deletion of Rules in Expert Systems
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Shie-Jue Lee
+  year: 1992
+  pages: 169–175
+  month: May
+  address: Alexandria, Egypt
+  booktitle: Proceedings of 2nd IASTED International Conference on Computer Applications in Industry
+- id: conference-1991-151-class-scheduling-usi
+  bibKey: Johnw_Conference.bib:Wu1991
+  bibType: inproceedings
+  title: Class Scheduling Using Rule-based Techniques
+  order: 0
+  type: conference
+  authors:
+    - Chih-Hung Wu
+    - Shie-Jue Lee
+  year: 1991
+  pages: 658–664
+  month: December
+  address: Taipei, Taiwan
+  booktitle: Proceedings of National Computer Symposium

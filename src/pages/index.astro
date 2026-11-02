@@ -1,0 +1,189 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { withBase } from '../lib/paths';
+import SiteNav from '../components/SiteNav.astro';
+import TabPanel from '../components/TabPanel.astro';
+import EntryList from '../components/EntryList.astro';
+import AwardList from '../components/AwardList.astro';
+import ServiceList from '../components/ServiceList.astro';
+import AcademicList from '../components/AcademicList.astro';
+import PublicationList from '../components/PublicationList.astro';
+import ProjectList from '../components/ProjectList.astro';
+import PhotoGrid from '../components/PhotoGrid.astro';
+import PhotoGallery from '../components/PhotoGallery.astro';
+import ProfileIntro from '../components/ProfileIntro.astro';
+import { getEntry, getCollection } from 'astro:content';
+import { siteTabs } from '../lib/tabs';
+import { sortByYearDesc, sortByCollectionDateDesc } from '../lib/site';
+import { sectionAccent } from '../lib/colors';
+
+const profile = await getEntry('profile', 'profile');
+const lab = await getEntry('lab', 'lab');
+if (!profile) throw new Error('找不到 profile 資料');
+if (!lab) throw new Error('找不到 lab 資料');
+
+const publications = sortByYearDesc(await getCollection('publications'));
+const projects = sortByCollectionDateDesc(await getCollection('projects'));
+const services = sortByCollectionDateDesc(await getCollection('services'));
+const academics = await getCollection('academics');
+const honors = sortByYearDesc(await getCollection('honors'));
+const graduates = sortByYearDesc(await getCollection('graduates'));
+const awards = await getCollection('awards');
+const galleryPhotos = sortByYearDesc(await getCollection('photos'));
+
+const labPhotos = lab.data.photos ?? [];
+
+const honorItems = honors.map((h) => ({
+  editCollection: 'honors',
+  editId: h.id,
+  order: h.data.order,
+  title: h.data.title,
+  subtitle: h.data.organization,
+  year: h.data.year,
+  detail: h.data.detail,
+  image: h.data.image,
+}));
+
+const graduateItems = graduates.map((g) => ({
+  editCollection: 'graduates',
+  editId: g.id,
+  order: g.data.order,
+  title: g.data.degree ? `${g.data.student}（${g.data.degree}）` : g.data.student,
+  subtitle: g.data.thesis,
+  link: g.data.link,
+  year: g.data.year,
+}));
+
+const siteDescription = `${profile.data.name} — ${profile.data.affiliation}`;
+const groupId = 'main';
+const interests = profile.data.interests ?? [];
+
+---
+
+<BaseLayout title="首頁" description={siteDescription}>
+  <SiteNav slot="nav" tabs={siteTabs} groupId={groupId} defaultTab="profile" />
+
+  <div data-tab-panels={groupId}>
+    <TabPanel id="profile" groupId={groupId} isDefault>
+      <ProfileIntro profile={profile} />
+
+      <div class="mt-6" data-edit-collection="profile" data-edit-section="2">
+        <h4 class="mb-3 text-lg font-semibold text-heading">研究專長</h4>
+        <ul class="flex flex-wrap gap-2">
+          {profile.data.researchAreas.map((area) => (
+            <li class="rounded-full border border-border bg-white px-3.5 py-1.5 text-sm text-body shadow-sm">
+              {area}
+            </li>
+          ))}
+        </ul>
+        {interests.length > 0 && (
+          <div class="mt-4">
+            <h5 class="mb-2 text-sm font-semibold text-muted">研究興趣</h5>
+            <ul class="flex flex-wrap gap-2">
+              {interests.map((item) => (
+                <li class="rounded-full border border-border bg-page px-3.5 py-1.5 text-sm text-muted">
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+
+      {honorItems.length > 0 && (
+        <div class="mt-6">
+          <h4 class="mb-3 text-lg font-semibold text-heading">榮譽</h4>
+          <EntryList items={honorItems} accent={sectionAccent.honors} compact emptyText="尚無榮譽紀錄。" />
+        </div>
+      )}
+    </TabPanel>
+
+    <TabPanel id="lab" groupId={groupId}>
+      <div class="space-y-6">
+        <div data-edit-collection="lab" class="rounded-xl bg-white p-6 leading-relaxed text-body shadow-sm">
+          <p class="whitespace-pre-line">{lab.data.intro}</p>
+        </div>
+        {lab.data.researchTopics && lab.data.researchTopics.length > 0 && (
+          <section data-edit-collection="lab" data-edit-section="1">
+            <h4 class="mb-3 text-lg font-semibold text-heading">研究主題</h4>
+            <ul class="list-disc space-y-1 pl-6">
+              {lab.data.researchTopics.map((topic) => <li>{topic}</li>)}
+            </ul>
+          </section>
+        )}
+        {lab.data.introEn && (
+          <section data-edit-collection="lab" lang="en" class="rounded-xl bg-white p-6 leading-relaxed text-body shadow-sm">
+            <h4 class="mb-3 text-lg font-semibold text-heading">About I.C.A.L.</h4>
+            <p class="whitespace-pre-line">{lab.data.introEn}</p>
+          </section>
+        )}
+        {lab.data.mission && lab.data.mission.length > 0 && (
+          <div data-edit-collection="lab" data-edit-section="1">
+            <h4 class="mb-3 text-lg font-semibold text-heading">實驗室目標</h4>
+            <ul class="grid gap-3 sm:grid-cols-3">
+              {lab.data.mission.map((item, i) => {
+                const colors = ['mission-blue', 'mission-teal', 'mission-purple'];
+                return (
+                  <li class:list={['rounded-lg p-4 text-sm leading-relaxed text-white shadow-sm', colors[i % colors.length]]}>
+                    {item}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        )}
+        {labPhotos.length > 0 && (
+          <div>
+            <h4 class="mb-4 text-lg font-semibold text-heading">實驗室照片</h4>
+            <PhotoGrid photos={labPhotos.map((photo, index) => ({ ...photo, editCollection: 'lab', editSection: 2, editIndex: index }))} />
+          </div>
+        )}
+        {galleryPhotos.length > 0 && (
+          <div>
+            <h4 class="mb-4 text-lg font-semibold text-heading">活動剪影</h4>
+            <PhotoGallery photos={galleryPhotos} />
+          </div>
+        )}
+        {lab.data.campusMap && (
+          <section data-edit-collection="lab" data-edit-section="2">
+            <h4 class="mb-3 text-lg font-semibold text-heading">校園交通圖</h4>
+            <a href={withBase(lab.data.campusMap)} target="_blank" rel="noopener noreferrer">
+              <img src={withBase(lab.data.campusMap)} alt="國立高雄大學校園交通圖（舊站保存版本）" loading="lazy" class="h-auto w-full rounded-xl" />
+            </a>
+            <p class="mt-2 text-sm text-muted">舊站保存版本，可點圖放大。</p>
+          </section>
+        )}
+      </div>
+    </TabPanel>
+
+    <TabPanel id="project" groupId={groupId}>
+      <ProjectList items={projects} />
+    </TabPanel>
+
+    <TabPanel id="publications" groupId={groupId}>
+      <PublicationList publications={publications} showAbstract />
+    </TabPanel>
+
+    <TabPanel id="graduate" groupId={groupId}>
+      <EntryList items={graduateItems} accent={sectionAccent.graduates} emptyText="尚無指導論文資料。" />
+    </TabPanel>
+
+    <TabPanel id="awards" groupId={groupId}>
+      <AwardList items={awards} />
+    </TabPanel>
+
+    <TabPanel id="services" groupId={groupId}>
+      <ServiceList items={services} />
+    </TabPanel>
+
+    <TabPanel id="academics" groupId={groupId}>
+      <AcademicList items={academics} />
+    </TabPanel>
+  </div>
+</BaseLayout>
+
+<style>
+  .mission-blue { background: linear-gradient(135deg, var(--color-lab-blue), var(--color-lab-indigo)); }
+  .mission-teal { background: linear-gradient(135deg, var(--color-lab-teal), var(--color-lab-blue)); }
+  .mission-purple { background: linear-gradient(135deg, var(--color-lab-purple), var(--color-lab-pink)); }
+</style>

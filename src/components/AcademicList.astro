@@ -1,0 +1,77 @@
+---
+import EntryFilters from './EntryFilters.astro';
+import type { CollectionEntry } from 'astro:content';
+import EntryList from './EntryList.astro';
+import type { EntryItem } from './EntryList.astro';
+import {
+  academicCategories,
+  academicCategoryAccent,
+  sectionAccent,
+} from '../lib/colors';
+import {
+  academicCategoryShortLabel,
+  formatAcademicEntry,
+  resolveAcademicCategory,
+} from '../lib/academics';
+import { sortByEntryDateDesc } from '../lib/site';
+
+interface Props {
+  items: CollectionEntry<'academics'>[];
+}
+
+const { items } = Astro.props;
+
+const entryItems: EntryItem[] = sortByEntryDateDesc(
+  items.map((item) => {
+    const category = resolveAcademicCategory(item);
+    const formatted = formatAcademicEntry(item.data.title, category, item.data.startYear);
+    return {
+      editCollection: 'academics',
+      editId: item.id,
+      editYear: item.data.endYear ?? item.data.startYear,
+      order: item.data.order,
+      title: formatted.title,
+      meta: formatted.meta,
+      startYear: item.data.startYear,
+      endYear: item.data.endYear,
+      category,
+      categoryLabel: academicCategoryShortLabel[category],
+      categoryAccent: academicCategoryAccent[category],
+    };
+  }),
+);
+
+const counts = {
+  all: entryItems.length,
+  ...Object.fromEntries(
+    academicCategories.map((category) => [
+      category,
+      entryItems.filter((item) => item.category === category).length,
+    ]),
+  ),
+} as Record<string, number>;
+
+const filters = [
+  { id: 'all', label: '全部', count: counts.all, color: sectionAccent.academics },
+  ...academicCategories.map((category) => ({
+    id: category,
+    label: academicCategoryShortLabel[category],
+    count: counts[category] ?? 0,
+    color: academicCategoryAccent[category],
+  })),
+].filter((filter) => filter.id === 'all' || filter.count > 0);
+---
+
+{entryItems.length === 0 ? (
+  <p class="rounded-lg bg-white px-5 py-4 text-muted shadow-sm">尚無學術活動資料。</p>
+) : (
+  <div class="service-section" data-entry-filters>
+    <EntryFilters filters={filters} label="學術服務分類" dotColors={['lab-green', 'lab-teal', 'lab-purple']} />
+    <EntryList
+      items={entryItems}
+      accent={sectionAccent.academics}
+      emptyText="尚無學術活動資料。"
+      compact
+    />
+  </div>
+)}

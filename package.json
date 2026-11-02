@@ -1,0 +1,28 @@
+{
+  "name": "johnw_web",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "start": "node server/index.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "admin:password": "node server/set-password.mjs",
+    "bib:check": "node scripts/sync-bib.mjs --check",
+    "bib:sync": "node scripts/sync-bib.mjs",
+    "bib:commit": "node scripts/commit-bib.mjs"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.1",
+    "astro": "^7.0.2",
+    "tailwindcss": "^4.3.1",
+    "js-yaml": "^4.1.1",
+    "zod": "^4.3.6",
+    "sharp": "^0.34.5"
+  }
+}

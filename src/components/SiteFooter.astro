@@ -1,0 +1,55 @@
+---
+import { getEntry } from 'astro:content';
+
+const profile = await getEntry('profile', 'profile');
+const lab = await getEntry('lab', 'lab');
+const year = new Date().getFullYear();
+const seenUrls = new Set<string>();
+const relatedLinks = [...(lab?.data.links ?? []), ...(profile?.data.links ?? [])].filter(link => {
+  if (seenUrls.has(link.url)) return false;
+  seenUrls.add(link.url);
+  return true;
+});
+// Keep laboratory destinations together at the front; preserve other configured order.
+const labPriority = ['https://www.ical.tw/', 'https://www.ical.tw/xICAL/'];
+const rank = (url: string) => {
+  const index = labPriority.indexOf(url);
+  return index < 0 ? labPriority.length : index;
+};
+relatedLinks.sort((a, b) => rank(a.url) - rank(b.url));
+const mapQuery = lab?.data.address
+  ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(lab.data.address)}`
+  : undefined;
+const phone = profile?.data.phone ?? lab?.data.phone;
+const phoneHref = phone?.replace(/[^\d+]/g, '');
+---
+
+<footer id="contact" class="site-footer mt-auto bg-heading text-white" aria-label="聯絡資訊與頁尾">
+  <div class="mx-auto max-w-6xl space-y-3 px-4 py-6 text-sm leading-relaxed sm:px-6 lg:px-8">
+    <div class="flex flex-col gap-3 lg:flex-row lg:items-start lg:justify-between lg:gap-8">
+      <p data-edit-collection="profile" aria-label="聯絡方式" class="flex min-w-0 flex-wrap gap-x-6 gap-y-2">
+        {profile?.data.email && (
+          <a href={`mailto:${profile.data.email}`} aria-label={`電子郵件：${profile.data.email}`} class="break-all text-white/85 transition-colors hover:text-white hover:underline underline-offset-4">{profile.data.email}</a>
+        )}
+        {phone && phoneHref && (
+          <a href={`tel:${phoneHref}`} aria-label={`電話：${phone}`} class="text-white/75 transition-colors hover:text-white hover:underline underline-offset-4">{phone}</a>
+        )}
+      </p>
+      {lab?.data.address && (
+        <p data-edit-collection="lab" aria-label="實驗室地址" class="min-w-0 text-white/65 lg:max-w-lg lg:text-right">
+          <a href={mapQuery} target="_blank" rel="noopener noreferrer" class="transition-colors hover:text-white hover:underline underline-offset-4">{lab.data.address}</a>
+        </p>
+      )}
+    </div>
+    {relatedLinks.length > 0 && (
+      <nav aria-label="相關連結" class="border-t border-white/10 pt-3">
+        <ul class="flex flex-wrap gap-x-5 gap-y-2 text-xs leading-relaxed sm:text-sm">
+          {relatedLinks.map(link => (
+            <li><a href={link.url} target="_blank" rel="noopener noreferrer" class="text-white/70 transition-colors hover:text-white hover:underline underline-offset-4">{link.label} ↗</a></li>
+          ))}
+        </ul>
+      </nav>
+    )}
+    <p class="text-xs text-white/40">© {year} {profile?.data.name ?? '吳志宏 教授'} · {profile?.data.affiliation ?? '國立高雄大學'}</p>
+  </div>
+</footer>

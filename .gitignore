@@ -1,0 +1,21 @@
+# Dependencies and generated output
+node_modules/
+dist/
+.astro/
+
+# Local admin credentials, uploads, and backups
+.admin-auth/
+.admin-data/
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+.aws/
+*.pem
+*.key
+
+# Logs and operating system files
+*.log
+.DS_Store
+Thumbs.db

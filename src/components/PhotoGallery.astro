@@ -1,0 +1,43 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import PhotoGrid from './PhotoGrid.astro';
+import { sortByYearDesc } from '../lib/site';
+
+interface Props {
+  photos: CollectionEntry<'photos'>[];
+  emptyText?: string;
+}
+
+const { photos, emptyText = '尚無照片。' } = Astro.props;
+
+const categories = ['實驗室', '學術活動', '獲獎典禮', '師生合影', '其他'] as const;
+
+const grouped = categories
+  .map((category) => ({
+    category,
+    items: sortByYearDesc(photos.filter((p) => p.data.category === category)),
+  }))
+  .filter((g) => g.items.length > 0);
+---
+
+{photos.length === 0 ? (
+  <p class="rounded-lg bg-white px-5 py-4 text-muted shadow-sm">{emptyText}</p>
+) : (
+  <div class="space-y-8">
+    {grouped.map((group) => (
+      <section>
+        <h4 class="mb-4 text-lg font-semibold text-heading">{group.category}</h4>
+        <PhotoGrid
+          photos={group.items.map((p) => ({
+            editCollection: 'photos',
+            editId: p.id,
+            editYear: p.data.year,
+            src: p.data.src,
+            caption: p.data.caption,
+            alt: p.data.alt,
+          }))}
+        />
+      </section>
+    ))}
+  </div>
+)}

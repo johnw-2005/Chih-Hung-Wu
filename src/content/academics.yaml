@@ -1,0 +1,531 @@
+- id: "academic-001"
+  title: "IEEE Computer Society, SMC Society, Member, 1998-"
+  organization: "IEEE Computer Society"
+  category: "學會會員"
+  startYear: 1998
+  order: 1
+
+- id: "academic-002"
+  title: "Taiwanese Association for Artificial Intelligence, Senior Member, 1998-"
+  organization: "Taiwanese Association for Artificial Intelligence"
+  category: "學會會員"
+  startYear: 1998
+  order: 2
+
+- id: "academic-003"
+  title: "Chinese Society of Information Management, Senior Member, 2000-"
+  organization: "Chinese Society of Information Management"
+  category: "學會會員"
+  startYear: 2000
+  order: 3
+
+- id: "academic-004"
+  title: "Taiwanese Association for Artificial Intelligence, Member of Board of Directors, 2002-"
+  organization: "Taiwanese Association for Artificial Intelligence"
+  category: "學會會員"
+  startYear: 2002
+  order: 4
+
+- id: "academic-005"
+  title: "International Association on Engineering, Member, 2005-"
+  organization: "International Association on Engineering"
+  category: "學會會員"
+  startYear: 2005
+  order: 5
+
+- id: "academic-006"
+  title: "IEEE CI Society, Member, 2005-"
+  organization: "IEEE CI Society"
+  category: "學會會員"
+  startYear: 2005
+  order: 6
+
+- id: "academic-007"
+  title: "International Society for Computers and Their Applications, Member, 2007-"
+  organization: "International Society for Computers and Their Applications"
+  category: "學會會員"
+  startYear: 2007
+  order: 7
+
+- id: "academic-008"
+  title: "IEEE GRS Society, Member, 2008-"
+  organization: "IEEE GRS Society"
+  category: "學會會員"
+  startYear: 2008
+  order: 8
+
+- id: "academic-009"
+  title: "Reviewer--International Journal of Fuzzy Systems (IJFS) , 2004~"
+  organization: "International"
+  category: "期刊審稿"
+  startYear: 2004
+  order: 9
+
+- id: "academic-010"
+  title: "Reviewer--IEEE/ASME Transactions on Mechatronics, 2004~"
+  organization: "IEEE"
+  category: "期刊審稿"
+  startYear: 2004
+  order: 10
+
+- id: "academic-011"
+  title: "Reviewer--Journal of the Chinese Institute of Engineers, 2005"
+  organization: "Journal / Conference"
+  category: "期刊審稿"
+  startYear: 2005
+  order: 11
+
+- id: "academic-012"
+  title: "Reviewer--International Journal of Software Engineering & Knowledge Engineering, 2006"
+  organization: "International"
+  category: "期刊審稿"
+  startYear: 2006
+  order: 12
+
+- id: "academic-013"
+  title: "Reviewer--Journal of Advanced Computational Intelligence & Intelligent Informatics, 2006~"
+  organization: "Journal / Conference"
+  category: "期刊審稿"
+  startYear: 2006
+  order: 13
+
+- id: "academic-014"
+  title: "Reviewer--IEEE Geoscience and Remote Sensing Letters (IEEE GRSL), 2007~"
+  organization: "IEEE"
+  category: "期刊審稿"
+  startYear: 2007
+  order: 14
+
+- id: "academic-015"
+  title: "Reviewer--International Journal of Computing and Information Sciences (IJCIS), 2006"
+  organization: "International"
+  category: "期刊審稿"
+  startYear: 2006
+  order: 15
+
+- id: "academic-016"
+  title: "Guest Editor--Journal of Internet Technology (JIT), 2006"
+  organization: "Journal / Conference"
+  category: "期刊審稿"
+  startYear: 2006
+  order: 16
+
+- id: "academic-017"
+  title: "Reviewer--Journal of Applied Intelligence, 2007~"
+  organization: "Journal / Conference"
+  category: "期刊審稿"
+  startYear: 2007
+  order: 17
+
+- id: "academic-018"
+  title: "Reviewer--Journal of Applied Sciences, 2007~"
+  organization: "Journal / Conference"
+  category: "期刊審稿"
+  startYear: 2007
+  order: 18
+
+- id: "academic-019"
+  title: "Reviewer--Asian Journal of Control, 2008"
+  organization: "Journal / Conference"
+  category: "期刊審稿"
+  startYear: 2008
+  order: 19
+
+- id: "academic-020"
+  title: "Reviewer--IEEE Transactions on Neural Networks, 2008"
+  organization: "IEEE"
+  category: "期刊審稿"
+  startYear: 2008
+  order: 20
+
+- id: "academic-021"
+  title: "Reviewer--IEEE Transactions on Knowledge and Data engineering, 2008"
+  organization: "IEEE"
+  category: "期刊審稿"
+  startYear: 2008
+  order: 21
+
+- id: "academic-022"
+  title: "2001--Session Chair and Program Committee-Conference on Information Technology and Applications in Outlying Islands, PeiHung, PengHu, Taiwan"
+  organization: "Journal / Conference"
+  category: "會議委員"
+  startYear: 2001
+  order: 22
+
+- id: "academic-023"
+  title: "2003--Program Committee and Reviewer--The 8th Conference on Artificial Intelligence and Applications"
+  organization: "Journal / Conference"
+  category: "會議委員"
+  startYear: 2003
+  order: 23
+
+- id: "academic-024"
+  title: "2003--Program Committee-Conference on Information Technology and Applications in Outlying Islands, PengHu, Taiwan"
+  organization: "Journal / Conference"
+  category: "會議委員"
+  startYear: 2003
+  order: 24
+
+- id: "academic-025"
+  title: "2004--Program Committee and Reviewer--The 9th Conference on Artificial Intelligence and Applications, Taipei"
+  organization: "Journal / Conference"
+  category: "會議委員"
+  startYear: 2004
+  order: 25
+
+- id: "academic-026"
+  title: "2005--Program Committee, Session Chair, Secretary, and Reviewer--The 10th Conference on Artificial Intelligence and Applications, Kaohsiung"
+  organization: "Journal / Conference"
+  category: "會議委員"
+  startYear: 2005
+  order: 26
+
+- id: "academic-027"
+  title: "2005--Program Committee--Conference on Information Technology and Applications in Outlying Islands, PengHu"
+  organization: "Journal / Conference"
+  category: "會議委員"
+  startYear: 2005
+  order: 27
+
+- id: "academic-028"
+  title: "2005--Program Committee--International Workshop On Experience Management, in conjunction with KES2005, Australia"
+  organization: "International"
+  category: "會議委員"
+  startYear: 2005
+  order: 28
+
+- id: "academic-029"
+  title: "2005--Session Chair--IEEE International Conference on System & Signals, Kaohsiung, Taiwan, April 28-29, 2005."
+  organization: "IEEE"
+  category: "會議委員"
+  startYear: 2005
+  order: 29
+
+- id: "academic-030"
+  title: "2006--Program Committee and Reviewer--The 11th Conference on Artificial Intelligence and Applications, Kaohsiung"
+  organization: "Journal / Conference"
+  category: "會議委員"
+  startYear: 2006
+  order: 30
+
+- id: "academic-031"
+  title: "2006--Program Committee--Conference on Information Technology and Applications in Outlying Islands, Kinmen"
+  organization: "Journal / Conference"
+  category: "會議委員"
+  startYear: 2006
+  order: 31
+
+- id: "academic-032"
+  title: "2006--Program Committee--International Workshop on Experience Management and Engineering (EME'2006) in conjunction with KES2006, UK"
+  organization: "International"
+  category: "會議委員"
+  startYear: 2006
+  order: 32
+
+- id: "academic-033"
+  title: "2006--Session Chair--The 2006 IAENG International Workshop on Artificial Intelligence and Applications (IWAIA'06), HongKong"
+  organization: "International"
+  category: "會議委員"
+  startYear: 2006
+  order: 33
+
+- id: "academic-034"
+  title: "2006--Session Chair--The 2006 IAENG International Workshop on Data Mining and Applications (IWDMA'06), HongKong"
+  organization: "International"
+  category: "會議委員"
+  startYear: 2006
+  order: 34
+
+- id: "academic-035"
+  title: "2006--Reviewer--International Computer Symposium (ICS'06), Taipei, Taiwan"
+  organization: "International"
+  category: "會議委員"
+  startYear: 2006
+  order: 35
+
+- id: "academic-036"
+  title: "2007--Program Committee--International Conference on the Management and Applications of Digital Contents, Tainan, Taiwan"
+  organization: "International"
+  category: "會議委員"
+  startYear: 2007
+  order: 36
+
+- id: "academic-037"
+  title: "2007--Program Committee and Reviewer--The 12th Conference on Artificial Intelligence and Applications"
+  organization: "Journal / Conference"
+  category: "會議委員"
+  startYear: 2007
+  order: 37
+
+- id: "academic-038"
+  title: "2007--Session Chair of Special Session on \\\"Engineering Applications of Artificial Intelligence and Soft-Computing\\\"--The 2007 International Conference on Innovative Computing, Information and Control (ICICIC-07), September 5-7, 2007, Kumamoto City International Center, Kumamoto, Japan"
+  organization: "International"
+  category: "會議委員"
+  startYear: 2007
+  order: 38
+
+- id: "academic-039"
+  title: "2007--Program Committee and Reviewer--The 2007 IEEE International Conference on Systems, Man and Cybernetics (SMC 2007), October 7-10, 2007, Montreal, Canada."
+  organization: "IEEE"
+  category: "會議委員"
+  startYear: 2007
+  order: 39
+
+- id: "academic-040"
+  title: "2008--Program Committee--The 2008 International Conference on Innovative Computing, Information and Control (ICICIC-08), 18-20 June, Dalian, China"
+  organization: "International"
+  category: "會議委員"
+  startYear: 2008
+  order: 40
+
+- id: "academic-041"
+  title: "2008--Program Committee--The 2008 Conference on Information Technology and Applications in Outlying Islands, 30-31, May, 2008, PengHu, Taiwan"
+  organization: "Journal / Conference"
+  category: "會議委員"
+  startYear: 2008
+  order: 41
+
+- id: "academic-042"
+  title: "2008--Program Committee&Reviewer--The Fourth International Conference on Intelligent Information Hiding and Multimedia Signal Processing (IIH-MSP 2008), Harbin, China"
+  organization: "International"
+  category: "會議委員"
+  startYear: 2008
+  order: 42
+
+- id: "academic-043"
+  title: "2008--Program Committee&Reviewer--2008 IEEE International Conference on Systems, Man, and Cybernetics (SMC 2008) , Singapore"
+  organization: "IEEE"
+  category: "會議委員"
+  startYear: 2008
+  order: 43
+
+- id: "academic-044"
+  title: "2009--Program Committee&Reviewer--ISIS 2009; Japan"
+  organization: "Journal / Conference"
+  category: "會議委員"
+  startYear: 2009
+  order: 44
+
+- id: "academic-045"
+  title: "2009--Program Committee&Reviewer--2009 AIE/EAI, Tainan, Taiwan"
+  organization: "Journal / Conference"
+  category: "會議委員"
+  startYear: 2009
+  order: 45
+
+- id: "academic-046"
+  title: "2009--Program Committee&Reviewer--ICMLC 2009; China"
+  organization: "Journal / Conference"
+  category: "會議委員"
+  startYear: 2009
+  order: 46
+
+- id: "academic-047"
+  title: "2009--Program Committee&Reviewer--IEEE SMC 2009; USA"
+  organization: "IEEE"
+  category: "會議委員"
+  startYear: 2009
+  order: 47
+
+- id: "academic-048"
+  title: "2009--Program Committee&Reviewer--2009 International Conference on Computational Intelligence and Security (CIS'09), Beijing, China."
+  organization: "International"
+  category: "會議委員"
+  startYear: 2009
+  order: 48
+
+- id: "academic-049"
+  title: "2010--Program Committee&Reviewer--IEEE SMC 2010; Istanbul,TURKEY"
+  organization: "IEEE"
+  category: "會議委員"
+  startYear: 2010
+  order: 49
+
+- id: "academic-050"
+  title: "2010--Program Committee&Reviewer--2010 International Conference on Computational Intelligence and Security (CIS'10), Nanning, China."
+  organization: "International"
+  category: "會議委員"
+  startYear: 2010
+  order: 50
+
+- id: "academic-051"
+  title: "Canada (ICCI 1992)"
+  organization: "Canada (ICCI 1992)"
+  category: "國際會議"
+  startYear: 1992
+  order: 51
+
+- id: "academic-052"
+  title: "Norway (ISMIS 1992)"
+  organization: "Norway (ISMIS 1992)"
+  category: "國際會議"
+  startYear: 1992
+  order: 52
+
+- id: "academic-053"
+  title: "USA (IEEE ICTAI 1994)"
+  organization: "USA (IEEE ICTAI 1994)"
+  category: "國際會議"
+  startYear: 1994
+  order: 53
+
+- id: "academic-054"
+  title: "USA (IEEE ICTAI 1995)"
+  organization: "USA (IEEE ICTAI 1995)"
+  category: "國際會議"
+  startYear: 1995
+  order: 54
+
+- id: "academic-055"
+  title: "Marlaysia (Academic Visiting 2001)"
+  organization: "Marlaysia (Academic Visiting 2001)"
+  category: "國際會議"
+  startYear: 2001
+  order: 55
+
+- id: "academic-056"
+  title: "Singapore (Academic Visiting 2001)"
+  organization: "Singapore (Academic Visiting 2001)"
+  category: "國際會議"
+  startYear: 2001
+  order: 56
+
+- id: "academic-057"
+  title: "Austrilia (HIS 2003)"
+  organization: "Austrilia (HIS 2003)"
+  category: "國際會議"
+  startYear: 2003
+  order: 57
+
+- id: "academic-058"
+  title: "Japan (HIS 2004)"
+  organization: "Japan (HIS 2004)"
+  category: "國際會議"
+  startYear: 2004
+  order: 58
+
+- id: "academic-059"
+  title: "Italy (IEEE CIMAS 2005)"
+  organization: "Italy (IEEE CIMAS 2005)"
+  category: "國際會議"
+  startYear: 2005
+  order: 59
+
+- id: "academic-060"
+  title: "Howaii (IEEE SMC 2005)"
+  organization: "Howaii (IEEE SMC 2005)"
+  category: "國際會議"
+  startYear: 2005
+  order: 60
+
+- id: "academic-061"
+  title: "Indonisia (Academic Visiting 2006)"
+  organization: "Indonisia (Academic Visiting 2006)"
+  category: "國際會議"
+  startYear: 2006
+  order: 61
+
+- id: "academic-062"
+  title: "HongKong (IMECS 2006)"
+  organization: "HongKong (IMECS 2006)"
+  category: "國際會議"
+  startYear: 2006
+  order: 62
+
+- id: "academic-063"
+  title: "China (ICICIC 2006)"
+  organization: "China (ICICIC 2006)"
+  category: "國際會議"
+  startYear: 2006
+  order: 63
+
+- id: "academic-064"
+  title: "USA (SEDE 2007)"
+  organization: "USA (SEDE 2007)"
+  category: "國際會議"
+  startYear: 2007
+  order: 64
+
+- id: "academic-065"
+  title: "HongKong (ICMLC 2007)"
+  organization: "HongKong (ICMLC 2007)"
+  category: "國際會議"
+  startYear: 2007
+  order: 65
+
+- id: "academic-066"
+  title: "Japan (ICICIC 2007)"
+  organization: "Japan (ICICIC 2007)"
+  category: "國際會議"
+  startYear: 2007
+  order: 66
+
+- id: "academic-067"
+  title: "TW (IEEE ISDA 2008)"
+  organization: "TW (IEEE ISDA 2008)"
+  category: "國際會議"
+  startYear: 2008
+  order: 67
+
+- id: "academic-068"
+  title: "Korea (AsiaGIS 2008)"
+  organization: "Korea (AsiaGIS 2008)"
+  category: "國際會議"
+  startYear: 2008
+  order: 68
+
+- id: "academic-069"
+  title: "HongKong (IEEE CIMAS 2009)"
+  organization: "HongKong (IEEE CIMAS 2009)"
+  category: "國際會議"
+  startYear: 2009
+  order: 69
+
+- id: "academic-070"
+  title: "Korea (FuzzIEEE 2009)"
+  organization: "Korea (FuzzIEEE 2009)"
+  category: "國際會議"
+  startYear: 2009
+  order: 70
+
+- id: "academic-071"
+  title: "Japan (ICCVIP 2010)"
+  organization: "Japan (ICCVIP 2010)"
+  category: "國際會議"
+  startYear: 2010
+  order: 71
+
+- id: "academic-072"
+  title: "China (ICMLC 2010)"
+  organization: "China (ICMLC 2010)"
+  category: "國際會議"
+  startYear: 2010
+  order: 72
+
+- id: "academic-073"
+  title: "Korea (ISIS 2011)"
+  organization: "Korea (ISIS 2011)"
+  category: "國際會議"
+  startYear: 2011
+  order: 73
+
+- id: "academic-074"
+  title: "China (ICMLC 2012)"
+  organization: "China (ICMLC 2012)"
+  category: "國際會議"
+  startYear: 2012
+  order: 74
+
+- id: "academic-075"
+  title: "Japan (ICGEC 2012)"
+  organization: "Japan (ICGEC 2012)"
+  category: "國際會議"
+  startYear: 2012
+  order: 75
+
+- id: "academic-076"
+  title: "2023--深度學習技術在金屬表面瑕疵檢測成效的比較， 曾令燊、陳詣翰、蔡瓊輝、吳志宏， 第二十一屆離島資訊與應用研討會(論文編號: ITAOI-2023-IS20-01)，宜蘭，臺灣."
+  organization: "Journal / Conference"
+  category: "國內會議"
+  startYear: 2023
+  order: 76

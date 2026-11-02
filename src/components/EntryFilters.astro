@@ -1,0 +1,188 @@
+---
+interface Props {
+  filters: { id: string; label: string; count: number; color: string }[];
+  label: string;
+  dotColors?: [string, string, string];
+}
+
+const { filters, label, dotColors = ['lab-blue', 'lab-teal', 'lab-purple'] } = Astro.props;
+---
+
+<div class="service-filters" role="tablist" aria-label={label}>
+      {filters.map((filter, index) => (
+        <button
+          type="button"
+          role="tab"
+          class:list={['service-filter', index === 0 && 'is-active']}
+          data-entry-filter={filter.id}
+          data-color={filter.color}
+          aria-selected={index === 0 ? 'true' : 'false'}
+        >
+          {filter.id === 'all' ? (
+            <span class="service-filter__dot service-filter__dot--all" aria-hidden="true" style={`--dot-1: var(--color-${dotColors[0]}); --dot-2: var(--color-${dotColors[1]}); --dot-3: var(--color-${dotColors[2]})`}>
+              <span class="service-filter__dot-bit" />
+              <span class="service-filter__dot-bit" />
+              <span class="service-filter__dot-bit" />
+            </span>
+          ) : (
+            <span class:list={['service-filter__dot', `category-dot-${filter.color}`]} aria-hidden="true" />
+          )}
+          <span class="service-filter__label">{filter.label}</span>
+          <span class="service-filter__count">{filter.count}</span>
+        </button>
+      ))}
+    </div>
+
+<style>
+  .service-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.625rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .service-filter {
+    --filter-accent: var(--color-lab-blue);
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    overflow: hidden;
+    border: 1px solid color-mix(in srgb, var(--filter-accent) 18%, var(--color-border));
+    border-radius: 0.625rem;
+    background: #ffffff;
+    color: var(--color-body);
+    padding: 0.4375rem 0.875rem 0.4375rem 0.6875rem;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    line-height: 1.4;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(26, 31, 44, 0.04);
+    transition:
+      transform 0.18s ease,
+      box-shadow 0.18s ease,
+      border-color 0.18s ease,
+      background 0.18s ease,
+      color 0.18s ease;
+  }
+
+  .service-filter[data-color='lab-blue'] { --filter-accent: var(--color-lab-blue); }
+  .service-filter[data-color='lab-teal'] { --filter-accent: var(--color-lab-teal); }
+  .service-filter[data-color='lab-purple'] { --filter-accent: var(--color-lab-purple); }
+  .service-filter[data-color='lab-indigo'] { --filter-accent: var(--color-lab-indigo); }
+  .service-filter[data-color='lab-orange'] { --filter-accent: var(--color-lab-orange); }
+  .service-filter[data-color='lab-amber'] { --filter-accent: var(--color-lab-amber); }
+  .service-filter[data-color='lab-green'] { --filter-accent: var(--color-lab-green); }
+  .service-filter[data-color='cat-blue'] { --filter-accent: var(--color-cat-blue); }
+  .service-filter[data-color='cat-indigo'] { --filter-accent: var(--color-cat-indigo); }
+  .service-filter[data-color='cat-teal'] { --filter-accent: var(--color-cat-teal); }
+  .service-filter[data-color='cat-green'] { --filter-accent: var(--color-cat-green); }
+  .service-filter[data-color='cat-purple'] { --filter-accent: var(--color-cat-purple); }
+  .service-filter[data-color='cat-orange'] { --filter-accent: var(--color-cat-orange); }
+  .service-filter[data-color='cat-rose'] { --filter-accent: var(--color-cat-rose); }
+  .service-filter[data-color='cat-amber'] { --filter-accent: var(--color-cat-amber); }
+
+  .service-filter::before {
+    content: '';
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 2px;
+    background: var(--filter-accent);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.2s ease;
+  }
+
+  .service-filter:hover {
+    transform: translateY(-1px);
+    border-color: color-mix(in srgb, var(--filter-accent) 42%, var(--color-border));
+    background: color-mix(in srgb, var(--filter-accent) 5%, #ffffff);
+    box-shadow: 0 4px 12px color-mix(in srgb, var(--filter-accent) 12%, transparent);
+  }
+
+  .service-filter__dot {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 9999px;
+    flex-shrink: 0;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--filter-accent) 14%, transparent);
+  }
+
+  .service-filter__dot--all {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.125rem;
+    width: auto;
+    height: auto;
+    box-shadow: none;
+  }
+
+  .service-filter__dot-bit {
+    display: block;
+    width: 0.3125rem;
+    height: 0.3125rem;
+    border-radius: 9999px;
+    background: var(--dot-1);
+  }
+
+  .service-filter__dot-bit:nth-child(2) {
+    background: var(--dot-2);
+  }
+
+  .service-filter__dot-bit:nth-child(3) {
+    background: var(--dot-3);
+  }
+
+  .service-filter__label {
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+
+  .service-filter__count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.375rem;
+    height: 1.25rem;
+    padding: 0 0.4375rem;
+    border-radius: 9999px;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    background: color-mix(in srgb, var(--filter-accent) 10%, var(--color-page));
+    color: color-mix(in srgb, var(--filter-accent) 72%, var(--color-muted));
+  }
+
+  .service-filter.is-active {
+    color: #ffffff;
+    border-color: var(--filter-accent);
+    background: linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--filter-accent) 92%, #ffffff),
+      var(--filter-accent)
+    );
+    box-shadow: 0 6px 16px color-mix(in srgb, var(--filter-accent) 28%, transparent);
+    transform: translateY(-1px);
+  }
+
+  .service-filter.is-active::before {
+    transform: scaleX(1);
+    background: rgba(255, 255, 255, 0.45);
+  }
+
+  .service-filter.is-active .service-filter__dot {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.35);
+  }
+
+  .service-filter.is-active .service-filter__dot-bit {
+    background: #ffffff;
+    opacity: 0.95;
+  }
+
+  .service-filter.is-active .service-filter__count {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+  }
+</style>

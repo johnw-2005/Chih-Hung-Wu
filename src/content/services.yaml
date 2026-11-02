@@ -1,0 +1,460 @@
+- id: service-001
+  category: 校內職務
+  role: 國立高雄大學人工智慧研究中心執行長
+  organization: 國立高雄大學
+  startYear: 2018
+  order: 1
+  endYear: 2021
+- id: service-002
+  category: 校內行政
+  role: 國立高雄大學電機系系主任
+  organization: 國立高雄大學
+  startYear: 2008
+  endYear: 2010
+  order: 2
+- id: service-003
+  category: 校內行政
+  role: 國立高雄大學電機系導師
+  organization: 國立高雄大學
+  startYear: 2004
+  order: 3
+- id: service-004
+  category: 校內行政
+  role: 國立高雄大學電機系系教評會委員
+  organization: 國立高雄大學
+  startYear: 2006
+  order: 4
+- id: service-005
+  category: 校內行政
+  role: 國立高雄大學電機系校務會議代表
+  organization: 國立高雄大學
+  startYear: 2006
+  order: 5
+- id: service-006
+  category: 校內行政
+  role: 國立高雄大學通識教育中心教評會委員
+  organization: 國立高雄大學
+  startYear: 2006
+  order: 6
+- id: service-007
+  category: 校內職務
+  role: 國立高雄大學教務處教學服務組組長
+  organization: 國立高雄大學
+  startYear: 2003
+  endYear: 2004
+  order: 7
+- id: service-008
+  category: 校內職務
+  role: 國立高雄大學原民社指導老師
+  organization: 國立高雄大學
+  startYear: 2006
+  order: 8
+- id: service-009
+  category: 校內職務
+  role: 國立高雄大學創新育成中心輔導專家
+  organization: 國立高雄大學
+  startYear: 2005
+  endYear: 2007
+  order: 9
+- id: service-010
+  category: 教學營隊
+  role: 2019年 偏鄉學童機器人體驗營 高雄市茂林區多納國小 - 我的機器人活動(108年07月29日～108年08月02日，共5日)
+  organization: 其他
+  startYear: 2019
+  order: 10
+- id: service-011
+  category: 教學營隊
+  role: 2019年 偏鄉學童機器人體驗營 台東縣豐源國小 - 我的機器人活動(108年07月23日～108年07月24日，共2日)
+  organization: 其他
+  startYear: 2019
+  order: 11
+- id: service-012
+  category: 教學營隊
+  role: 2019年 偏鄉學童機器人體驗營 台東縣蘭嶼鄉蘭嶼國小 - 我的機器人活動(108年07月27日～108年07月28日，共3日)
+  organization: 其他
+  startYear: 2019
+  order: 12
+- id: service-013
+  category: 教學營隊
+  role: 2019年 偏鄉學童機器人體驗營 多納國小 - 我的機器人活動(108年07月29日～108年08月02日，共5日)
+  organization: 其他
+  startYear: 2019
+  order: 13
+- id: service-014
+  category: 教學營隊
+  role: 2018年 國立高雄大學機器人營隊(107年6月23日-107年6月24日)
+  organization: 其他
+  startYear: 2018
+  order: 14
+- id: service-015
+  category: 教學營隊
+  role: 2018年 高雄市甲圍國小資訊與機器人研習營 (107年07月27日～107年07月28日，共2日)
+  organization: 其他
+  startYear: 2018
+  order: 15
+- id: service-016
+  category: 教學營隊
+  role: 2018年 高雄市多納國小資訊與機器人研習營 (107年07月08日～107年07月13日，共5日)
+  organization: 其他
+  startYear: 2018
+  order: 16
+- id: service-017
+  category: 教學營隊
+  role: 2016 年高雄市多納國小資訊與機器人研習營 (105年07月04日～105年07月08日，共5日)
+  organization: 其他
+  startYear: 2016
+  order: 17
+- id: service-018
+  category: 教學營隊
+  role: 2015 年高雄市多納國小資訊與機器人研習營 (104年08月17日～104年08月21日，共5日)
+  organization: 其他
+  startYear: 2015
+  order: 18
+- id: service-019
+  category: 教學營隊
+  role: 2014 年高雄市多納國小資訊與機器人研習營 (103年08月11日～101年08月15日，共5日)
+  organization: 其他
+  startYear: 2014
+  order: 19
+- id: service-020
+  category: 教學營隊
+  role: 2012 年高雄市多納國小電腦學習營 (101年07月30日～101年08月3日，共5日)
+  organization: 其他
+  startYear: 2012
+  order: 20
+- id: service-021
+  category: 教學營隊
+  role: 2011 年高雄市多納國小電腦學習營 (100年08月22日～100年08月26日，共5日)
+  organization: 其他
+  startYear: 2011
+  order: 21
+- id: service-022
+  category: 教學營隊
+  role: 2011 年高雄縣多納國小電腦學習營 (100年01月24日～100年01月26日，共3日)
+  organization: 其他
+  startYear: 2011
+  order: 22
+- id: service-023
+  category: 教學營隊
+  role: 2010 年台東嘉蘭國小資訊營 (99年08月18日～99年08月22日，共5日)
+  organization: 其他
+  startYear: 2010
+  order: 23
+- id: service-024
+  category: 教學營隊
+  role: 2010 年台東縣嘉蘭村社區電子商務研習營 (99年08月18日～99年08月21日，共4日)
+  organization: 其他
+  startYear: 2010
+  order: 24
+- id: service-025
+  category: 教學營隊
+  role: 2010 年高雄縣多納國小電腦學習營 (99年07月26日～99年07月30日，共5日)
+  organization: 其他
+  startYear: 2010
+  order: 25
+- id: service-026
+  category: 教學營隊
+  role: 2010 年台東縣蘭嶼Scratch電腦動畫學習營 (99年05月15日～99年05月16日，共2日)
+  organization: 其他
+  startYear: 2010
+  order: 26
+- id: service-027
+  category: 教學營隊
+  role: 2010 年高雄縣多納國小電腦學習營 (99年02月01日～99年02月05日，共5日)
+  organization: 其他
+  startYear: 2010
+  order: 27
+- id: service-028
+  category: 教學營隊
+  role: 2009 年台東縣蘭嶼國小電腦學習營 (98年10月31日～98年11月1日，共2日)
+  organization: 其他
+  startYear: 2009
+  order: 28
+- id: service-029
+  category: 教學營隊
+  role: 2009 年台東縣蘭嶼國小教師資訊研習 (98年10月28日～98年10月28日，共1日)
+  organization: 其他
+  startYear: 2009
+  order: 29
+- id: service-030
+  category: 教學營隊
+  role: 2009 年高雄縣多納國小電腦學習營 (98年07月27日～98年08月01日，共 5日)
+  organization: 其他
+  startYear: 2009
+  order: 30
+- id: service-031
+  category: 教學營隊
+  role: 2009 年高雄縣多納國小電腦學習營 (98年02月02日～98年02月06日，共5日)
+  organization: 其他
+  startYear: 2009
+  order: 31
+- id: service-032
+  category: 教學營隊
+  role: 2008 年高雄縣多納國小電腦學習營 (97年01月28日～97年02月01日，共5日)
+  organization: 其他
+  startYear: 2008
+  order: 32
+- id: service-033
+  category: 教學營隊
+  role: 2008 年高雄縣多納民眾資訊研習 3 (97年01月05日，共1日)
+  organization: 其他
+  startYear: 2008
+  order: 33
+- id: service-034
+  category: 教學營隊
+  role: 2007 年高雄縣多納民眾資訊研習 2 (96年12月02日，共1日)
+  organization: 其他
+  startYear: 2007
+  order: 34
+- id: service-035
+  category: 教學營隊
+  role: 2007 年高雄縣多納民眾資訊研習 1 (96年10月25日，共1日)
+  organization: 其他
+  startYear: 2007
+  order: 35
+- id: service-036
+  category: 教學營隊
+  role: 2007 年台東縣蘭嶼國小校團「資訊推廣營」-發現藍海III (96年09月21日～96年09月23日，共3日)
+  organization: 其他
+  startYear: 2007
+  order: 36
+- id: service-037
+  category: 教學營隊
+  role: 2007 年台東縣東清國小校團「資訊推廣營」-發現藍海III (96年09月21日～96年09月23日，共3日)
+  organization: 其他
+  startYear: 2007
+  order: 37
+- id: service-038
+  category: 教學營隊
+  role: 2007 年台東縣朗島國小校團「資訊推廣營」-發現藍海III (96年09月21日～96年09月23日，共3日)
+  organization: 其他
+  startYear: 2007
+  order: 38
+- id: service-039
+  category: 教學營隊
+  role: 2007 年高雄縣三民鄉民權國小電腦資訊營隊 (96年08月06日～96年8月10日，共5日)
+  organization: 其他
+  startYear: 2007
+  order: 39
+- id: service-040
+  category: 教學營隊
+  role: 2007 年高雄縣三民鄉民族國小電腦資訊營隊 (96年08月06日～96年08月10日，共5日)
+  organization: 其他
+  startYear: 2007
+  order: 40
+- id: service-041
+  category: 教學營隊
+  role: 2007 年高雄縣三民鄉民生國小電腦資訊營隊 (96年08月06日～96年08月10日，共5日)
+  organization: 其他
+  startYear: 2007
+  order: 41
+- id: service-042
+  category: 教學營隊
+  role: 2007 年高雄市楠陽國小、高雄縣橫山、深水國小社區電腦資訊營隊 (96年03月31日～96年04月01日，共3日)
+  organization: 其他
+  startYear: 2007
+  order: 42
+- id: service-043
+  category: 教學營隊
+  role: 2007 年高雄縣多納國小社區電腦資訊營隊 (96年01月21日～96年01月27日，共7日)
+  organization: 其他
+  startYear: 2007
+  order: 43
+- id: service-044
+  category: 教學營隊
+  role: 2006 年台東縣東清國小「蘭嶼四部曲動畫營」-發現藍海II (95年11月18日～95年11月19日，共2日)
+  organization: 其他
+  startYear: 2006
+  order: 44
+- id: service-045
+  category: 教學營隊
+  role: 2006 年台東縣蘭嶼國小「校園資訊推廣營」-發現藍海II (95年11月17日～95年11月19日，共3日)
+  organization: 其他
+  startYear: 2006
+  order: 45
+- id: service-046
+  category: 教學營隊
+  role: 2006 年台東縣蘭嶼紅頭、漁人部落社區 (蘭嶼 Long-Stay 計畫) 電腦教學 (95年08月04日～95年08月019日，共16日)
+  organization: 其他
+  startYear: 2006
+  order: 46
+- id: service-047
+  category: 教學營隊
+  role: 2006 年高雄市楠陽國小、高雄縣橫山、深水、岡山、彌陀、大社國小社區電腦教學 (95年08月21～95年08月25日，共5日)
+  organization: 其他
+  startYear: 2006
+  order: 47
+- id: service-048
+  category: 教學營隊
+  role: 2006 年高雄縣三民鄉民權國小資訊與網路維護與升級 (95年07月21日～95年07月22日，共2日)
+  organization: 其他
+  startYear: 2006
+  order: 48
+- id: service-049
+  category: 教學營隊
+  role: 2006 年高雄縣多納國小社區電腦與文化活動營 (95年7月24日～95年8月4日，共14日)
+  organization: 其他
+  startYear: 2006
+  order: 49
+- id: service-050
+  category: 教學營隊
+  role: 2006 年台東縣蘭嶼國小社區電腦教學--發現藍海 (文化與動畫) (95年06月28日～95年06月29日，共2日)
+  organization: 其他
+  startYear: 2006
+  order: 50
+- id: service-051
+  category: 教學營隊
+  role: 2006 年台東縣東清國小社區電腦教學--發現藍海 (文化與動畫) (95年06月28日～95年06月29日，共2日)
+  organization: 其他
+  startYear: 2006
+  order: 51
+- id: service-052
+  category: 教學營隊
+  role: 2006 年高雄市楠陽國小、高雄縣橫山、深水國小社區電腦教學 (95年04月22～95年04月23日，共4日)
+  organization: 其他
+  startYear: 2006
+  order: 52
+- id: service-053
+  category: 教學營隊
+  role: 2006 年高雄縣多納國小社區電腦繪圖比賽 (95年03月25日～95年03月26日，共2日)
+  organization: 其他
+  startYear: 2006
+  order: 53
+- id: service-054
+  category: 教學營隊
+  role: 2006 年高雄縣茂林國小社區電腦繪圖比賽 (95年03月25日～95年03月26日，共2日)
+  organization: 其他
+  startYear: 2006
+  order: 54
+- id: service-055
+  category: 教學營隊
+  role: 2005 年高雄縣多納國小社區電腦教學 (94年12月10日～94年12月11日，共2日) 活動內容：學習製作FLASH電腦繪圖與數位影像處理
+  organization: 其他
+  startYear: 2005
+  order: 55
+- id: service-056
+  category: 教學營隊
+  role: 2005 年高雄縣茂林國小社區電腦教學 (94年12月10日～94年12月11日，共2日) 活動內容：學習製作FLASH電腦繪圖與數位影像處理
+  organization: 其他
+  startYear: 2005
+  order: 56
+- id: service-057
+  category: 教學營隊
+  role: 2005 年台東縣蘭嶼國小社區電腦教學 (94年10月22日～94年10月23日，共2日) 活動內容：學習製作Flash賀卡與大頭貼
+  organization: 其他
+  startYear: 2005
+  order: 57
+- id: service-058
+  category: 教學營隊
+  role: 2005 年高雄縣多納國小社區電腦教學 (94年08月22日～94年08月26日，共4日) 活動內容：學習製作FLASH電腦動畫與數位影像處理+英語教學+課業輔導
+  organization: 其他
+  startYear: 2005
+  order: 58
+- id: service-059
+  category: 教學營隊
+  role: 2005 年高雄縣多納國小社區電腦教學 (94年07月11日～94年07月15日，共5日) 活動內容：學習製作FLASH電腦動畫與數位影像處理+英語教學+課業輔導
+  organization: 其他
+  startYear: 2005
+  order: 59
+- id: service-060
+  category: 教學營隊
+  role: 2005 年台東縣蘭嶼國小社區電腦教學 (94年05月14日～94年05月15日，共2日) 活動內容：學習製作數位照片
+  organization: 其他
+  startYear: 2005
+  order: 60
+- id: service-061
+  category: 教學營隊
+  role: 2005 年高雄縣多納國小社區電腦教學 (94年01月24日～94年01月28日，共4日) 活動內容：學習製作FLASH電腦動畫
+  organization: 其他
+  startYear: 2005
+  order: 61
+- id: service-062
+  category: 教學營隊
+  role: 2004 年台東縣蘭嶼國小社區電腦教學 (93年11月10日～93年11月11日，共2日) 活動內容：學習製作FLASH電子賀卡
+  organization: 其他
+  startYear: 2004
+  order: 62
+- id: service-063
+  category: 教學營隊
+  role: 2004 年高雄縣多納國小社區電腦教學 (93年08月01日～93年08月07日，共6日) 活動內容：學習製作FLASH電腦動畫
+  organization: 其他
+  startYear: 2004
+  order: 63
+- id: service-064
+  category: 教學營隊
+  role: 2003 年高雄縣多納國小社區電腦教學 (92年12月26日，共1日) 活動內容：FLASH電腦動畫之課後輔導
+  organization: 其他
+  startYear: 2003
+  order: 64
+- id: service-065
+  category: 教學營隊
+  role: 2003 年高雄市楠陽國小社區電腦教學 (92年12月20日～92年12月21日，共2日) 活動內容：學習製作FLASH電子賀卡
+  organization: 其他
+  startYear: 2003
+  order: 65
+- id: service-066
+  category: 教學營隊
+  role: 2003 年高雄市楠陽國小社區電腦教學 (92年12月06日～92年12月07日，共2日) 活動內容：學習製作FLASH電子賀卡
+  organization: 其他
+  startYear: 2003
+  order: 66
+- id: service-067
+  category: 教學營隊
+  role: 2003 年高雄縣多納國小社區電腦教學 (92年07月～92年07月，共5日) 活動內容：學習製作FLASH電腦動畫
+  organization: 其他
+  startYear: 2003
+  order: 67
+- id: service-068
+  category: 教學營隊
+  role: 2003 年高雄縣慈德育幼院社區電腦教學 (92年03月15日～92年03月15日，共1日) 活動內容：學習製作FLASH電子賀卡
+  organization: 其他
+  startYear: 2003
+  order: 68
+- id: service-069
+  category: 教學營隊
+  role: 2002 年高雄市楠梓國小社區電腦教學 (91年10月19日，共1日) 活動內容：學習製作FLASH電子賀卡
+  organization: 其他
+  startYear: 2002
+  order: 69
+- id: service-070
+  category: 教學營隊
+  role: 2002 年高雄市楠梓國小社區電腦教學 (91年10月28日，共1日) 活動內容：學習製作FLASH電子賀卡
+  organization: 其他
+  startYear: 2002
+  order: 70
+- id: service-071
+  category: 國際服務
+  role: 2015 年印尼泗水台灣學校網路團隊 (104年11月16日～104年11月27日，共12日)
+  organization: 其他
+  startYear: 2015
+  order: 71
+- id: service-072
+  category: 國際服務
+  role: 2014 年印尼泗水台灣學校網路團隊 (103年10月22日～103年10月29日，共7日)
+  organization: 其他
+  startYear: 2014
+  order: 72
+- id: service-073
+  category: 國際服務
+  role: 2013 年印尼泗水台灣學校電腦學習營 (102年09月20日～102年10月01日，共11日)
+  organization: 其他
+  startYear: 2013
+  order: 73
+- id: service-074
+  category: 國際服務
+  role: 2012 年印尼泗水台灣學校電腦學習營 (101年11月27日～101年12月04日，共8日)
+  organization: 其他
+  startYear: 2012
+  order: 74
+- id: service-075
+  category: 國際服務
+  role: 2011 年印尼泗水台灣學校電腦學習營 (100年09月17日～100年09月27日，共11日)
+  organization: 其他
+  startYear: 2011
+  order: 75
+- id: service-076
+  category: 國際服務
+  role: 2006 年印尼雅加達台北國際學校電腦動畫營與校園網路檢測服務 (95年06月1日～95年06月11日，共10日) 活動內容：學習製作FLASH電腦繪圖與校園網路檢測與規劃
+  organization: 其他
+  startYear: 2006
+  order: 76

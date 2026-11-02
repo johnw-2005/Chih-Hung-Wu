@@ -1,0 +1,83 @@
+{
+  "sources": [
+    {
+      "file": "Johnw_Journal.bib",
+      "collection": "publications"
+    },
+    {
+      "file": "Johnw_Conference.bib",
+      "collection": "publications",
+      "legacyIds": {
+        "Huang2018": "conference-2018-050-an-optimal-design-of",
+        "Wu201809a": "conference-2018-054-an-optimal-design-of",
+        "Pan2018a": "conference-2018-053-emotion-recognition",
+        "Wu201807a": "conference-2018-055-emotion-recognition",
+        "Jian2017": "conference-2017-056-jang-jian-c-h-wu",
+        "Lai2016": "conference-2016-065-lin-gender-recognit",
+        "Lai2016a": "conference-2016-066-lin-gender-classifi",
+        "Yeh2006": "conference-2006-114-doong-a-kernel-prot"
+      }
+    },
+    {
+      "file": "Johnw_Others.bib",
+      "collection": "publications",
+      "legacyIds": {
+        "johnw:WECSE2008": "other-2008-152-machine-learning-in",
+        "johnw:IBTITNM2005": "other-2005-153-computational-intell",
+        "johnw:TA2003": "other-2003-154-the-techniques-and-e",
+        "johnw:KBSTA2000": "other-2000-155-techniques-and-appli"
+      }
+    },
+    {
+      "file": "Johnw_Projects.bib",
+      "collection": "projects",
+      "category": "研究型",
+      "legacyIds": {
+        "nsysunuk:2018": "project-008",
+        "nsysunuk:2017a": "project-011",
+        "nsysunuk:2016a": "project-014",
+        "nsysunuk:2015b": "project-015",
+        "moe:2014b": "project-016",
+        "MoL:2010b": "project-023",
+        "IND:2009a": "project-025",
+        "most:2007a": "project-028",
+        "most:2006a": "project-029",
+        "most:2005a": "project-031"
+      }
+    },
+    {
+      "file": "Johnw_Projects_2.bib",
+      "collection": "projects",
+      "category": "教學服務型",
+      "legacyIds": {
+        "moe:2022a": "project-040",
+        "moe:2021a": "project-041",
+        "moe:2020a": "project-043",
+        "moe:2019b": "project-047",
+        "most:2018b": "project-052",
+        "moe:2018a": "project-050",
+        "most:STSP:2018a": "project-051",
+        "most:2017b": "project-054",
+        "moe:2017a": "project-053",
+        "most:2016b": "project-056",
+        "moe:2016a": "project-055",
+        "moe:2015a": "project-057",
+        "moe:2014a": "project-058",
+        "moe:2012a": "project-059",
+        "moe:2011a": "project-060",
+        "moe:2010a": "project-061",
+        "moe:2009a": "project-062",
+        "moe:2006a": "project-063",
+        "moe:2006b": "project-064",
+        "moe:2005a": "project-065",
+        "moe:2005b": "project-066",
+        "moe:2004": "project-067"
+      }
+    },
+    {
+      "file": "Johnw_ProjectsST.bib",
+      "collection": "projects",
+      "category": "大專生"
+    }
+  ]
+}

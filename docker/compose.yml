@@ -1,0 +1,27 @@
+name: johnw_web
+
+services:
+  web:
+    image: johnw_web-web-dev
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "127.0.0.1:4321:4321"
+    volumes:
+      - ..:/app
+      - node_modules:/app/node_modules
+    environment:
+      SITE_MODE: ${SITE_MODE:-dev}
+    command:
+      - sh
+      - -c
+      - |
+        case "$$SITE_MODE" in
+          dev) exec npm run dev -- --host 0.0.0.0 ;;
+          admin) npm run build && exec env ADMIN_ORIGIN=http://localhost:4321 COOKIE_SECURE=false npm start ;;
+          *) echo "SITE_MODE must be dev or admin" >&2; exit 1 ;;
+        esac
+
+volumes:
+  node_modules:

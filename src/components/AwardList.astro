@@ -1,0 +1,76 @@
+---
+import EntryFilters from './EntryFilters.astro';
+import type { CollectionEntry } from 'astro:content';
+import EntryList from './EntryList.astro';
+import {awardFields} from '../lib/award-fields.mjs';
+import type { EntryItem } from './EntryList.astro';
+import {
+  awardCategories,
+  awardCategoryAccent,
+  awardCategoryShortLabel,
+  parseAwardEntry,
+  resolveAwardCategory,
+} from '../lib/award-parser.mjs';
+import { sectionAccent } from '../lib/colors';
+import { sortByYearDesc } from '../lib/site';
+
+interface Props {
+  items: CollectionEntry<'awards'>[];
+}
+
+const { items } = Astro.props;
+
+const entryItems: EntryItem[] = sortByYearDesc(items).map((item) => {
+    const data = awardFields(item.data);
+    const category = resolveAwardCategory({...item,data});
+    const parsed = parseAwardEntry(data.title, data.award);
+    const subtitleLines = [data.recipient, data.organization].filter(Boolean);
+
+    return {
+      editCollection: 'awards',
+      editId: item.id,
+      title: parsed.displayTitle,
+      subtitleLines,
+      year: item.data.year,
+      detail: data.detail,
+      image: item.data.image,
+      category,
+      categoryLabel: awardCategoryShortLabel[category],
+      categoryAccent: awardCategoryAccent[category],
+      awardLabel: parsed.awardLabel,
+    };
+});
+
+const counts = {
+  all: entryItems.length,
+  ...Object.fromEntries(
+    awardCategories.map((category) => [
+      category,
+      entryItems.filter((item) => item.category === category).length,
+    ]),
+  ),
+} as Record<string, number>;
+
+const filters = [
+  { id: 'all', label: '全部', count: counts.all, color: sectionAccent.awards },
+  ...awardCategories.map((category) => ({
+    id: category,
+    label: awardCategoryShortLabel[category],
+    count: counts[category] ?? 0,
+    color: awardCategoryAccent[category],
+  })),
+].filter((filter) => filter.id === 'all' || filter.count > 0);
+---
+
+{entryItems.length === 0 ? (
+  <p class="rounded-lg bg-white px-5 py-4 text-muted shadow-sm">尚無獲獎紀錄。</p>
+) : (
+  <div class="service-section" data-entry-filters>
+    <EntryFilters filters={filters} label="獲獎分類" dotColors={['lab-amber', 'cat-indigo', 'cat-purple']} />
+    <EntryList
+      items={entryItems}
+      accent={sectionAccent.awards}
+      emptyText="尚無獲獎紀錄。"
+    />
+  </div>
+)}

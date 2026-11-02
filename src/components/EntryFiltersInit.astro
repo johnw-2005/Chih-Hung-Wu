@@ -1,0 +1,49 @@
+<script>
+  function initEntryFilters() {
+    document.querySelectorAll('[data-entry-filters]').forEach((root) => {
+      if (!(root instanceof HTMLElement) || root.dataset.filtersReady === 'true') return;
+      root.dataset.filtersReady = 'true';
+
+      const buttons = Array.from(root.querySelectorAll('[data-entry-filter]'));
+      const cards = Array.from(root.querySelectorAll('[data-entry-category]'));
+
+      function apply(filter: string) {
+        buttons.forEach((btn) => {
+          const isActive = btn.dataset.entryFilter === filter;
+          btn.classList.toggle('is-active', isActive);
+          btn.setAttribute('aria-selected', String(isActive));
+        });
+
+        cards.forEach((card) => {
+          if (!(card instanceof HTMLElement)) return;
+          const show = filter === 'all' || card.dataset.entryCategory === filter;
+          card.hidden = !show;
+        });
+      }
+
+      apply('all');
+
+      buttons.forEach((btn) => {
+        btn.addEventListener('click', () => apply(btn.dataset.entryFilter ?? 'all'));
+      });
+    });
+  }
+
+  function resetPanelEntryFilters(panel: HTMLElement) {
+    panel.querySelectorAll('[data-entry-filters]').forEach((root) => {
+      const allBtn = root.querySelector('[data-entry-filter="all"]');
+      if (allBtn instanceof HTMLButtonElement) {
+        allBtn.click();
+      }
+    });
+  }
+
+  initEntryFilters();
+  document.addEventListener('astro:page-load', initEntryFilters);
+  document.addEventListener('tab-panel-activate', (event) => {
+    const panel = event.target;
+    if (panel instanceof HTMLElement) {
+      resetPanelEntryFilters(panel);
+    }
+  });
+</script>
